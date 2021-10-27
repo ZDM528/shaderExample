@@ -1,4 +1,4 @@
-import { Component, director, game, SceneAsset, _decorator } from "cc";
+import { Component, director, game, Scene, SceneAsset, _decorator } from "cc";
 
 const { ccclass } = _decorator;
 @ccclass('Main')
@@ -17,7 +17,7 @@ export class Main extends Component {
         if (Main.onLoadedGameScene) Main.onLoadedGameScene();
     }
 
-    public static reloadGameScene(): void {
-        director.loadScene(Main.gameSceneName);
+    public static async reloadGameScene(): Promise<Scene> {
+        return new Promise<Scene>(resolve => director.loadScene(Main.gameSceneName, (error, scene) => resolve(scene)));
     }
 }

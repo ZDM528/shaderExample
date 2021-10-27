@@ -29,6 +29,7 @@ class Playable {
         if (DEV) {
             // 给调试版本增加一个命令，快速到ending。
             globalThis.gameOver = (result?: boolean) => this.gameEnd(result);
+            globalThis.gameRetry2 = () => this.retryGame();
         }
 
         this.checkWindowResize();
@@ -56,7 +57,9 @@ class Playable {
         }
 
         audioManager.initialize();
-        mvPlatform != null ? mvPlatform.sendGameEvent("gameReady") : this.gameStart();
+
+        await this.reloadScene();
+        this.gameReady();
     }
 
     private checkWindowResize(): void {
@@ -75,7 +78,6 @@ class Playable {
     }
 
     private dispatchSizeEvent(): void {
-        console.log("dispatchSizeEvent");
         if (typeof (Event) === 'function') {
             // modern browsers
             window.dispatchEvent(new Event('resize'));
@@ -88,10 +90,13 @@ class Playable {
         }
     }
 
+    public gameReady(): void {
+        mvPlatform != null ? mvPlatform.sendGameEvent("gameReady") : this.gameStart();
+    }
+
     private gameStart(startSounds: boolean = true): void {
         console.log("gameStart");
         this.dispatchSizeEvent();
-        Main.reloadGameScene();
         audioManager.playMusic("bm_bgm");
         if (!startSounds && document) {
             audioManager.enableSounds = false;
@@ -124,9 +129,14 @@ class Playable {
         mvPlatform.sendAction(str);
     }
 
-    public retryGame(): void {
+    public async reloadScene(): Promise<void> {
+        await Main.reloadGameScene();
+        return GameManager.instance.initialize();
+    }
+
+    public async retryGame(): Promise<void> {
         this.#retryCount++;
-        Main.reloadGameScene();
+        await this.reloadScene();
         audioManager.playMusic("bm_bgm");
         mvPlatform?.sendGameEvent("gameRetry");
     }

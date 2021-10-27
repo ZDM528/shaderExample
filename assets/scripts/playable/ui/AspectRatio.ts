@@ -34,7 +34,7 @@ export class AspectRatio extends Component {
     }
 
     onDestroy(): void {
-        this.sprite.node.off(Sprite.EventType.SPRITE_FRAME_CHANGED, this.updateAspectRatio, this);
+        this.sprite.node?.off(Sprite.EventType.SPRITE_FRAME_CHANGED, this.updateAspectRatio, this);
         this.node.parent.off(Node.EventType.SIZE_CHANGED, this.updateAspectRatio, this);
     }
 

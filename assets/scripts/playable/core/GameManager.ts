@@ -26,8 +26,9 @@ export class GameManager extends Component {
         GameManager._instance = this;
     }
 
-    onLoad(): void {
-        this.createGameView();
+    public async initialize(): Promise<void> {
+        resources.preload(this.endingViewPath);
+        await this.createGameView();
     }
 
     public async createGameView(): Promise<void> {

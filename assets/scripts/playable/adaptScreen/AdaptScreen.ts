@@ -85,7 +85,7 @@ class TransformData {
     @property(WidgetData)
     public widget = new WidgetData();
 
-    public constructor(ratio: number, other: TransformData) {
+    public constructor(ratio: number, other?: TransformData) {
         this.ratio = ratio;
         if (other != null) this.set(other);
     }
@@ -97,6 +97,12 @@ class TransformData {
         this.size.set(other.size);
         this.anchorPoint.set(other.anchorPoint);
         this.widget.set(other.widget);
+    }
+}
+
+declare module "cc" {
+    interface View {
+        readonly editorCanvasSizeRatio: number;
     }
 }
 
@@ -120,8 +126,8 @@ export class AdaptScreen extends Component {
             this.node.on(Node.EventType.TRANSFORM_CHANGED, this.saveTransformData, this);
             this.node.on(Node.EventType.SIZE_CHANGED, this.saveTransformSize, this);
             this.node.on(Node.EventType.ANCHOR_CHANGED, this.saveTransformAnchorPoint, this);
-            view.on('design-resolution-changed', this.onDesignResolutionChanged, this);
-            this.onDesignResolutionChanged();
+            view.on('editor-canvas-resize', this.onEditorSizeChanged, this);
+            this.onEditorSizeChanged(view.editorCanvasSizeRatio);
 
             let addComponentFunc: Function = this.node.addComponent;
             this.node.addComponent = (...args) => {
@@ -146,7 +152,7 @@ export class AdaptScreen extends Component {
             this.node.off(Node.EventType.TRANSFORM_CHANGED, this.saveTransformData, this);
             this.node.off(Node.EventType.SIZE_CHANGED, this.saveTransformSize, this);
             this.node.off(Node.EventType.ANCHOR_CHANGED, this.saveTransformAnchorPoint, this);
-            view.off('design-resolution-changed', this.onDesignResolutionChanged, this);
+            view.off('editor-canvas-resize', this.onEditorSizeChanged, this);
             this.node.off("addComponent", this.onAddComponent, this);
 
             let widget = this.getComponent(Widget);
@@ -172,19 +178,18 @@ export class AdaptScreen extends Component {
         };
     }
 
-    private onDesignResolutionChanged(): void {
+    private onEditorSizeChanged(ratio: number): void {
         this.resolutionChangedTime = Date.now();
-
-        let ratio = AdaptScreenManager.canvasSizeRatio;
         this.transformData = this.transformDatas.find(v => v.ratio == ratio);
         if (this.transformData == null) {
             let nearest = this.getNearestTransformData(ratio);
             this.transformData = new TransformData(ratio, nearest);
             this.transformDatas.push(this.transformData);
-            if (nearest == null)
+            if (nearest == null) {
                 this.initSaveTransform();
-            else
+            } else {
                 this.updateTransformData(this.transformData);
+            }
         } else {
             this.updateTransformData(this.transformData);
         }

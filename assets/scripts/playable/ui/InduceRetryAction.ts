@@ -3,7 +3,7 @@ import { Component } from "cc";
 import { Label, _decorator } from "cc";
 import { InstallType, playable } from "../core/Playable";
 import { gameConfig } from "../gameConfig/GameConfigManager";
-import { mvPlatform } from "../MVPlatform/Platform";
+import { mvPlayable } from "../MVPlatform/MVPlayable";
 
 const { ccclass, property, requireComponent, menu, disallowMultiple } = _decorator;
 
@@ -24,7 +24,7 @@ export class InduceRetryAction extends Component {
         let label = this.getComponentInChildren(Label);
         if (label == null) return;
         const retryCount = gameConfig.playAgain ?? 0;
-        if (playable.retryCount >= retryCount && mvPlatform?.disable_induce_click)
+        if (playable.retryCount >= retryCount && mvPlayable?.disable_induce_click)
             label.string = this.induceKeyText;
     }
 

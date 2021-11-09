@@ -58,7 +58,7 @@ interface EventTypeObject {
  * 素材与仓库的游戏事件通信，就是素材调用这些接口。
  */
 class GameEvent {
-    public constructor(public readonly platform: Platform) { }
+    public constructor(public readonly platform: MVPlayable) { }
 
     gameReady(): void {
         console.log("MV platform gameReady");
@@ -76,7 +76,7 @@ class GameEvent {
     }
 }
 
-class Platform {
+class MVPlayable {
     private readonly gameEvent = new GameEvent(this);
     private eventMap = new Map<string, (...params: any) => any>();
     /**
@@ -168,4 +168,4 @@ class Platform {
         console.log("MV platform sendAction ", action);
     }
 }
-export const mvPlatform = new Platform();
+export const mvPlayable = new MVPlayable();

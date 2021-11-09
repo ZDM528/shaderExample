@@ -1,6 +1,6 @@
 import { Button, Component, Label, _decorator } from "cc";
 import { InstallType, playable } from "../core/Playable";
-import { mvPlatform } from "../MVPlatform/Platform";
+import { mvPlayable } from "../MVPlatform/MVPlayable";
 
 const { ccclass, property, requireComponent, menu,disallowMultiple } = _decorator;
 
@@ -20,12 +20,12 @@ export class InduceInstallAction extends Component {
     onEnable(): void {
         let label = this.getComponentInChildren(Label);
         if (label == null) return;
-        if (mvPlatform?.disable_induce_click)
+        if (mvPlayable?.disable_induce_click)
             label.string = this.induceKeyText;
     }
 
     protected onButtonClicked(): void {
-        let installType = mvPlatform?.disable_induce_click ? InstallType.None : InstallType.Induce;
+        let installType = mvPlayable?.disable_induce_click ? InstallType.None : InstallType.Induce;
         playable.install(installType);
     }
 }

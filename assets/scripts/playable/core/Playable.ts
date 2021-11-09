@@ -1,7 +1,7 @@
 import { DEV } from "cc/env";
 import GameConfigManager from "../gameConfig/GameConfigManager";
 import LocalizeManager from "../localize/LocalizeManager";
-import { mvPlatform } from "../MVPlatform/Platform";
+import { mvPlayable } from "../MVPlatform/MVPlayable";
 import { View } from "../ui/View";
 import ActionEvent from "../utility/ActionEvent";
 import { audioManager } from "./AudioManager";
@@ -42,14 +42,14 @@ class Playable {
 
         this.checkWindowResize();
 
-        if (mvPlatform) {
-            mvPlatform.addEventListener("gameStart", this.gameStart.bind(this));
-            mvPlatform.addEventListener("gameEnd", this.gameEnd.bind(this));
-            mvPlatform.addEventListener("reloadLanguage", () => {
+        if (mvPlayable) {
+            mvPlayable.addEventListener("gameStart", this.gameStart.bind(this));
+            mvPlayable.addEventListener("gameEnd", this.gameEnd.bind(this));
+            mvPlayable.addEventListener("reloadLanguage", () => {
                 LocalizeManager.loadLanguageConfig("config/languages")
-                    .then(() => LocalizeManager.setLocalize(mvPlatform?.languageName ?? "zh-cn"));
+                    .then(() => LocalizeManager.setLocalize(mvPlayable?.languageName ?? "zh-cn"));
             });
-            mvPlatform.addEventListener("enableSounds", (enable) => audioManager.enableSounds = enable);
+            mvPlayable.addEventListener("enableSounds", (enable) => audioManager.enableSounds = enable);
         }
 
         try {
@@ -59,7 +59,7 @@ class Playable {
         }
         try {
             await LocalizeManager.initialize("config/languages");
-            LocalizeManager.setLocalize(mvPlatform?.languageName ?? "zh-cn");
+            LocalizeManager.setLocalize(mvPlayable?.languageName ?? "zh-cn");
         } catch (error) {
             console.warn(error);
         }
@@ -99,7 +99,7 @@ class Playable {
     }
 
     public gameReady(): void {
-        mvPlatform != null ? mvPlatform.sendGameEvent("gameReady") : this.gameStart();
+        mvPlayable != null ? mvPlayable.sendGameEvent("gameReady") : this.gameStart();
     }
 
     private gameStart(startSounds: boolean = true): void {
@@ -123,19 +123,19 @@ class Playable {
 
     public gameEnd<T extends View>(...params: Parameters<T["intialize"]>): void {
         GameManager.instance.createEndingView<T>(...params);
-        mvPlatform?.sendGameEvent("gameEnd", params[0]);
+        mvPlayable?.sendGameEvent("gameEnd", params[0]);
     }
 
     public install(type?: InstallType, index?: number): void {
         const installValue = installTypeWrap[type & -type]; // 只取最右边第一个1的位。
-        mvPlatform?.install(installValue, index);
+        mvPlayable?.install(installValue, index);
     }
 
     /** 埋点接口 */
     public sendAction(action: number, force?: boolean): void {
         if (!this.enableAction && !!force) return;
         let str = "action&action=" + action;
-        mvPlatform.sendAction(str);
+        mvPlayable.sendAction(str);
     }
 
     public async reloadScene(): Promise<void> {
@@ -147,7 +147,7 @@ class Playable {
         this.#retryCount++;
         await this.reloadScene();
         audioManager.playMusic("bm_bgm");
-        mvPlatform?.sendGameEvent("gameRetry");
+        mvPlayable?.sendGameEvent("gameRetry");
         this.retryEvent.DispatchAction(this.retryCount);
     }
 }

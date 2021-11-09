@@ -3,6 +3,7 @@ import GameConfigManager from "../gameConfig/GameConfigManager";
 import LocalizeManager from "../localize/LocalizeManager";
 import { mvPlatform } from "../MVPlatform/Platform";
 import { View } from "../ui/View";
+import ActionEvent from "../utility/ActionEvent";
 import { audioManager } from "./AudioManager";
 import { GameManager } from "./GameManager";
 import { Main } from "./Main";
@@ -21,8 +22,15 @@ installTypeWrap[InstallType.Auto] = "autoClick";
 installTypeWrap[InstallType.Induce] = "youdaoClick";
 
 class Playable {
+    /**
+     * 重玩事件，@param 参数1是重玩次数，默认从1开始。
+     */
+    public readonly retryEvent = new ActionEvent<number>();
     #retryCount: number = 0;
     public get retryCount() { return this.#retryCount; }
+    private _enabledAction: boolean = true;
+    public get enableAction() { return this._enabledAction; }
+    public set enableAction(value) { this._enabledAction = value; }
 
     public async initialize() {
         console.log("Playable initialize");
@@ -124,7 +132,8 @@ class Playable {
     }
 
     /** 埋点接口 */
-    public sendAction(action: number): void {
+    public sendAction(action: number, force?: boolean): void {
+        if (!this.enableAction && !!force) return;
         let str = "action&action=" + action;
         mvPlatform.sendAction(str);
     }
@@ -139,6 +148,7 @@ class Playable {
         await this.reloadScene();
         audioManager.playMusic("bm_bgm");
         mvPlatform?.sendGameEvent("gameRetry");
+        this.retryEvent.DispatchAction(this.retryCount);
     }
 }
 

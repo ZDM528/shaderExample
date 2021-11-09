@@ -82,10 +82,8 @@ class AudioManager {
             context.resume().catch((e) => { });
             // promise rejection cannot be caught, need to check running state again
             if (<string>context.state !== 'running') {
-                console.log("wait for touch to playMusic ");
                 const canvas = document.getElementById('GameCanvas') as HTMLCanvasElement;
                 const onGesture = () => {
-                    console.log("touch to playMusic ");
                     canvas.removeEventListener("touchstart", onGesture);
                     canvas.removeEventListener("touchend", onGesture);
                     canvas.removeEventListener("mousedown", onGesture);
@@ -121,16 +119,13 @@ class AudioManager {
     public async playMusic(audioPath: string, onCompleted?: () => void): Promise<AudioID> {
         this.stopMusic();
         let audioBuffer = await this.loadAudioBuffer(audioPath);
-        console.log("reqest playMusic ", audioPath);
         await this.runContext();
-        console.log("create playMusic ", audioPath);
         const source = this.audioContext.createBufferSource();
         source.buffer = audioBuffer;
         source.connect(this.musicGain);
         source.loop = true;
         if (onCompleted) source.onended = () => onCompleted();
         source.start(0, this.audioContext.currentTime);
-        console.log("end playMusic ", audioPath);
         this.music = source;
         return source;
     }
@@ -172,7 +167,9 @@ class AudioManager {
      * 停止播放音频
      * @param audioID 音频ID
      */
-    public stopAudio(audioID: AudioID): void {
+    public async stopAudio(audioID: AudioID | Promise<AudioID>) {
+        if (audioID instanceof Promise)
+            audioID = await audioID;
         const source = audioID as AudioBufferSourceNode;
         source?.stop();
     }

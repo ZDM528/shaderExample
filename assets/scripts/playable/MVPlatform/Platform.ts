@@ -1,4 +1,3 @@
-import { director, game } from "cc";
 import { BUILD } from "cc/env";
 
 // 这个是为了兼容旧的通信接口，新版不使用这些接口

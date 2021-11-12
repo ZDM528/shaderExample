@@ -1,5 +1,6 @@
 import { Canvas, Component, instantiate, Prefab, Node, resources, _decorator, CCString } from "cc";
 import { View } from "../ui/View";
+import ActionEvent from "../utility/ActionEvent";
 import { ISystem } from "./RegisterSystem";
 
 const { ccclass, property } = _decorator;
@@ -9,6 +10,9 @@ export class GameManager extends Component {
     private static _instance: GameManager;
     public static get instance() { return GameManager._instance; }
     private static readonly systemList: ISystem[] = [];
+    public static onLoadedCompleteEvent = new ActionEvent();
+    private static _isLoadedComplete: boolean = false;
+    public static get isLoadedComplete() { return GameManager._isLoadedComplete; }
 
     @property(Canvas)
     readonly canvas: Canvas = null;
@@ -37,6 +41,8 @@ export class GameManager extends Component {
         if (this.preloadDirAssets.length > 0)
             await new Promise<void>(resolve => resources.preload(this.preloadDirAssets, () => resolve()));
         await this.createGameView();
+        GameManager._isLoadedComplete = true;
+        GameManager.onLoadedCompleteEvent.DispatchAction();
     }
 
     public async createGameView(): Promise<void> {

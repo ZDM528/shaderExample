@@ -131,7 +131,7 @@ class MVPlayable {
      * @param type 事件类型
      * @param callback 事件触发时回调
      */
-    addEventListener<T extends ObjectInclude<EventTypeObject, Function>>(type: T, callback: (...params: Parameters<EventTypeObject[T]>) => void): void {
+    public addEventListener<T extends ObjectInclude<EventTypeObject, Function>>(type: T, callback: (...params: Parameters<EventTypeObject[T]>) => void): void {
         this.eventMap.set(type, callback);
     }
 
@@ -141,7 +141,7 @@ class MVPlayable {
      * @param params 该事件对应的参数
      * @returns 该事件返回的参数
      */
-    dispatchEventListener<T extends ObjectInclude<EventTypeObject, Function>>(type: T, ...params: Parameters<EventTypeObject[T]>): ReturnType<EventTypeObject[T]> {
+    public dispatchEventListener<T extends ObjectInclude<EventTypeObject, Function>>(type: T, ...params: Parameters<EventTypeObject[T]>): ReturnType<EventTypeObject[T]> {
         let callback = this.eventMap.get(type);
         if (callback) return callback(...params);
     }
@@ -156,14 +156,14 @@ class MVPlayable {
         return this.gameEvent[type].call(this.gameEvent, ...params);
     }
 
-    install(type?: string, index?: number): void {
+    public install(type?: string, index?: number): void {
         // globalThis?.install(type, index);
         console.log("MV platform install ", type, index);
         globalThis.install?.({ type: type });
     }
 
     /** 埋点接口 */
-    sendAction(action: string): void {
+    public sendAction(action: string): void {
         globalThis.HttpAPI?.sendPoint(action);
         console.log("MV platform sendAction ", action);
     }

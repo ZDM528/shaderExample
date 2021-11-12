@@ -1,4 +1,5 @@
-import { Component, tween, Vec3, _decorator } from "cc";
+import { Component, Vec3, _decorator } from "cc";
+import { xtween } from "./XTween";
 
 const { ccclass, property } = _decorator;
 
@@ -22,9 +23,8 @@ export class TweenScale extends Component {
     }
 
     public startTween(): void {
-        tween(this.node).repeatForever(
-            tween(this.node).by(this.duration, { scale: new Vec3(this.scale, this.scale, this.scale) })
-                .by(this.duration, { scale: new Vec3(-this.scale, -this.scale, -this.scale) })
+        xtween(this.node).repeatForever(true,
+            xtween(this.node).by(this.duration, { scale: new Vec3(this.scale, this.scale, this.scale) })
         ).start();
     }
 }

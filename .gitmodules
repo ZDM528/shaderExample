@@ -1,0 +1,3 @@
+[submodule "assets/scripts/playable"]
+	path = assets/scripts/playable
+	url = git@gitlab.mobvista.com:hubluesky/playable.git

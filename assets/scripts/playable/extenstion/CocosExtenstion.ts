@@ -131,15 +131,10 @@ Component.prototype.waitForTime = async function <T extends Component>(this: T, 
     return new Promise<void>((resolve) => this.scheduleOnce(resolve, time));
 }
 
- // 有些平台没有console.time和console.timeEnd这两个函数，会导致引擎异常无法正常启动，在这里模拟一下。
+// 有些平台没有console.time和console.timeEnd这两个函数，会导致引擎异常无法正常启动，在这里模拟一下。
 if (console.time == null) console.time = function (message?: any, ...optionalParams: any[]): void {
     console.log(message, ...optionalParams);
 }
 if (console.timeEnd == null) console.timeEnd = function (message?: string, ...optionalParams: any[]) {
     console.log(message, ...optionalParams);
 }
-
-// Label.prototype.format = function (this: Label, format: string, ...params: any[]): void {
-//     this["formatValue"] = format;
-//     this["paramsValue"] = params;
-// }

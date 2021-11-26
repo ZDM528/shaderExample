@@ -1,10 +1,9 @@
 {
   "ver": "1.0.0",
-  "importer": "*",
+  "importer": "json",
   "imported": true,
-  "uuid": "abcb6fe6-eeba-4f74-9f73-5cba9cb32811",
+  "uuid": "6e1965c4-83dd-4749-a0a4-41dbc4ead2e1",
   "files": [
-    ".config",
     ".json"
   ],
   "subMetas": {},

@@ -74,7 +74,7 @@
         "_value": false
       },
       "tween": {
-        "_value": true
+        "_value": false
       },
       "terrain": {
         "_value": false
@@ -93,11 +93,10 @@
       "base",
       "gfx-webgl",
       "gfx-webgl2",
+      "audio",
       "2d",
       "ui",
-      "particle-2d",
-      "audio",
-      "tween"
+      "particle-2d"
     ],
     "noDeprecatedFeatures": {
       "value": false,

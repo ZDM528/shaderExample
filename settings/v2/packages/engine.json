@@ -93,10 +93,10 @@
       "base",
       "gfx-webgl",
       "gfx-webgl2",
-      "audio",
       "2d",
       "ui",
-      "particle-2d"
+      "particle-2d",
+      "audio"
     ],
     "noDeprecatedFeatures": {
       "value": false,

@@ -96,7 +96,8 @@
       "2d",
       "ui",
       "particle-2d",
-      "audio"
+      "audio",
+      "marionette"
     ],
     "noDeprecatedFeatures": {
       "value": false,

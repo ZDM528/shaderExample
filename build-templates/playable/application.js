@@ -130,7 +130,7 @@ System.register("chunks:///application.js", [], function (_export, _context) {
     var launchScene = settings.launchScene; // load scene
 
     cc.director.loadScene(launchScene, null, function () {
-      cc.view.setDesignResolutionSize(960, 640, 4);
+      cc.view.setDesignResolutionSize(1334, 750, 4);
       console.log("Success to load scene: ".concat(launchScene));
     });
   }

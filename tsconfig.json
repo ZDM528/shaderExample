@@ -1,7 +1,9 @@
 {
   /* Base configuration. Do not edit this field. */
   "extends": "./temp/tsconfig.cocos.json",
-
+  "types": [
+    "./@types",
+  ],
   /* Add your custom configuration here. */
   "compilerOptions": {
     "strict": false

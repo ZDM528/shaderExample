@@ -15,7 +15,7 @@
         "_value": true
       },
       "3d": {
-        "_value": false
+        "_value": true
       },
       "2d": {
         "_value": true
@@ -24,7 +24,7 @@
         "_value": true
       },
       "particle": {
-        "_value": false
+        "_value": true
       },
       "physics": {
         "_value": false,
@@ -56,10 +56,10 @@
         "_value": false
       },
       "primitive": {
-        "_value": false
+        "_value": true
       },
       "profiler": {
-        "_value": false
+        "_value": true
       },
       "particle-2d": {
         "_value": true
@@ -87,21 +87,29 @@
       },
       "dragon-bones": {
         "_value": false
+      },
+      "marionette": {
+        "_value": true
       }
     },
     "includeModules": [
+      "2d",
+      "3d",
+      "audio",
       "base",
       "gfx-webgl",
       "gfx-webgl2",
-      "2d",
-      "ui",
+      "marionette",
+      "particle",
       "particle-2d",
-      "audio",
-      "marionette"
+      "primitive",
+      "profiler",
+      "ui"
     ],
     "noDeprecatedFeatures": {
       "value": false,
       "version": ""
-    }
+    },
+    "flags": {}
   }
 }

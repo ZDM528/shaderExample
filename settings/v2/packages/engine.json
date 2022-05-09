@@ -89,7 +89,7 @@
         "_value": false
       },
       "marionette": {
-        "_value": true
+        "_value": false
       }
     },
     "includeModules": [
@@ -99,7 +99,6 @@
       "base",
       "gfx-webgl",
       "gfx-webgl2",
-      "marionette",
       "particle",
       "particle-2d",
       "primitive",

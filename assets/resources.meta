@@ -9,9 +9,7 @@
     "isBundle": true,
     "bundleName": "resources",
     "priority": 8,
-    "compressionType": {
-      "web-mobile": "merge_all_json"
-    },
+    "compressionType": {},
     "isRemoteBundle": {}
   }
 }

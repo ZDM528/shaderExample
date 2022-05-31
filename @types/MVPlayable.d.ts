@@ -1,8 +1,12 @@
+/**
+ *  @deprecated 这个是为了兼容旧的通信接口，新版不使用这些接口
+ */
 declare global {
     namespace MW_CONFIG {
-        var disable_global_click: boolean;
-        var disable_auto_click: boolean;
-        var disable_yd_click: boolean;
+        let channel: Channel;
+        let disable_global_click: boolean;
+        let disable_auto_click: boolean;
+        let disable_yd_click: boolean;
     }
     var MW_LIVE_PREVIEW_LANGUAGE: boolean;
     function gameStart(startSounds?: boolean): void;
@@ -21,8 +25,10 @@ declare global {
     namespace HttpAPI {
         function sendPoint(value: string): void;
     }
+    /** 有一个全局MVPlayable入口 */
     var mvPlayable: MVPlayable;
 }
+declare type Channel = "m" | "dsp" | "fb" | "google" | "unity" | "vungle" | "applovin" | "csj" | "toutiao" | "ironsource";
 declare type ObjectInclude<T, E> = {
     [k in keyof T]: T[k] extends E ? k : never;
 }[keyof T];
@@ -40,12 +46,18 @@ interface EventTypeObject {
      */
     gameEnd(result: boolean): void;
     /**
+     * 切换场景回调
+     * @param sceneName 场景名
+     * @returns 如果场景切换需要加载超过一帧，那就使用Promise返回。
+     */
+    switchScene(sceneName: string): Promise<void>;
+    /**
      * 修改当前语言
      * @param name 语言名称
      */
     setLanguage(name: string): boolean;
     /**
-     * 重新加载语言
+     * 重新加载语言表
      */
     reloadLanguage(): void;
     /**
@@ -53,6 +65,8 @@ interface EventTypeObject {
      * @param enable true 为打开，false为关闭
      */
     enableSounds(enable: boolean): void;
+    /** 重新加载游戏 */
+    reloadGame(): void;
 }
 /**
  * 素材与仓库的游戏事件通信，就是素材调用这些接口。
@@ -65,9 +79,14 @@ declare class GameEvent {
     gameRetry(): void;
 }
 declare class MVPlayable {
-    static readonly version = "1.0.0";
+    /** 当前MVPlayble 的版本号 */
+    static readonly version = "1.1.2";
     private readonly gameEvent;
     private eventMap;
+    /**
+     * 当前渠道名称
+     */
+    get channel(): Channel;
     /**
      * 是否屏蔽素材内置全局可点
      * @description true: 屏蔽全局可点； false: 启动全局可点
@@ -91,7 +110,7 @@ declare class MVPlayable {
      */
     get languageName(): string;
     private getQueryString;
-    constructor();
+    constructor(legacy?: boolean);
     /**
      * 监听仓库事件
      * @param type 事件类型
@@ -104,16 +123,24 @@ declare class MVPlayable {
      * @param params 该事件对应的参数
      * @returns 该事件返回的参数
      */
-    dispatchEventListener<T extends ObjectInclude<EventTypeObject, Function>>(type: T, ...params: Parameters<EventTypeObject[T]>): ReturnType<EventTypeObject[T]>;
+    dispatchEventListener<T extends ObjectInclude<EventTypeObject, Function>>(type: T, ...params: Parameters<EventTypeObject[T]>): ReturnType<EventTypeObject[T]> | void;
     /**
      * 给仓库发送游戏事件
      * @param type 事件类型
      * @param params 该事件对应的参数
      * @returns 该事件返回的参数
      */
-    sendGameEvent<T extends ObjectInclude<GameEvent, Function>>(type: T, ...params: Parameters<GameEvent[T]>): ReturnType<GameEvent[T]>;
+    sendGameEvent<T extends ObjectInclude<GameEvent, Function>>(type: T, ...params: Parameters<GameEvent[T]>): ReturnType<GameEvent[T]> | void;
+    /**
+     * 跳转安装接口
+     * @param type 跳转类型
+     * @param index 策划要求的跳转索引
+     */
     install(type?: string, index?: number): void;
-    /** 埋点接口 */
+    /**
+     * 发送埋点接口
+     * @param action 埋点标识
+     */
     sendAction(action: string): void;
 }
 export {};

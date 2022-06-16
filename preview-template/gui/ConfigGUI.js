@@ -3,15 +3,18 @@ export default class ConfigGUI {
         // Create the GUI
         this.gui = new guify({ align: 'right', opacity: 0.95, width: "400", open: false });
     }
-    static createConfigGUI(configJson, storageKey, logicConfig, logicConfigDesc, logicConfigKey) {
+    static createConfigGUI(configJson, storageKey, logicConfig) {
         if (cc.sys.isMobile)
             return;
         let configGui = new ConfigGUI();
         configGui.createGameConfig(configJson, storageKey);
-        configGui.createLogicConfig(logicConfig, logicConfigDesc, logicConfigKey);
+        if (logicConfig != null)
+            configGui.createLogicConfig(logicConfig, logicConfig.getPropertyDescriptor?.(), logicConfig.getStorageKey?.());
         return configGui;
     }
     createGameConfig(configJson, storageKey) {
+        if (configJson == null || storageKey == null)
+            return;
         this.gui.Register({ type: "title", label: "GameConfig" });
         this.gui.Register({
             type: "button", label: "Save", action: function () {
@@ -39,7 +42,7 @@ export default class ConfigGUI {
         }
     }
     createLogicConfig(logicConfig, logicConfigDesc, logicConfigKey) {
-        if (logicConfig == null)
+        if (logicConfig == null || logicConfigDesc || logicConfigKey)
             return;
         this.gui.Register({ type: "title", label: "LogicConfig" });
         this.gui.Register({

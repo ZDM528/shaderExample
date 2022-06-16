@@ -58,9 +58,7 @@
                 do {
                     await waitForTime();
                 } while (window.gameConfig == null);
-                let logicConfig = window?.logicConfig;
-                ConfigGUI.createConfigGUI(gameConfig.getJsonAsset(), gameConfig.getStorageKey()
-                    , logicConfig, logicConfig?.getPropertyDescriptor(), logicConfig?.getStorageKey());
+                ConfigGUI.createConfigGUI(gameConfig.getJsonAsset?.(), gameConfig.getStorageKey?.(), window?.logicConfig);
             </script>
 </body>
 

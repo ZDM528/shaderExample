@@ -40,11 +40,12 @@ interface LogicConfigDescriptorMap {
 export default class ConfigGUI {
     private gui: Guify;
 
-    public static createConfigGUI(configJson: GameConfigJson, storageKey: string, logicConfig: Object, logicConfigDesc: LogicConfigDescriptorMap, logicConfigKey: string): ConfigGUI {
+    public static createConfigGUI(configJson: GameConfigJson, storageKey: string, logicConfig: any): ConfigGUI {
         if (cc.sys.isMobile) return;
         let configGui = new ConfigGUI();
         configGui.createGameConfig(configJson, storageKey);
-        configGui.createLogicConfig(logicConfig, logicConfigDesc, logicConfigKey);
+        if (logicConfig != null)
+            configGui.createLogicConfig(logicConfig, logicConfig.getPropertyDescriptor?.(), logicConfig.getStorageKey?.());
         return configGui;
     }
 
@@ -54,6 +55,7 @@ export default class ConfigGUI {
     }
 
     private createGameConfig(configJson: GameConfigJson, storageKey: string): void {
+        if (configJson == null || storageKey == null) return;
         this.gui.Register({ type: "title", label: "GameConfig" });
         this.gui.Register({
             type: "button", label: "Save", action: function () {
@@ -84,7 +86,7 @@ export default class ConfigGUI {
     }
 
     private createLogicConfig(logicConfig: Object, logicConfigDesc: LogicConfigDescriptorMap, logicConfigKey: string): void {
-        if (logicConfig == null) return;
+        if (logicConfig == null || logicConfigDesc || logicConfigKey) return;
 
         this.gui.Register({ type: "title", label: "LogicConfig" });
         this.gui.Register({

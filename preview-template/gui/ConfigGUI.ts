@@ -86,7 +86,7 @@ export default class ConfigGUI {
     }
 
     private createLogicConfig(logicConfig: Object, logicConfigDesc: LogicConfigDescriptorMap, logicConfigKey: string): void {
-        if (logicConfig == null || logicConfigDesc || logicConfigKey) return;
+        if (logicConfig == null || logicConfigDesc == null || logicConfigKey == null) return;
 
         this.gui.Register({ type: "title", label: "LogicConfig" });
         this.gui.Register({

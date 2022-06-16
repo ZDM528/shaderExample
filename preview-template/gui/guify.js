@@ -4538,7 +4538,6 @@
                         _createClass(Theme, [{
                             key: "Apply",
                             value: function Apply() {
-                                console.log(this);
                                 var root = document.documentElement;
                                 root.style.setProperty("--color-menu-bar-background", this.colors.menuBarBackground);
                                 root.style.setProperty("--color-menu-bar-text", this.colors.menuBarText);

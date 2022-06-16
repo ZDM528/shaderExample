@@ -14,6 +14,12 @@
       "gfx-webgl2": {
         "_value": true
       },
+      "animation": {
+        "_value": true
+      },
+      "skeletal-animation": {
+        "_value": true
+      },
       "3d": {
         "_value": true
       },
@@ -90,12 +96,6 @@
       },
       "marionette": {
         "_value": false
-      },
-      "animation": {
-        "_value": true
-      },
-      "skeletal-animation": {
-        "_value": true
       }
     },
     "includeModules": [
@@ -114,7 +114,7 @@
       "ui"
     ],
     "noDeprecatedFeatures": {
-      "value": false,
+      "value": true,
       "version": ""
     },
     "flags": {}

@@ -768,6 +768,8 @@
 
                             dom_css__WEBPACK_IMPORTED_MODULE_1___default()(_this.container, {
                                 width: opts.width,
+                                height: "100%",
+                                position: "relative",
                                 opacity: opts.opacity || 1.0
                             });
 
@@ -4250,7 +4252,6 @@
 
                                dom_css__WEBPACK_IMPORTED_MODULE_0___default()(this.container, {
                                 width: this.opts.width,
-                                height: "100%",
                                 opacity: this.opts.opacity || 1.0
                             });
 

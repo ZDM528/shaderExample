@@ -1,3 +1,6 @@
 [submodule "assets/scripts/playable"]
 	path = assets/scripts/playable
 	url = git@gitlab.mobvista.com:hubluesky/playable.git
+[submodule "preview-template"]
+	path = preview-template
+	url = git@gitlab.mobvista.com:hubluesky/CocosCreator/preview-template.git

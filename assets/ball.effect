@@ -1,0 +1,58 @@
+// Effect Syntax Guide: https://docs.cocos.com/creator/manual/zh/shader/index.html
+
+CCEffect %{
+  techniques:
+  - name: opaque 
+    passes:
+    - vert: ball-vs:vert # builtin header
+      frag: ball-fs:frag
+      properties: &props
+        waterY: { value: 0.0, editor: {slide: true ,step: 0.01 , min: -0.5 ,max: 0.5} }
+}%
+
+CCProgram ball-vs %{
+  precision highp float;
+  #include <input>
+  #include <cc-global>
+  #include <decode-base>
+  #include <cc-local-batch>
+  #include <input>
+  #include <cc-fog-vs>
+
+  out vec3 v_position;
+  
+  vec4 vert () {
+    vec4 position;
+    CCVertInput(position);
+
+    mat4 matWorld;
+    CCGetWorldMatrix(matWorld);
+
+    CC_TRANSFER_FOG(matWorld * position);
+    v_position=vec3(position);
+    return cc_matProj * (cc_matView * matWorld) * position;
+  }
+}%
+
+CCProgram ball-fs %{
+  precision highp float;
+  #include <output>
+  #include <cc-fog-fs>
+
+  in vec2 v_uv;
+  in vec3 v_position;  
+  // 传入的是模型坐标
+
+  uniform Constant {
+    float waterY;
+  };
+
+  vec4 frag () {
+    vec4 color=vec4(0.0,0.6,1.0,1.0);
+    float waterX = v_position.y;
+    waterX = sin(v_position.x *10.0 +cc_time.x * 3.5 )* 0.03 + waterX;
+    float height = waterY-0.5;
+    color = mix(color, vec4(1.0, 1.1, 1.0, 1.0), step(height,waterX));
+    return CCFragOutput(color);
+  }  
+}%

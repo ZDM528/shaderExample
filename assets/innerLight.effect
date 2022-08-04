@@ -1,0 +1,45 @@
+// Effect Syntax Guide: https://docs.cocos.com/creator/manual/zh/shader/index.html
+CCEffect %{
+  techniques:
+  - name: opaque
+    passes:
+    - vert: general-vs:vert     # builtin header
+      frag: rimlight-fs:frag
+      properties: &props
+        mainTexture:    { value: white }
+        mainColor:      { value: [1, 1, 1, 1], editor: { type: color } }
+        rimLightColor:  { value: [1.0, 1.0, 1.0], target: rimColor.rgb, editor: { displayName: Rim Color, type: color }}
+        rimInstensity:  { value: 1.0,target: rimColor.a, editor: {slide: true, range:[0,10],step: 0.1}}
+}%
+
+CCProgram rimlight-fs %{
+  precision highp float;
+  #include <output>
+  #include <cc-fog-fs>
+  #include <cc-global>
+
+  in vec2 v_uv;
+  in vec3 v_position;
+  in vec3 v_normal;
+
+  uniform sampler2D mainTexture;
+
+  uniform Constant {
+    vec4 mainColor;
+    vec4 rimColor;
+  };
+
+  vec4 frag () {
+    vec3 normal = normalize(v_normal);
+    vec3 viewDirection = cc_cameraPos.xyz - v_position;
+    vec3 normalizedViewDirection = normalize(viewDirection);
+    float rimPower= max(dot(normal,normalizedViewDirection),0.0);
+    vec4 col = mainColor * texture(mainTexture, v_uv);
+    float rimInstensity = rimColor.a;
+    col.rgb*=1.0+pow(rimPower,rimInstensity) * rimColor.rgb;
+    //  col.rgb+=pow(rimPower,rimInstensity) * rimColor.rgb;
+    // col.rgb +=rimPower * rimColor.rgb;
+    CC_APPLY_FOG(col, v_position);
+    return CCFragOutput(col);
+  }
+}%

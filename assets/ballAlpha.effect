@@ -6,16 +6,23 @@ CCEffect %{
     passes:
     - vert: ball-vs:vert # builtin header
       frag: ball-fs:frag
+      # 需要开启混合模式，透明度才有作用
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: src_alpha
+          blendDst: one_minus_src_alpha
+          blendDstAlpha: one_minus_src_alpha
       properties: &props
+        
 }%
 
 CCProgram ball-vs %{
   precision highp float;
-  #include <input>
+  #include <input-standard>
   #include <cc-global>
   #include <decode-base>
   #include <cc-local-batch>
-  #include <input>
   #include <cc-fog-vs>
 
   out vec3 v_position;
@@ -28,7 +35,6 @@ CCProgram ball-vs %{
     mat4 matWorld;
     CCGetWorldMatrix(matWorld);
 
-
     CC_TRANSFER_FOG(matWorld * In.position);
     v_position=vec3(In.position);
     v_normal=normalize(In.normal);
@@ -40,16 +46,18 @@ CCProgram ball-fs %{
   precision highp float;
   #include <output>
   #include <cc-fog-fs>
+  #include <cc-global>
 
   in vec2 v_uv;
   in vec3 v_position;  
   in vec3 v_normal;
-
   // 传入的是模型坐标
 
   vec4 frag () {
+    vec3 viewDirection=normalize(cc_cameraPos.xyz-v_position);
+    float dot=1.0-max(dot(viewDirection,v_normal),0.0);
     vec4 color=vec4(0.0,0.6,1.0,1.0);
-    
+    color.a = mix(0.0,1.0,dot/2.0);
     return CCFragOutput(color);
   }  
-}%
+}%;

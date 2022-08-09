@@ -1,0 +1,86 @@
+// Effect Syntax Guide: https://docs.cocos.com/creator/manual/zh/shader/index.html
+
+CCEffect %{
+  techniques:
+  - name: opaque
+    passes:
+    - vert: general-vs:vert # builtin header
+      frag: unlit-fs:frag
+      properties: &props
+        mainTexture:    { value: white }
+        mainColor:      { value: [1, 1, 1, 1], editor: { type: color } }
+  - name: transparent
+    passes:
+    - vert: general-vs:vert # builtin header
+      frag: unlit-fs:frag
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: src_alpha
+          blendDst: one_minus_src_alpha
+          blendSrcAlpha: src_alpha
+          blendDstAlpha: one_minus_src_alpha
+      properties: *props
+}%
+
+CCProgram unlit-fs %{
+  precision highp float;
+  #include <output>
+  #include <cc-fog-fs>
+
+  in vec2 v_uv;
+  in vec3 v_position;
+
+  uniform sampler2D mainTexture;
+  uniform Constant {
+    vec4 mainColor;
+  };
+
+  // vec3 draw(vec2 position,float raduis){
+  //   float width =80.0;
+  //   float height=40.0;
+  //   vec3 color = vec3(0.0,1.0,0.0);
+  //   vec2 point =position; 
+  //   vec2 uv = v_uv;
+  //   uv.x *= width/height;
+  //   float a = distance(uv,point);
+  //   a = step(a,raduis);
+  //   color *=  a;
+  //   return color;
+  // }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+  // vec4 frag () {
+  //   vec4 o = vec4(1.0,1.0,1.0,1.0);
+  //   vec2 point = vec2(0.25,0.25);
+  //   o.rgb *= draw(point,0.25);
+  //   o.rgb += draw(vec2(0.7,0.7),0.25);
+  //   return CCFragOutput(o);
+  // }
+
+  float draw(vec2 position,float radius,float width){
+    vec2 point=position;
+    float a=distance(v_uv,point);
+    a = smoothstep(radius,radius-0.005,a);
+    float b=distance(v_uv,point);
+    b = smoothstep(radius-width,radius-width-0.005,b);
+    float finallColor=a-b;
+    return finallColor;
+  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+  vec4 frag () {
+    vec4 o1=vec4(0.0,1.0,0.0,1.0);
+    vec4 o2=vec4(1.0,0.0,0.0,1.0);
+    vec4 o3=vec4(1.0,0.4,0.3,1.0);
+    float color1=draw(vec2(0.5,0.0),0.5,0.1);
+    float color2=draw(vec2(0.5,0.0),0.4,0.1);
+    float color3=draw(vec2(0.5,0.0),0.3,0.1);
+    o1*=color1;
+    o2*=color2;
+    o3*=color3;
+    vec4 o=vec4(1.0,1.0,1.0,1.0);
+    o *=o1;
+    o +=o2;
+    o +=o3;
+    return CCFragOutput(o);
+  }
+}%

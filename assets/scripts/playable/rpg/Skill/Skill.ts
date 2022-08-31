@@ -3,7 +3,7 @@ import { audioManager } from "../../core/AudioManager";
 import ActionEvent, { Action } from "../../utility/ActionEvent";
 import BaseCharacter from "../BaseCharacter";
 import CharacterAnimator from "../CharacterAnimator";
-import CharacterMoveController from "../CharacterMoveController";
+import CharacterMoveBaseController from "../CharacterMoveBaseController";
 import ISkillConfig from "../Configs/SkillConfig";
 import EffectManager from "../EffectManager";
 import SkillController from "./SkillController";
@@ -78,7 +78,7 @@ export default class Skill<T extends ISkillConfig = ISkillConfig> {
         this.onCompletedCallback = onCallback;
         this.skillStartTime = game.totalTime;
         this.onStart(target);
-        let animator = this.character.getCharaterComponent(CharacterAnimator);
+        let animator = this.character.getCharacterComponent(CharacterAnimator);
         animator?.play(this.config.animationName, this.config.crossFadeTime, this.onAnimationComplete.bind(this, target), this.onEffectEvent.bind(this, target), this.onDamageEvent.bind(this, target));
     }
 
@@ -89,7 +89,7 @@ export default class Skill<T extends ISkillConfig = ISkillConfig> {
     protected onStart(target: BaseCharacter): void {
         this._isExecuting = true;
         if (!this.config.movable)
-            this.character.getCharaterComponent(CharacterMoveController)?.disableMove();
+            this.character.getCharacterComponent(CharacterMoveBaseController)?.disableMove();
         this.skillController.disableSkillable();
         this.onSkillStartEvent.dispatchAction();
         if (this.config.executeAudio != null)
@@ -123,7 +123,7 @@ export default class Skill<T extends ISkillConfig = ISkillConfig> {
         this.skillStartTime = game.totalTime;
 
         if (!this.config.movable)
-            this.character.getCharaterComponent(CharacterMoveController)?.enableMove();
+            this.character.getCharacterComponent(CharacterMoveBaseController)?.enableMove();
         this.skillController.enableSkillable();
         this.onSkillEndEvent.dispatchAction();
         if (this.onCompletedCallback) {

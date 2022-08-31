@@ -1,7 +1,7 @@
 import { RigidBody, Vec3 } from "cc";
-import CharacterMoveController from "./CharacterMoveController";
+import CharacterMoveBaseController from "./CharacterMoveBaseController";
 
-export default class CharacterPhysicMover extends CharacterMoveController {
+export default class CharacterPhysicMover extends CharacterMoveBaseController {
 
     private rigibody: RigidBody;
     private moveDirection = new Vec3();

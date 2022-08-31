@@ -38,8 +38,10 @@ class CubicPoly {
     private init(x0: number, x1: number, t0: number, t1: number): void {
         this.c0 = x0;
         this.c1 = t0;
-        this.c2 = - 3 * x0 + 3 * x1 - 2 * t0 - t1;
-        this.c3 = 2 * x0 - 2 * x1 + t0 + t1;
+        this.c2 = (x1 - x0) * 3 - 2 * t0 - t1;
+        // this.c2 = - 3 * x0 + 3 * x1 - 2 * t0 - t1;
+        this.c3 = (x1 - x0) * -2 + t0 + t1;
+        // this.c3 = 2 * x0 - 2 * x1 + t0 + t1;
     }
 
     public initCatmullRom(x0: number, x1: number, x2: number, x3: number, tension: number): void {

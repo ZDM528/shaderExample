@@ -14,7 +14,7 @@ export default class SkillController extends CharacterComponent<BaseCharacter> {
     /** 第一个技能 */
     public get skill() { return this._skillList[1]; }
 
-    public initialize(skills: Skill[]): void {
+    public initialize(...skills: Skill[]): void {
         this._skillList = skills;
         this._skillableCount = 0;
         this.character.diedEvent.addEvent(this.onDied, this);

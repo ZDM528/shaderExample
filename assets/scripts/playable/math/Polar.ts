@@ -1,4 +1,4 @@
-import { IVec2, Vec2, _decorator } from "cc";
+import { IVec2Like, Vec2, _decorator } from "cc";
 
 const { ccclass, property } = _decorator;
 @ccclass("Polar")
@@ -25,7 +25,7 @@ export default class Polar {
         return this;
     }
 
-    public setFromVector(v: IVec2): Polar {
+    public setFromVector(v: IVec2Like): Polar {
         return this.setFromCoord(v.x, v.y);
     }
 
@@ -35,7 +35,7 @@ export default class Polar {
         return this;
     }
 
-    public toCoords(out: Vec2 = new Vec2()): Vec2 {
+    public toCoords<T extends IVec2Like>(out: T  /**= new Vec2() */): T {
         out.x = this.radius * Math.cos(this.theta);
         out.y = this.radius * Math.sin(this.theta);
         return out;

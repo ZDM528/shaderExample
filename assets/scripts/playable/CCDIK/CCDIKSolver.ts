@@ -1,4 +1,5 @@
 import { Mat4, Quat, Vec3, Node } from "cc";
+import { DEV } from "cc/env";
 
 const _q = new Quat();
 const _targetPos = new Vec3();
@@ -56,13 +57,13 @@ export default class CCDIKSolver {
     public readonly iks: IKConstraints[] = [];
 
     /**
-    * @param {THREE.SkinnedMesh} mesh
+    * @param {SkinnedMesh} mesh
     * @param {Array<Object>} iks
     */
     public constructor(mesh: SkinMesh, iks: IKConstraints[]) {
         this.mesh = mesh;
         this.iks = iks;
-        this.checkValid();
+        if (DEV) this.checkValid();
     }
 
     /**

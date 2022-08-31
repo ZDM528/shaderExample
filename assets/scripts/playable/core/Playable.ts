@@ -85,6 +85,10 @@ class Playable {
         audioManager.initialize(audioPath);
 
         await this.reloadScene();
+
+        if (GameManager.instance.disableRetryActions)
+            this.retryEvent.addEventOnce(() => this.enableAction = false);
+            
         this.gameReady();
     }
 
@@ -103,13 +107,13 @@ class Playable {
             });
         }
 
-        setInterval(() => {
-            let newWidth = windowWidth(), newHeight = windowHeight()
-            if (width != newWidth || height != newHeight) {
-                width = newWidth, height = newHeight;
-                this.dispatchSizeEvent();
-            }
-        }, 100);
+        // setInterval(() => {
+        //     let newWidth = windowWidth(), newHeight = windowHeight()
+        //     if (width != newWidth || height != newHeight) {
+        //         width = newWidth, height = newHeight;
+        //         this.dispatchSizeEvent();
+        //     }
+        // }, 100);
         this.dispatchSizeEvent();
     }
 

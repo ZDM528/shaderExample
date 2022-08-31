@@ -1,9 +1,9 @@
-import { IVec3, Node, Vec3, _decorator } from "cc";
+import { Node, Vec3, _decorator } from "cc";
 import { audioManager } from "../core/AudioManager";
 import ActionEvent from "../utility/ActionEvent";
 import BaseObject from "./BaseObject";
 import CampManager from "./Camp/CampManager";
-import ICharacterConfig from "./Configs/CharacterConfig";
+import ICharacterConfig, { ICharacterConfigData } from "./Configs/CharacterConfig";
 
 const { ccclass, property } = _decorator;
 @ccclass('BaseCharacter')
@@ -23,7 +23,7 @@ export default class BaseCharacter extends BaseObject {
 
     /** 所属GameObject */
     public get gameObject() { return this.node; }
-    private _config: ICharacterConfig = null;
+    private _config: ICharacterConfigData = null;
     /** 角色配置信息 */
     public get config() { return this._config; }
 
@@ -46,18 +46,19 @@ export default class BaseCharacter extends BaseObject {
      * #### 初始化角色对象
      * @param config 角色配置表
      */
-    public initialize(config: ICharacterConfig, ...args: any): void {
+    public initialize(config: ICharacterConfigData, ...args: any): void {
+        super.initialize();
         this._config = config;
         this._health = config.health;
         this._isDeath = false;
 
-        this.updateBestrokedPoint();
+        this.updateBestrokedPoint(this.node);
         if (config.camp != null)
             CampManager.instance.addCharacter(config.camp, this);
     }
 
-    public updateBestrokedPoint(): void {
-        this._beStrokedPoint = this.config.beStrokedName == null ? this.gameObject : this.gameObject.searchChild(this.config.beStrokedName);
+    public updateBestrokedPoint(node: Node): void {
+        this._beStrokedPoint = this.config.beStrokedName == null ? node : node.searchChild(this.config.beStrokedName);
     }
 
     public resetConfig(config: ICharacterConfig): void {

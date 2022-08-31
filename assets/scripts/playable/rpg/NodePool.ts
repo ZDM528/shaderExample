@@ -1,13 +1,15 @@
 import { instantiate, Node, Prefab } from "cc";
 
+type KeyType = Node | Prefab;
+
 declare module "cc" {
     interface Node {
-        _poolKey: Node | Prefab;
+        _poolKey: KeyType;
     }
 }
 
 export default class NodePool {
-    private static pool = new Map<Node | Prefab, Node[]>();
+    private static pool = new Map<KeyType, Node[]>();
     private static root: Node;
 
     public static initilaize(root: Node): void {
@@ -18,16 +20,16 @@ export default class NodePool {
         NodePool.pool.clear();
     }
 
-    public static cacheNodes(count: number, prefab: Node | Prefab): void {
+    public static cacheNodes(prefab: KeyType, count: number): void {
         let list = NodePool.getPoolList(prefab);
         for (let i = 0; i < count; i++) {
-            let node = NodePool.instantiateNode(prefab);
+            let node = NodePool.instantiateNode(prefab, NodePool.root);
             list.push(node);
             node.active = false;
         }
     }
 
-    private static getPoolList(prefab: Node | Prefab): Node[] {
+    private static getPoolList(prefab: KeyType): Node[] {
         let list = NodePool.pool.get(prefab);
         if (list == null) {
             list = [];
@@ -36,11 +38,11 @@ export default class NodePool {
         return list;
     }
 
-    public static createNode(prefab: Node | Prefab): Node {
+    public static createNode(prefab: KeyType): Node {
         let list = NodePool.getPoolList(prefab);
         let node = list.pop();
         if (node == null)
-            node = NodePool.instantiateNode(prefab);
+            node = NodePool.instantiateNode(prefab, NodePool.root);
         node.active = true;
         return node;
     }
@@ -49,14 +51,14 @@ export default class NodePool {
         if (node._poolKey == null) return node.destroy();
         let list = NodePool.getPoolList(node._poolKey);
         list.push(node);
-        node.setParent(NodePool.root, false);
+        NodePool.root.addChild(node);
         return true;
     }
 
-    private static instantiateNode(prefab: Node | Prefab): Node {
+    public static instantiateNode(prefab: KeyType, parent: Node): Node {
         let node = instantiate(prefab) as Node;
         node._poolKey = prefab;
-        node.setParent(NodePool.root, false);
+        parent.addChild(node);
         return node;
     }
 }

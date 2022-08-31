@@ -78,9 +78,8 @@ class FrameLate extends EventBase {
 }
 
 export default class Timer extends System {
-    public static readonly ID = 'Timer';
-    private static _instance: Timer;
-    public static get instance() { return Timer._instance; }
+    public static readonly ID = 'PlayableTimer';
+    public static readonly instance = new Timer();
     private readonly eventList: EventBase[] = [];
     public timeScale = 1;
 
@@ -149,10 +148,6 @@ export default class Timer extends System {
         this.eventList.clear();
     }
 
-    init(): void {
-        Timer._instance = this;
-    }
-
     update(deltaTime: number): void {
         this.updateEvents(deltaTime, "onUpdate");
     }
@@ -179,8 +174,7 @@ export default class Timer extends System {
 }
 
 // director.on(Director.EVENT_INIT, () => {
-//     console.log("Timer Director.EVENT_INIT", director.isPaused());
-const timerSys = new Timer();
-director.registerSystem(Timer.ID, timerSys, System.Priority.SCHEDULER);
+    // console.log("Timer Director.EVENT_INIT", director.isPaused());
+director.registerSystem(Timer.ID, Timer.instance, System.Priority.SCHEDULER);
 // });
 // console.log("Timer Director.on", director.isPaused());

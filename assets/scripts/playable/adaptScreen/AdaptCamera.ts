@@ -1,5 +1,5 @@
 import { Camera, Component, Enum, view, _decorator } from "cc";
-import { EDITOR } from "cc/env";
+import { EDITOR_WITHOUT_RUN } from "../extenstion/CocosExtenstion";
 import { AdaptScreenManager, OrientationType } from "./AdaptScreenManager";
 
 const { ccclass, property, requireComponent, executeInEditMode, disallowMultiple, menu } = _decorator;
@@ -11,7 +11,7 @@ const { ccclass, property, requireComponent, executeInEditMode, disallowMultiple
 @menu("UI/AspectCamera")
 export class AspectCamera extends Component {
     @property({ type: Enum(OrientationType), readonly: true })
-    public get orientationType() { return EDITOR && view.editorCanvasSizeRatio > AdaptScreenManager.RATIO_UNIT ? OrientationType.Landscape : OrientationType.Portrait; }
+    public get orientationType() { return EDITOR_WITHOUT_RUN && view.editorCanvasSizeRatio > AdaptScreenManager.RATIO_UNIT ? OrientationType.Landscape : OrientationType.Portrait; }
 
     @property
     private _hFovAxis: Camera.FOVAxis = Camera.FOVAxis.HORIZONTAL;
@@ -20,7 +20,7 @@ export class AspectCamera extends Component {
     public set hFovAxis(v) {
         if (this._hFovAxis == v) return;
         this._hFovAxis = v;
-        if (EDITOR && view.editorCanvasSizeRatio > AdaptScreenManager.RATIO_UNIT)
+        if (EDITOR_WITHOUT_RUN && view.editorCanvasSizeRatio > AdaptScreenManager.RATIO_UNIT)
             this.camera.fovAxis = v;
     }
     @property
@@ -30,7 +30,7 @@ export class AspectCamera extends Component {
     public set hFov(v) {
         if (this._hFov == v) return;
         this._hFov = v;
-        if (EDITOR && view.editorCanvasSizeRatio > AdaptScreenManager.RATIO_UNIT)
+        if (EDITOR_WITHOUT_RUN && view.editorCanvasSizeRatio > AdaptScreenManager.RATIO_UNIT)
             this.camera.fov = v;
     }
 
@@ -41,7 +41,7 @@ export class AspectCamera extends Component {
     public set vFovAxis(v) {
         if (this._vFovAxis == v) return;
         this._vFovAxis = v;
-        if (EDITOR && view.editorCanvasSizeRatio <= AdaptScreenManager.RATIO_UNIT)
+        if (EDITOR_WITHOUT_RUN && view.editorCanvasSizeRatio <= AdaptScreenManager.RATIO_UNIT)
             this.camera.fovAxis = v;
     }
 
@@ -52,14 +52,14 @@ export class AspectCamera extends Component {
     public set vFov(v) {
         if (this._vFov == v) return;
         this._vFov = v;
-        if (EDITOR && view.editorCanvasSizeRatio <= AdaptScreenManager.RATIO_UNIT)
+        if (EDITOR_WITHOUT_RUN && view.editorCanvasSizeRatio <= AdaptScreenManager.RATIO_UNIT)
             this.camera.fov = v;
     }
 
     public get camera() { return this.getComponent(Camera); }
 
     onLoad(): void {
-        if (EDITOR) {
+        if (EDITOR_WITHOUT_RUN) {
             view.on('editor-canvas-resize', this.onResizeChanged, this);
         } else {
             AdaptScreenManager.onResizeEvent.addEvent(this.onResizeEvent, this);
@@ -68,7 +68,7 @@ export class AspectCamera extends Component {
     }
 
     onDestroy(): void {
-        if (EDITOR) {
+        if (EDITOR_WITHOUT_RUN) {
             view.off('editor-canvas-resize', this.onResizeChanged, this);
         } else {
             AdaptScreenManager.onResizeEvent.removeEvent(this.onResizeEvent, this);

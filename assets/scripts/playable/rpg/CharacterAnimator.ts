@@ -1,13 +1,13 @@
-import { Animation, AnimationState, dragonBones } from "cc";
+import { Animation, AnimationState, assert, dragonBones } from "cc";
 import Timer from "../extenstion/Timer";
-import { Action, Func } from "../utility/ActionEvent";
-import { xtween } from "../xtween/XTween";
+import { Action } from "../utility/ActionEvent";
 import BaseObject from "./BaseObject";
 import { CharacterAnimationType, CharacterAnimationValue } from "./CharacterAnimationType";
 import CharacterComponent from "./CharacterComponent";
 
 interface IAnimator {
     readonly animation: any;
+    setAnimation(animation: any);
     onDestroy?(): void;
     play(name: string, crossFadeTime: number, callback?: Action<boolean>): void;
     stop();
@@ -17,9 +17,21 @@ interface IAnimator {
 class CAnimation implements IAnimator {
     private onCallback: Action<boolean>;
     private animationName: string;
+    private _animation: Animation;
+    public get animation() { return this._animation; }
 
-    constructor(readonly animation: Animation) {
+    constructor(animation: Animation) {
+        this.setAnimation(animation);
+    }
+
+    setAnimation(animation: any) {
+        assert(animation != null);
+        if (this.animation != null)
+            this.animation.off(Animation.EventType.STOP, this.onAnimationStop, this);
+        this._animation = animation;
         this.animation.on(Animation.EventType.STOP, this.onAnimationStop, this);
+        if (this.animationName != null)
+            this.animation.play(this.animationName);
     }
 
     private onAnimationStop(name: string, state: AnimationState): void {
@@ -33,6 +45,7 @@ class CAnimation implements IAnimator {
     }
 
     private callbackFunc(result: boolean): void {
+        this.animationName = null;
         if (this.onCallback != null) {
             let tempFunc: Function = this.onCallback;
             this.onCallback = null;
@@ -61,7 +74,16 @@ class CAnimation implements IAnimator {
 
 class CDragonBones implements IAnimator {
     private onCallback: Action<boolean>;
-    constructor(readonly animation: dragonBones.ArmatureDisplay) { }
+    private _animation: dragonBones.ArmatureDisplay;
+    public get animation() { return this._animation; }
+
+    constructor(animation: dragonBones.ArmatureDisplay) {
+        this.setAnimation(animation);
+    }
+
+    public setAnimation(animation: dragonBones.ArmatureDisplay) {
+        this._animation = animation;
+    }
 
     play(name: string, crossFadeTime: number, onCallback?: Action<boolean>): void {
         let state = this.animation.playAnimation(name, -1);
@@ -93,6 +115,9 @@ class CDragonBones implements IAnimator {
 export default class CharacterAnimator extends CharacterComponent<BaseObject> {
     private animator: IAnimator;
     public get animation(): Animation | dragonBones.ArmatureDisplay { return this.animator.animation; }
+    public setAnimation(animation: Animation | dragonBones.ArmatureDisplay) {
+        this.animator.setAnimation(animation);
+    }
 
     public initialize(animation: Animation | dragonBones.ArmatureDisplay): void {
         this.animator = this.createAnimator(animation);

@@ -14,16 +14,15 @@ CCEffect %{
           blendDst: one_minus_src_alpha
           blendDstAlpha: one_minus_src_alpha
       properties: &props
-        
 }%
 
 CCProgram ball-vs %{
   precision highp float;
-  #include <input-standard>
-  #include <cc-global>
-  #include <decode-base>
-  #include <cc-local-batch>
-  #include <cc-fog-vs>
+  #include <legacy/input-standard>
+  #include <builtin/uniforms/cc-global>
+  #include <legacy/decode-base>
+  #include <legacy/local-batch>
+  #include <legacy/fog-vs>
 
   out vec3 v_position;
   out vec3 v_normal;
@@ -44,9 +43,9 @@ CCProgram ball-vs %{
 
 CCProgram ball-fs %{
   precision highp float;
-  #include <output>
-  #include <cc-fog-fs>
-  #include <cc-global>
+  #include <legacy/output>
+  #include <legacy/fog-fs>
+  #include <builtin/uniforms/cc-global>
 
   in vec2 v_uv;
   in vec3 v_position;  

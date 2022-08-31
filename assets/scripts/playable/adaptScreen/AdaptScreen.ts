@@ -1,5 +1,5 @@
 import { BitMask, Component, Enum, ISizeLike, IVec2, log, Node, Size, UITransform, Vec2, Vec3, view, Widget, _decorator } from 'cc';
-import { EDITOR } from 'cc/env';
+import { EDITOR_WITHOUT_RUN } from '../extenstion/CocosExtenstion';
 import { AspectRatio } from '../ui/AspectRatio';
 import { AdaptScreenManager } from './AdaptScreenManager';
 const { ccclass, property, executeInEditMode, disallowMultiple, menu } = _decorator;
@@ -92,7 +92,7 @@ class TransformData {
     private _scale = new Vec3();
     @property({ visible: false })
     private _size = new Size();
-    @property({ visible: true })
+    @property({ visible: false })
     private _anchorPoint = new Vec2();
     @property({ type: WidgetData })
     private _widgetData = new WidgetData();
@@ -156,7 +156,7 @@ export class AdaptScreen extends Component {
     /** editor only */
     private _transformData: TransformData;
     private get transformData(): TransformData {
-        if (EDITOR && this._transformData == null && view.editorCanvasSizeRatio) {
+        if (EDITOR_WITHOUT_RUN && this._transformData == null && view.editorCanvasSizeRatio) {
             log("create TransformData", this.node.name, view.editorCanvasSizeRatio);
             this._transformData = new TransformData(view.editorCanvasSizeRatio);
             this._transformData.adaptScreen = this;
@@ -168,7 +168,7 @@ export class AdaptScreen extends Component {
     private widgetRecursiveDirty: Function;
 
     onLoad(): void {
-        if (EDITOR) {
+        if (EDITOR_WITHOUT_RUN) {
             this.node.on(Node.EventType.TRANSFORM_CHANGED, this.saveTransformData, this);
             this.node.on(Node.EventType.SIZE_CHANGED, this.saveTransformSize, this);
             this.node.on(Node.EventType.ANCHOR_CHANGED, this.saveTransformAnchorPoint, this);
@@ -194,7 +194,7 @@ export class AdaptScreen extends Component {
     }
 
     onDestroy(): void {
-        if (EDITOR) {
+        if (EDITOR_WITHOUT_RUN) {
             this.node.off(Node.EventType.TRANSFORM_CHANGED, this.saveTransformData, this);
             this.node.off(Node.EventType.SIZE_CHANGED, this.saveTransformSize, this);
             this.node.off(Node.EventType.ANCHOR_CHANGED, this.saveTransformAnchorPoint, this);

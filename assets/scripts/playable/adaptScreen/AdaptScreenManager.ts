@@ -1,5 +1,5 @@
 
-import { Canvas, Component, ResolutionPolicy, screen, view, _decorator } from 'cc';
+import { Canvas, Component, ResolutionPolicy, screen, Size, view, _decorator } from 'cc';
 import ActionEvent from '../utility/ActionEvent';
 const { ccclass, property, menu, disallowMultiple, requireComponent, executeInEditMode } = _decorator;
 

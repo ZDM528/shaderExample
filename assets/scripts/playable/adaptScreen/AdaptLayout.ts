@@ -1,5 +1,5 @@
 import { Component, Enum, view, _decorator } from "cc";
-import { EDITOR } from "cc/env";
+import { EDITOR_WITHOUT_RUN } from "../extenstion/CocosExtenstion";
 import HorizontalLayout from "../layout/HorizontalLayout";
 import VerticalLayout from "../layout/VerticalLayout";
 import { AdaptScreenManager } from "./AdaptScreenManager";
@@ -28,7 +28,7 @@ export default class AdaptLayout extends Component {
     }
 
     onLoad(): void {
-        if (EDITOR) {
+        if (EDITOR_WITHOUT_RUN) {
             view.on('editor-canvas-resize', this.onResizeChanged, this);
             this.onResizeChanged(view.editorCanvasSizeRatio);
         } else {
@@ -38,7 +38,7 @@ export default class AdaptLayout extends Component {
     }
 
     onDestroy(): void {
-        if (EDITOR) {
+        if (EDITOR_WITHOUT_RUN) {
             view.off('editor-canvas-resize', this.onResizeChanged, this);
         } else {
             AdaptScreenManager.onResizeEvent.removeEvent(this.onResizeEvent, this);

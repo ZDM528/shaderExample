@@ -214,6 +214,7 @@ export default abstract class BaseLayout extends Component {
         child.on(Node.EventType.TRANSFORM_CHANGED, this.layoutDirty, this);
         child.on(Node.EventType.ANCHOR_CHANGED, this.layoutDirty, this);
         child.on('active-in-hierarchy-changed', this.layoutDirty, this);
+        child.on(LayoutElement.DirtyEventName, this.layoutDirty, this);
     }
 
     protected removeChildEventListeners(child: Node): void {
@@ -222,6 +223,7 @@ export default abstract class BaseLayout extends Component {
         child.off(Node.EventType.TRANSFORM_CHANGED, this.layoutDirty, this);
         child.off(Node.EventType.ANCHOR_CHANGED, this.layoutDirty, this);
         child.off('active-in-hierarchy-changed', this.layoutDirty, this);
+        child.off(LayoutElement.DirtyEventName, this.layoutDirty, this);
     }
 
     protected onChildAdded(child: Node): void {

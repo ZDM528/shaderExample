@@ -1,5 +1,7 @@
 import { sys } from "cc";
-import { DEV, EDITOR } from "cc/env";
+import { DEV } from "cc/env";
+import { EDITOR_WITHOUT_RUN } from "../extenstion/CocosExtenstion";
+import GameConfigManager from "./GameConfigManager";
 
 type ValueType = "switch" | "color-picker" | "slider" | "radio" | "input" | "interval" | "file";
 
@@ -29,21 +31,25 @@ export default class LogicConfigManager {
             value.configurable = true;
         }
         let result = Object.defineProperties({}, prototypies) as any;
-        if (DEV && !EDITOR) {
+        if (DEV && !EDITOR_WITHOUT_RUN) {
             globalThis.logicConfig = result;
             globalThis.logicConfig.getPropertyDescriptor = function () { return prototypies; }
             globalThis.logicConfig.getStorageKey = function () { return `${globalThis.CC_PROJECTNAME}#logicConfig`; }
-            let key = globalThis.logicConfig.getStorageKey();
-            let storageConfig = sys.localStorage.getItem(key);
-            if (storageConfig != null) {
-                try {
-                    let newData = JSON.parse(storageConfig);
-                    result = Object.assign(result, newData);
-                } catch (error) {
-                    console.warn(error);
-                }
-            }
+            GameConfigManager.onInitEvent.addEvent(()=> LogicConfigManager.mergeStorageData(result));
         }
         return result;
+    }
+
+    private static mergeStorageData(result: Object): void {
+        let key = globalThis.logicConfig.getStorageKey();
+        let storageConfig = sys.localStorage.getItem(key);
+        if (storageConfig != null) {
+            try {
+                let newData = JSON.parse(storageConfig);
+                result = Object.assign(result, newData);
+            } catch (error) {
+                console.warn(error);
+            }
+        }
     }
 }

@@ -1,9 +1,9 @@
 
 import { assert, Component, Node, Quat, _decorator } from 'cc';
-import CCDIKSolver, { IKLink } from './CCDIKSolver';
+import { EDITOR_WITHOUT_RUN } from '../extenstion/CocosExtenstion';
 import { Action } from '../utility/ActionEvent';
+import CCDIKSolver, { IKLink } from './CCDIKSolver';
 import { IKConstraint } from './IKConstraint';
-import { EDITOR } from 'cc/env';
 const { ccclass, property, executeInEditMode } = _decorator;
 
 interface BoneReset {
@@ -52,8 +52,8 @@ export class IKComponent extends Component {
 
         assert(!bones.contains(this.effector));
         if (this.effector != null)
-        bones.push(this.effector);
-        
+            bones.push(this.effector);
+
         assert(!bones.contains(this.target));
         if (this.target != null)
             bones.push(this.target);
@@ -91,7 +91,7 @@ export class IKComponent extends Component {
     }
 
     public lateUpdate(): void {
-        if (EDITOR) {
+        if (EDITOR_WITHOUT_RUN) {
             if (!this.preview)
                 return;
             if (this.ikSolver == null)

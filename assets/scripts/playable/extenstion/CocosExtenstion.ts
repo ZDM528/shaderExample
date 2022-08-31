@@ -1,5 +1,5 @@
-import { IVec3Like } from "cc";
-import { BaseNode, Component, game, instantiate, IVec3, IVec4Like, Node, Quat, Vec2, Vec3, Vec4 } from "cc";
+import { BaseNode, Component, game, instantiate, IVec3, IVec3Like, IVec4Like, Node, Quat, Vec2, Vec3, Vec4 } from "cc";
+import { EDITOR } from "cc/env";
 
 declare module "cc" {
     namespace Node {
@@ -107,6 +107,10 @@ declare module "cc" {
          * @param length 新的长度
          */
         setLength(length: number): Vec3;
+
+        lengthXZSqr(): number;
+
+        lengthXZ(): number;
     }
 
     interface Vec4 {
@@ -131,6 +135,9 @@ declare module "cc" {
         smoothDamp(target: Quat, velocity: { current: number }, smoothTime: number, maxSpeed?: number, deltaTime?: number): Quat;
     }
 }
+
+// @ts-ignore
+export const EDITOR_WITHOUT_RUN = EDITOR && !cc.GAME_VIEW;
 
 BaseNode.prototype.getComponentInParents = function <T extends Component>(this: BaseNode, type: { prototype: T, new() }): T {
     let component = this.getComponent(type);
@@ -299,6 +306,14 @@ Vec3.prototype.smoothDamp = function (this: Vec3, target: IVec3, currentVelocity
 
 Vec3.prototype.setLength = function (this: Vec3, length: number): Vec3 {
     return Vec3.multiplyScalar(this, this, length / this.length());
+}
+
+Vec3.prototype.lengthXZSqr = function (this: Vec3): number {
+    return this.x * this.x + this.z * this.z;
+}
+
+Vec3.prototype.lengthXZ = function (this: Vec3): number {
+    return Math.sqrt(this.lengthXZSqr());
 }
 
 Quat.prototype.angle = function (this: Quat, target: Quat): number {

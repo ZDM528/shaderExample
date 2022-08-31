@@ -35,7 +35,7 @@ export default class AIController extends CharacterComponent {
      * @param type 变量名
      * @param value 变量值
      */
-    public setVariable<T extends AnyConstructor>(type: T | PropertyKey, value: InstanceType<T>): void {
+    public setVariable<T extends Object >(type: AnyConstructor<T> | PropertyKey, value: T): void {
         this.variableBoard.set(type, value);
     }
 

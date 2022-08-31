@@ -1,5 +1,5 @@
-import { Component, Enum, game, Mat3, Node, Quat, Vec3, _decorator } from 'cc';
-import { EDITOR } from 'cc/env';
+import { Component, Enum, game, Node, Quat, Vec3, _decorator } from 'cc';
+import { EDITOR_WITHOUT_RUN } from '../extenstion/CocosExtenstion';
 import Spherical from '../math/Spherical';
 const { ccclass, property, playOnFocus, executeInEditMode } = _decorator;
 
@@ -14,7 +14,6 @@ const vec3Temp1 = new Vec3();
 const vec3Temp2 = new Vec3();
 const vec3Temp3 = new Vec3();
 const quatTemp1 = new Quat();
-const mat3Temp1 = new Mat3();
 
 @ccclass('OrbitFollowTarget')
 @executeInEditMode
@@ -61,7 +60,7 @@ export class OrbitFollowTarget extends Component {
     private readonly angularVelocity = { current: 0 };
 
     lateUpdate(deltaTime: number): void {
-        if (EDITOR && !this.preview) return;
+        if (EDITOR_WITHOUT_RUN && !this.preview) return;
         if (this.target == null) return;
         this.smoothToTarget(this.smoothPositionTime, this.smoothAngularTime, deltaTime);
     }

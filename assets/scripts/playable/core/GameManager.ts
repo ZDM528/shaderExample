@@ -2,7 +2,6 @@ import { Camera, Canvas, Component, instantiate, Node, Prefab, Vec3, _decorator 
 import { BUILD } from "cc/env";
 import { View } from "../ui/View";
 import ActionEvent from "../utility/ActionEvent";
-import { playable } from "./Playable";
 import { ISystem } from "./RegisterSystem";
 
 const { ccclass, property } = _decorator;
@@ -36,7 +35,7 @@ export class GameManager extends Component {
     // public readonly loadProgressEvent: Array<() => Promise<void>> = [];
     /** 开始游戏事件 */
     public readonly startPlayingEvent = new ActionEvent();
-    
+
     private _gameView: View;
     public get gameView() { return this._gameView; }
     private _endingView: View;
@@ -69,8 +68,6 @@ export class GameManager extends Component {
 
         this._isLoadedComplete = true;
         this.onLoadedCompleteEvent.dispatchActionAndComplete();
-        if (this.disableRetryActions)
-            playable.retryEvent.addEventOnce(() => playable.enableAction = false);
     }
 
     public createGameView(): void {

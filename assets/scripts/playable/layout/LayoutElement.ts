@@ -1,11 +1,12 @@
 import { Component, _decorator } from "cc";
-import BaseLayout from "./BaseLayout";
 
 const { ccclass, menu, property, executeInEditMode } = _decorator;
 @ccclass
 @executeInEditMode
 @menu("Layout/LayoutElement")
 export default class LayoutElement extends Component {
+    public static readonly DirtyEventName = "LayoutElementDirty";
+
     @property
     private _ignoreLayout: boolean = false;
     @property
@@ -79,8 +80,7 @@ export default class LayoutElement extends Component {
     }
 
     public layoutDirty(): void {
-        let layout: BaseLayout = this.node.parent?.getComponent(BaseLayout as any);
-        layout?.layoutDirty();
+        this.node.emit(LayoutElement.DirtyEventName);
     }
 
     // onEnable(): void {

@@ -7,17 +7,17 @@ CCEffect %{
     - vert: ball-vs:vert # builtin header
       frag: ball-fs:frag
       properties: &props
-        waterY: { value: 0.0, editor: {slide: true ,step: 0.01 , min: -0.5 ,max: 0.5} }
+        waterY: { value: 0.0, editor: {slide: true ,step: 0.01 , min: -0.5 ,max: 1} }
 }%
 
 CCProgram ball-vs %{
   precision highp float;
-  #include <input>
-  #include <cc-global>
-  #include <decode-base>
-  #include <cc-local-batch>
-  #include <input>
-  #include <cc-fog-vs>
+  #include <legacy/input>
+  #include <builtin/uniforms/cc-global>
+  #include <legacy/decode-base>
+  #include <legacy/local-batch>
+  #include <legacy/input>
+  #include <legacy/fog-vs>
 
   out vec3 v_position;
   
@@ -36,8 +36,8 @@ CCProgram ball-vs %{
 
 CCProgram ball-fs %{
   precision highp float;
-  #include <output>
-  #include <cc-fog-fs>
+  #include <legacy/output>
+  #include <legacy/fog-fs>
 
   in vec2 v_uv;
   in vec3 v_position;  

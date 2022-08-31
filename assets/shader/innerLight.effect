@@ -3,7 +3,7 @@ CCEffect %{
   techniques:
   - name: opaque
     passes:
-    - vert: general-vs:vert     # builtin header
+    - vert: legacy/main-functions/general-vs:vert     # builtin header
       frag: rimlight-fs:frag
       properties: &props
         mainTexture:    { value: white }
@@ -14,9 +14,9 @@ CCEffect %{
 
 CCProgram rimlight-fs %{
   precision highp float;
-  #include <output>
-  #include <cc-fog-fs>
-  #include <cc-global>
+  #include <legacy/output>
+  #include <legacy/fog-fs>
+  #include <builtin/uniforms/cc-global>
 
   in vec2 v_uv;
   in vec3 v_position;
@@ -33,7 +33,7 @@ CCProgram rimlight-fs %{
     vec3 normal = normalize(v_normal);
     vec3 viewDirection = cc_cameraPos.xyz - v_position;
     vec3 normalizedViewDirection = normalize(viewDirection);
-    float rimPower= 1.0-max(dot(normal,normalizedViewDirection),0.0);
+    float rimPower= max(dot(normal,normalizedViewDirection),0.0);
     vec4 col = mainColor * texture(mainTexture, v_uv);
     float rimInstensity = rimColor.a;
     col.rgb*=1.0+pow(rimPower,rimInstensity) * rimColor.rgb;

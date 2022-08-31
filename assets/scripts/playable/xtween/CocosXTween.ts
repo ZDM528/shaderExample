@@ -1,13 +1,13 @@
 import { director, Director, UIOpacity } from "cc";
-import { CCObject, Node, Renderable2D, System } from "cc";
+import { CCObject, Node, UIRenderer, System } from "cc";
 import { EDITOR } from "cc/env";
 import { XTween } from "./XTween";
 
 /**
- * CocosCreator vesrsion 3.4.1
+ * CocosCreator vesrsion 3.6.0
  */
 declare module "cc" {
-    interface Renderable2D {
+    interface UIRenderer {
         colorR: number;
         colorG: number;
         colorB: number;
@@ -40,7 +40,7 @@ declare module "cc" {
     }
 }
 
-Object.defineProperties(Renderable2D.prototype, {
+Object.defineProperties(UIRenderer.prototype, {
     "colorR": {
         get: function () { return this.color.r; },
         set: function (v) {
@@ -118,17 +118,17 @@ Object.defineProperties(Node.prototype, {
     alpha: {
         get: function () {
             const self: Node = this;
-            let renderable2D = self.getComponent(Renderable2D);
-            if (renderable2D != null) return renderable2D.alpha;
+            let uiRenderer = self.getComponent(UIRenderer);
+            if (uiRenderer != null) return uiRenderer.alpha;
             let uiOpacity = self.getComponent(UIOpacity);
             return uiOpacity.alpha;
         },
         set: function (v) {
             const self: Node = this;
-            let renderable2D = self.getComponent(Renderable2D);
-            if (renderable2D != null) {
-                if (renderable2D.alpha != v)
-                    renderable2D.alpha = v;
+            let uiRenderer = self.getComponent(UIRenderer);
+            if (uiRenderer != null) {
+                if (uiRenderer.alpha != v)
+                    uiRenderer.alpha = v;
             } else {
                 let uiOpacity = self.getComponent(UIOpacity);
                 if (uiOpacity.alpha != v)
@@ -285,11 +285,11 @@ Object.defineProperties(Node.prototype, {
     },
 });
 
-let oldUpdateActions = XTween.prototype._updateActions;
-XTween.prototype._updateActions = function updateActions(deltaTime: number): boolean {
-    if (this.target instanceof CCObject && !this.target.isValid) return true;
-    return oldUpdateActions.call(this, deltaTime);
-}
+// let oldUpdateActions = XTween.prototype._updateActions;
+// XTween.prototype._updateActions = function updateActions(deltaTime: number): boolean {
+//     if (this.target instanceof CCObject && !this.target.isValid) return true;
+//     return oldUpdateActions.call(this, deltaTime);
+// }
 
 export class XTweenSystem extends System {
     static readonly ID = 'XTWEEN';

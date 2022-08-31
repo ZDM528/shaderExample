@@ -1,4 +1,7 @@
-import { assert, Component, Enum, EventHandler, EventTouch, IVec2, Node, UITransform, v2, v3, Vec2, Vec3, Widget, _decorator } from "cc";
+import { assert, Component, Enum, EventHandler, EventTouch, IVec2, Node, UITransform, Vec2, Vec3, Widget, _decorator } from "cc";
+
+const vec2Temp1 = new Vec2()
+const vec3Temp1 = new Vec3();
 
 const { ccclass, property, menu } = _decorator;
 
@@ -71,11 +74,10 @@ export default class JoystickUI extends Component {
     readonly stopEvents: EventHandler[] = [];
 
     protected transform: UITransform;
-    protected positionTemp = v3();
     protected initPosition: Vec3;
     private touchId: number;
 
-    private _joystickValue: Vec2 = v2();
+    private _joystickValue: Vec2 = new Vec2();
     public get joystickValue() { return this._joystickValue; }
     public get joystickDistance() {
         let distance = this.controlPanel.width * 0.5;
@@ -131,7 +133,7 @@ export default class JoystickUI extends Component {
         this.touchId = event.touch.getID();
 
         let uiPoint = event.getUILocation();
-        let position = this.transform.convertToNodeSpaceAR(this.positionTemp.set(uiPoint.x, uiPoint.y, 0), this.positionTemp);
+        let position = this.transform.convertToNodeSpaceAR(vec3Temp1.set(uiPoint.x, uiPoint.y, 0), vec3Temp1);
 
         switch (this.controlType) {
             case JoyStickControlType.Fixed:
@@ -151,7 +153,7 @@ export default class JoystickUI extends Component {
     private onJoystickMoving(event: EventTouch) {
         if (this.touchId != event.touch.getID()) return;
         let uiPoint = event.getUILocation();
-        let position = this.transform.convertToNodeSpaceAR(this.positionTemp.set(uiPoint.x, uiPoint.y, 0), this.positionTemp);
+        let position = this.transform.convertToNodeSpaceAR(vec3Temp1.set(uiPoint.x, uiPoint.y, 0), vec3Temp1);
         this.updateJoystickValue(position);
         EventHandler.emitEvents(this.moveEvents, this.joystickValue);
         this.node.emit(EventType.Move, this.joystickValue, this);
@@ -195,8 +197,8 @@ export default class JoystickUI extends Component {
     }
 
     private updateCenterPosition(): void {
-        let position = Vec2.multiplyScalar(new Vec2(), this.joystickValue, this.joystickDistance);
-        this.center.node.position = this.positionTemp.set(position.x, position.y, 0);
+        let position = Vec2.multiplyScalar(vec2Temp1, this.joystickValue, this.joystickDistance);
+        this.center.node.position = vec3Temp1.set(position.x, position.y, 0);
     }
 
     private static calcuateJoystickValue(direction: Vec2, joystickDistance: number): Vec2 {

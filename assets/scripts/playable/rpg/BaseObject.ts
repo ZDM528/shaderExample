@@ -85,7 +85,7 @@ export default class BaseObject extends Component {
      * @param classType 组件类型
      * @returns 组件实例
      */
-    public getCharaterComponent<T extends CharacterComponent>(classType: AnyConstructor<T>): T | null {
+    public getCharacterComponent<T extends CharacterComponent>(classType: AnyConstructor<T>): T | null {
         let target = this.components.get(classType) as T;
         if (target != null) return target;
         for (const [key, component] of this.components)

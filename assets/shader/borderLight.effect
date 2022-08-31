@@ -4,8 +4,8 @@ CCEffect %{
   - name: opaque
     passes:
     - switch: USE_OUTLINE_PASS
-      vert: outline-vs:vert
-      frag: outline-fs:frag
+      vert: legacy/main-functions/outline-vs:vert
+      frag: legacy/main-functions/outline-fs:frag
       rasterizerState:
         cullMode: front
       depthStencilState:
@@ -36,11 +36,11 @@ CCEffect %{
 
 CCProgram unlit-vs %{
   precision highp float;
-  #include <input-standard>
-  #include <cc-global>
-  #include <decode-base>
-  #include <cc-local-batch>
-  #include <cc-fog-vs>
+  #include <legacy/input-standard>
+  #include <builtin/uniforms/cc-global>
+  #include <legacy/decode-base>
+  #include <legacy/local-batch>
+  #include <legacy/fog-vs>
 
   #if USE_VERTEX_COLOR
     in lowp vec4 a_color;
@@ -92,8 +92,8 @@ CCProgram unlit-vs %{
 
 CCProgram unlit-fs %{
   precision highp float;
-  #include <output-standard>
-  #include <cc-fog-fs>
+  #include <legacy/output-standard>
+  #include <legacy/fog-fs>
 
   #if USE_ALPHA_TEST
     #pragma define-meta ALPHA_TEST_CHANNEL options([a, r, g, b])
@@ -114,7 +114,7 @@ CCProgram unlit-fs %{
   #endif
 
   #if USE_RIM_LIGHT
-    #include <cc-global>
+    #include <builtin/uniforms/cc-global>
     in vec3 v_position;
     in vec3 v_normal;
     uniform RimConstants {

@@ -91,7 +91,7 @@ export class CharacterAIState extends AIState<BaseCharacter> {
 export class IdleState extends CharacterAIState {
 
     onEnter(): void {
-        let animator = this.character.getCharaterComponent(CharacterAnimator);
+        let animator = this.character.getCharacterComponent(CharacterAnimator);
         animator?.play(ActionType.Idle);
     }
 

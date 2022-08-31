@@ -1,7 +1,7 @@
 import { Button, CCString, Component, Label, UIOpacity, Vec3, _decorator } from "cc";
 import { playable } from "../core/Playable";
 import LocalizeManager from "../localize/LocalizeManager";
-import { XTween, xtween } from "../xtween/XTween";
+import { XTween } from "../xtween/XTween";
 
 const { ccclass, property, requireComponent } = _decorator;
 @ccclass("CopyClipBoard")
@@ -34,16 +34,13 @@ export default class CopyClipBoard extends Component {
         let result = playable.copyToClipBoard(data.value);
 
         if (result && this.promptLabel != null) {
-            XTween.removeTargetTweens(this.promptLabel);
+            XTween.removeTagTweens(this.promptLabel.node);
             let uiOpacity = this.promptLabel.getOrAddComponent(UIOpacity);
             uiOpacity.opacity = 255;
             this.promptLabel.node.active = true;
             this.promptLabel.node.position = this.startPosition;
             const duration = 1;
-            xtween(this.promptLabel).parallel(
-                xtween(this.promptLabel.node).to(duration, { position: this.targetPosition }),
-                xtween(uiOpacity).to(duration, { opacity: 0 }, { easing: XTween.Easing.Quintic.In })
-            ).call(() => this.promptLabel.node.active = false).start();
+            XTween.to(this.promptLabel.node, duration, { position: this.targetPosition, alpha: 0 }, { easing: "quinticIn" }).set({ active: false }).play();
         }
     }
 }

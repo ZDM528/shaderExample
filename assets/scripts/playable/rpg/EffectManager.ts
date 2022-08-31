@@ -1,4 +1,4 @@
-import { Color, Component, director, game, instantiate, IVec3, Node, ParticleSystem, Vec3 } from "cc";
+import { assert, Color, Component, director, game, instantiate, IVec3, Node, ParticleSystem, Vec3 } from "cc";
 import { Prefab, resources } from "cc";
 import { audioManager } from "../core/AudioManager";
 import { Action } from "../utility/ActionEvent";
@@ -27,9 +27,11 @@ export default class EffectManager {
      * @param target 目标对象
      */
     public static async playStrikeEffect(assetPath: string | Node | Prefab, audioName: string, target: { beStrokedPoint: Node }): Promise<void> {
-        let effectNode = await EffectManager.createEffectNode(assetPath, target.beStrokedPoint, false);
-        if (effectNode == null) return;
-        EffectManager.playParticles(effectNode);
+        if (assetPath != null) {
+            let effectNode = await EffectManager.createEffectNode(assetPath, target.beStrokedPoint, false);
+            if (effectNode != null)
+                EffectManager.playParticles(effectNode);
+        }
         audioName = audioName ?? GlobalConfig.defaultStrikeAudio;
         if (audioName != null)
             audioManager.playEffect(audioName);
@@ -100,6 +102,7 @@ export default class EffectManager {
         }
         let effectNode = effectPrefab instanceof Prefab ? instantiate(effectPrefab) : instantiate<Node>(effectPrefab);
         if (point instanceof Node) {
+            assert(point != null && point.isValid)
             effectNode.setParent(point, false);
             effectNode.position = Vec3.ZERO;
             // effectNode.transform.rotation = new Laya.Quaternion();

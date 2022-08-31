@@ -16,7 +16,8 @@ export default class ContinuousSkill extends Skill<IContinuousSkillConfig> {
 
     protected async onStart(target: BaseCharacter) {
         super.onStart(target);
-        this.effectNode = await EffectManager.createEffectNodeByConfig(this.config.effect, this.character.gameObject);
+        if (this.config.effect != null)
+            this.effectNode = await EffectManager.createEffectNodeByConfig(this.config.effect, this.character.gameObject);
         this.character.schedule(this.onUpdateFunc, 0, Infinity);
         this.elapseTime = 0;
         this.attackTime = this.config.attackInterval;
@@ -48,6 +49,7 @@ export default class ContinuousSkill extends Skill<IContinuousSkillConfig> {
     protected onEnd(result: boolean): void {
         super.onEnd(result);
         this.character.unschedule(this.onUpdateFunc);
-        EffectManager.destroyEffect(this.effectNode);
+        if (this.effectNode != null)
+            EffectManager.destroyEffect(this.effectNode);
     }
 }

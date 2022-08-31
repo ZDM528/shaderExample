@@ -1,5 +1,5 @@
 import { Component, EventHandler, EventTouch, Node, Sprite, SpriteFrame, _decorator } from "cc";
-import { EDITOR } from "cc/env";
+import { EDITOR_WITHOUT_RUN } from "../extenstion/CocosExtenstion";
 
 const { ccclass, property, executeInEditMode } = _decorator;
 
@@ -58,12 +58,12 @@ export class SwitchButton extends Component {
     readonly switchEvents: EventHandler[] = [];
 
     onEnable(): void {
-        if (!EDITOR)
+        if (!EDITOR_WITHOUT_RUN)
             this.registerNodeEvent();
     }
 
     onDisable(): void {
-        if (!EDITOR)
+        if (!EDITOR_WITHOUT_RUN)
             this.unregisterNodeEvent();
     }
 

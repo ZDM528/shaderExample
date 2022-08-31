@@ -541,7 +541,7 @@ Object.defineProperties(Array.prototype, {
 // Array
 if (Array.prototype.at == null) {
     Array.prototype.at = function <T>(this: T[], index: number): T {
-        if (index < 0) return this[this.length - index];
+        if (index < 0) return this[this.length + index];
         return this[index];
     }
 }

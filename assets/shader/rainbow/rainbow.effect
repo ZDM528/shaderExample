@@ -1,0 +1,117 @@
+
+// Copyright (c) 2017-2020 Xiamen Yaji Software Co., Ltd.
+CCEffect %{
+  techniques:
+  - passes:
+    - vert: sprite-vs:vert
+      frag: sprite-fs:frag
+      depthStencilState:
+        depthTest: false
+        depthWrite: false
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: src_alpha
+          blendDst: one_minus_src_alpha
+          blendDstAlpha: one_minus_src_alpha
+      rasterizerState:
+        cullMode: none
+      properties:
+        alphaThreshold: { value: 0.5 }
+        mainTexture:    { value: white }
+        mainColor:      { value: [1, 1, 1, 1], editor: { type: color } }
+}%
+
+CCProgram sprite-vs %{
+  precision highp float;
+  #include <builtin/uniforms/cc-global>
+  #if USE_LOCAL
+    #include <builtin/uniforms/cc-local>
+  #endif
+  #if SAMPLE_FROM_RT
+    #include <common/common-define>
+  #endif
+  in vec3 a_position;
+  in vec2 a_texCoord;
+  in vec4 a_color;
+
+  out vec4 color;
+  out vec2 uv0;
+  out vec2 v_uv;
+  out vec3 v_position;
+
+  vec4 vert () {
+    vec4 pos = vec4(a_position, 1);
+
+    #if USE_LOCAL
+      pos = cc_matWorld * pos;
+    #endif
+
+    #if USE_PIXEL_ALIGNMENT
+      pos = cc_matView * pos;
+      pos.xyz = floor(pos.xyz);
+      pos = cc_matProj * pos;
+    #else
+      pos = cc_matViewProj * pos;
+    #endif
+
+    uv0 = a_texCoord;
+    #if SAMPLE_FROM_RT
+      CC_HANDLE_RT_SAMPLE_FLIP(uv0);
+    #endif
+    color = a_color;
+    v_uv=a_texCoord;
+    v_position=pos.xyz;
+
+    return pos;
+  }
+}%
+
+CCProgram sprite-fs %{
+  precision highp float;
+  #include <builtin/internal/embedded-alpha>
+  #include <builtin/internal/alpha-test>
+
+  in vec4 color;
+  in vec2 v_uv;
+  in vec3 v_position;
+
+  uniform sampler2D mainTexture;
+  uniform Constant {
+    vec4 mainColor;
+  };
+
+  #if USE_TEXTURE
+    in vec2 uv0;
+    #pragma builtin(local)
+    layout(set = 2, binding = 11) uniform sampler2D cc_spriteTexture;
+  #endif
+
+  float draw(vec2 position,float radius,float width){
+    vec2 point=position;
+    float a=distance(v_uv,point);
+    a = smoothstep(radius,radius-0.005,a);
+    float b=distance(v_uv,point);
+    b = smoothstep(radius-width,radius-width-0.005,b);
+    float finallColor=a-b;
+    return finallColor;
+  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+  vec4 frag () {
+    vec4 o1=vec4(0.0,1.0,0.0,1.0);
+    vec4 o2=vec4(1.0,0.0,0.0,1.0);
+    vec4 o3=vec4(1.0,0.4,0.3,1.0);
+    float color1=draw(vec2(0.5,0.0),0.5,0.1);
+    float color2=draw(vec2(0.5,0.0),0.4,0.1);
+    float color3=draw(vec2(0.5,0.0),0.3,0.1);
+    o1*=color1;
+    o2*=color2;
+    o3*=color3;
+    vec4 o=vec4(1.0,1.0,1.0,1.0);
+    o *=o1;
+    o +=o2;
+    o +=o3;
+    return o;
+  }
+}%
+

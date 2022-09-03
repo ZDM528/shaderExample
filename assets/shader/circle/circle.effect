@@ -17,9 +17,10 @@ CCEffect %{
         cullMode: none
       properties:
         alphaThreshold: { value: 0.5 }
-        lightWidth: { value: 0.2}
-        lightColor: { value: [1, 1, 1, 1], editor: { type: color }}
-        lightStrength: { value: 2.0 , editor: {min: 1.0, max: 10.0 }}
+        circleRadius: { value: 0.2, editor: { min: 0,max: 1,tooltip: '光圈大小'}}
+        circlePoint: { value: [0.5,0.5], editor: { tooltip: '光圈中心位置'}}
+        circleBlur: { value: 0.1, editor: { tooltip: "光圈虚化程度"}}
+        circleWHRadio: { value: 1.0, editor: { tooltip: '贴图宽高比'}}
 }%
 
 CCProgram sprite-vs %{
@@ -61,24 +62,24 @@ CCProgram sprite-vs %{
 
     return pos;
   }
-  }%
+}%
 
 CCProgram sprite-fs %{
   precision highp float;
   #include <builtin/internal/embedded-alpha>
   #include <builtin/internal/alpha-test>
-  #include <cc-global>
 
   in vec4 color;
-  in vec2 uv0;
 
-  uniform Constant{
-    vec4 lightColor;
-    float lightWidth;
-    float lightStrength;
+  uniform Constanc{
+    vec2 circlePoint;
+    float circleRadius;
+    float circleBlur;
+    float circleWHRadio;
   };
 
   #if USE_TEXTURE
+    in vec2 uv0;
     #pragma builtin(local)
     layout(set = 2, binding = 11) uniform sampler2D cc_spriteTexture;
   #endif
@@ -93,21 +94,14 @@ CCProgram sprite-fs %{
         o.r = o.g = o.b = gray;
       #endif
     #endif
+    vec2 uv = vec2(uv0.x * circleWHRadio,uv0.y);
+    vec2 point=vec2(circlePoint.x * circleWHRadio,circlePoint.y);
+    float distance = distance(uv,point);
+    float a = smoothstep(circleRadius,circleRadius-circleBlur,distance);
 
-    o *= color;  
-    float time_step=-lightWidth;
-    time_step += mod( cc_time.x, 1.0 + 2.0 * lightWidth );
-    float minX = -uv0.y + time_step;
-    float maxX = -uv0.y + lightWidth + time_step;
-    float disRight = mix( lightStrength, 1.0, step( maxX, uv0.x )) ;
-    float disLeft = mix( lightStrength - 1.0, 0.0, step( minX, uv0.x ));
-    float colorlerp = step( lightStrength, disRight - disLeft );
-    vec4 addColor = colorlerp * vec4( lightColor.r - 1.0, lightColor.g - 1.0, lightColor.b - 1.0, 1.0 ) + vec4(1.0,1.0,1.0,1.0);
-    o *= ( disRight - disLeft ) * addColor;
+    o *= color;
+    o.a=a;
     ALPHA_TEST(o);
-    
     return o;
   }
 }%
-
-

@@ -84,9 +84,8 @@ CCProgram sprite-fs %{
       #endif
     #endif
 
-     o *= color;
-     o.a *= 1.0 - uv0.x;
-    
+    o *= color;
+    //  o.a *= 0.0;
     //  float y = -pow( uv0.x, 2.0 ) + 1.0;
     //  float c1 = smoothstep(y - 0.1, y, uv0.y);
     //  float c2 = smoothstep(y, y + 0.1, uv0.y) ;
@@ -94,11 +93,19 @@ CCProgram sprite-fs %{
     //  vec4  addColor = c3 * vec4(0.0,1.0,0.0,1.0);
     //  o += addColor;
 
-     float y = 1.0 - abs(sin(uv0.x * 20.0)) * 0.3 ;
+    //  float y = -abs(sin(uv0.x * 20.0)) * 0.3 + 1.0;
+    //  float y = -uv0.x + 1.0;
+    //  float y = -smoothstep( 0.0, 1.0, uv0.x ) + 1.0;
+    //  float y = -(1.0 - cos(uv0.x * 3.14 / 2.0) ) + 1.0;
+    //  float y = -pow(uv0.x, 5.0) + 1.0;
+     float y = -(1.0 - sqrt(1.0 - pow(uv0.x, 2.0))) + 1.0;
      float c1 = step( y - 0.01, uv0.y );
      float c2 = step( y + 0.01, uv0.y );
      float c3 = c1 - c2; 
-     vec4  addColor = c3 * vec4(0.0,1.0,0.0,1.0);
+     vec4 startC = vec4(1.0,0.0,1.0,1.0);
+     vec4 endC = vec4(0.0,1.0,0.0,1.0);
+     vec4 c=vec4(0.0,1.0,0.0,1.0);
+     vec4  addColor = c3 * mix(startC,endC,uv0.x);
      o += addColor;
 
     ALPHA_TEST(o);

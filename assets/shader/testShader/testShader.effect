@@ -98,15 +98,31 @@ CCProgram sprite-fs %{
     //  float y = -smoothstep( 0.0, 1.0, uv0.x ) + 1.0;
     //  float y = -(1.0 - cos(uv0.x * 3.14 / 2.0) ) + 1.0;
     //  float y = -pow(uv0.x, 5.0) + 1.0;
-     float y = -(1.0 - sqrt(1.0 - pow(uv0.x, 2.0))) + 1.0;
-     float c1 = step( y - 0.01, uv0.y );
-     float c2 = step( y + 0.01, uv0.y );
-     float c3 = c1 - c2; 
-     vec4 startC = vec4(1.0,0.0,1.0,1.0);
-     vec4 endC = vec4(0.0,1.0,0.0,1.0);
-     vec4 c=vec4(0.0,1.0,0.0,1.0);
-     vec4  addColor = c3 * mix(startC,endC,uv0.x);
-     o += addColor;
+    //  float y = -(1.0 - sqrt(1.0 - pow(uv0.x, 2.0))) + 1.0;
+    //  float c1 = step( y - 0.01, uv0.y );
+    //  float c2 = step( y + 0.01, uv0.y );
+    //  float c3 = c1 - c2; 
+    //  vec4 startC = vec4(1.0,0.0,1.0,1.0);
+    //  vec4 endC = vec4(0.0,1.0,0.0,1.0);
+    //  vec4 c=vec4(0.0,1.0,0.0,1.0);
+    //  vec4  addColor = c3 * mix(startC,endC,uv0.x);
+    //  o += addColor;
+
+    // float a = step(0.1,uv0.x);
+    // float b = step(0.1,uv0.y);
+    // float c = step(0.1,1.0 - uv0.x);
+    // float d = step(0.1,1.0 - uv0.y);
+    // vec3 addColor=vec3(a * b * c * d);
+    // o *= vec4(addColor,1.0);
+
+    // vec2 uv = uv0 * 2.0 - 1.0;
+    // float distance =distance(abs(uv),vec2(0.3));
+    // vec4 addColor = vec4(vec3(fract(distance * 1.0)),1.0);
+    // o  *= addColor;
+
+    vec2 pos = vec2(0.5) - uv0;
+    o *= vec4(pos.x,0.0,0.0,1.0);
+    
 
     ALPHA_TEST(o);
     return o;

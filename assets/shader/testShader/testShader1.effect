@@ -1,0 +1,144 @@
+// Copyright (c) 2017-2020 Xiamen Yaji Software Co., Ltd.
+CCEffect %{
+  techniques:
+  - passes:
+    - vert: sprite-vs:vert
+      frag: sprite-fs:frag
+      depthStencilState:
+        depthTest: false
+        depthWrite: false
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: src_alpha
+          blendDst: one_minus_src_alpha
+          blendDstAlpha: one_minus_src_alpha
+      rasterizerState:
+        cullMode: none
+      properties:
+        alphaThreshold: { value: 0.5 }
+        texture1: { value: white }
+}%
+
+CCProgram sprite-vs %{
+  precision highp float;
+  #include <builtin/uniforms/cc-global>
+  #if USE_LOCAL
+    #include <builtin/uniforms/cc-local>
+  #endif
+  #if SAMPLE_FROM_RT
+    #include <common/common-define>
+  #endif
+  in vec3 a_position;
+  in vec2 a_texCoord;
+  in vec4 a_color;
+
+  out vec4 color;
+  out vec2 uv0;
+
+  vec4 vert () {
+    vec4 pos = vec4(a_position, 1);
+
+    #if USE_LOCAL
+      pos = cc_matWorld * pos;
+    #endif
+
+    #if USE_PIXEL_ALIGNMENT
+      pos = cc_matView * pos;
+      pos.xyz = floor(pos.xyz);
+      pos = cc_matProj * pos;
+    #else
+      pos = cc_matViewProj * pos;
+    #endif
+
+    uv0 = a_texCoord;
+    #if SAMPLE_FROM_RT
+      CC_HANDLE_RT_SAMPLE_FLIP(uv0);
+    #endif
+    color = a_color;
+
+    return pos;
+  }
+}%
+
+CCProgram sprite-fs %{
+  precision highp float;
+  #include <builtin/internal/embedded-alpha>
+  #include <builtin/internal/alpha-test>
+    #include <cc-global>
+ 
+  in vec4 color;
+
+  uniform sampler2D texture1;
+
+  #if USE_TEXTURE
+    in vec2 uv0;
+    #pragma builtin(local)
+    layout(set = 2, binding = 11) uniform sampler2D cc_spriteTexture;
+  #endif
+
+  float box(in vec2 st,in vec2 size){
+    size = vec2(0.5) - size * 0.5;
+    vec2 uv1 = smoothstep(size,size + vec2(0.001),st);
+    vec2 uv2 = smoothstep(size,size + vec2(0.001),vec2(1.0 - st));
+    vec2 uv3 = uv1 * uv2;
+    return uv3.x  * uv3.y;
+  }
+
+  float cross(in vec2 st,float size){
+    return box(st,vec2(size,size/3.0)) + box(st,vec2(size/3.0,size));
+  }
+
+  mat2 rotate2d(float angle){
+    return mat2(cos(angle),-sin(angle),
+                sin(angle),cos(angle));
+  }
+
+  mat2 scale(vec2 _scale){
+    return mat2(_scale.x,0.0,
+                0.0,_scale.y);
+  }
+
+
+   
+ vec4 lm_take_effect_filter(sampler2D filterTex,vec4 inputColor,float uniAlpha){
+  vec4 textureColor = inputColor;	
+  highp float blueColor=textureColor.b * 63.;
+  
+  highp vec2 quad1;
+  quad1.y=floor(floor(blueColor)/8.);
+  quad1.x=floor(blueColor)-(quad1.y*8.);
+  
+  highp vec2 quad2;
+  quad2.y=floor(ceil(blueColor)/8.);
+  quad2.x=ceil(blueColor)-(quad2.y*8.);
+  
+  highp vec2 texPos1;
+  texPos1.x=(quad1.x*1./8.)+.5/512.+((1./8.-1./512.) * textureColor.r);
+  texPos1.y=(quad1.y*1./8.)+.5/512.+((1./8.-1./512.) * textureColor.g);
+  
+  highp vec2 texPos2;
+  texPos2.x=(quad2.x*1./8.)+.5/512.+((1./8.-1./512.) * textureColor.r);
+  texPos2.y=(quad2.y*1./8.)+.5/512.+((1./8.-1./512.) * textureColor.g);
+  
+  vec4 newColor1= texture(filterTex,texPos1);
+  vec4 newColor2= texture(filterTex,texPos2);
+  vec4 newColor=mix(newColor1,newColor2,fract(blueColor));
+  newColor = mix(textureColor,vec4(newColor.rgb,textureColor.w),uniAlpha);
+
+  return newColor;
+}
+
+  vec4 frag () {
+    vec4 curColor= vec4(1, 1, 1, 1);
+    vec4 resultColor= vec4(1, 1, 1, 1);
+
+    #if USE_TEXTURE
+      curColor *= CCSampleWithAlphaSeparated(cc_spriteTexture, uv0);
+      resultColor = lm_take_effect_filter(texture1,curColor, 1.0);
+    #endif
+    resultColor.rgb = mix(curColor.rgb, resultColor.rgb, curColor.a);
+    resultColor.a = curColor.a;
+    return resultColor;
+  }
+}%

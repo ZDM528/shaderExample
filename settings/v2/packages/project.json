@@ -11,5 +11,11 @@
     "legacyFbxImporter": {
       "visible": true
     }
-  }
+  },
+  "layer": [
+    {
+      "name": "canvas_19",
+      "value": 524288
+    }
+  ]
 }

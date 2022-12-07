@@ -25,6 +25,11 @@
     }
   ],
   "_props": [
-    {}
+    {
+      "u_inputTexture": {
+        "__uuid__": "835ddd27-e5ba-4123-99e4-5194ea4ef536@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      }
+    }
   ]
 }

@@ -17,6 +17,18 @@ CCEffect %{
         cullMode: none
       properties:
         alphaThreshold: { value: 0.5 }
+        u_inputTexture: { value: white}
+        u_ScreenParams: {value: [1.0,1.0,1.0,1.0] }
+        dirBlurStep: { value: 0.0}
+        scaleBlurStep: { value: 0.0}
+        blurDirection: {value: [1.0,1.0]}
+        u_NoisePos: {value: [1.0,1.0]}
+        u_Frequency: {value: 1.0}
+        u_TwistRotFactor: {value: 24.0}
+        u_TwistFactor: {value: 0.45}
+        u_ScaleFactor: {value: 1.75}
+        u_Distort: {value: 0.0}
+        c1: {value: [1.0,1.0]}
 }%
 
 CCProgram sprite-vs %{
@@ -34,6 +46,24 @@ CCProgram sprite-vs %{
 
   out vec4 color;
   out vec2 uv0;
+  out vec2 TexCoords;
+
+
+  uniform Param{
+    mat4 userMat;
+    mat4 fitMat;
+ 
+  };
+
+  float u_OutputWidth = 200.0;
+  float u_OutputHeight = 200.0;
+
+  void transformUV(out vec2 uv) {
+    float aspect = u_OutputWidth / u_OutputHeight;
+    uv = vec2((uv0.x * 2. - 1.) * aspect, uv0.y * 2. - 1.);
+    uv = (fitMat * userMat * vec4(uv, 0, 1)).xy;
+    uv = vec2((uv.x / aspect + 1.) / 2., (uv.y + 1.) / 2.);
+  }
 
   vec4 vert () {
     vec4 pos = vec4(a_position, 1);
@@ -50,11 +80,14 @@ CCProgram sprite-vs %{
       pos = cc_matViewProj * pos;
     #endif
 
-    uv0 = a_texCoord;
     #if SAMPLE_FROM_RT
       CC_HANDLE_RT_SAMPLE_FLIP(uv0);
     #endif
+
     color = a_color;
+    uv0 = a_texCoord;
+    transformUV(uv0);
+    TexCoords = uv0;
 
     return pos;
   }
@@ -67,6 +100,24 @@ CCProgram sprite-fs %{
     #include <cc-global>
  
   in vec4 color;
+  in vec2 TexCoords;
+  uniform sampler2D u_inputTexture;
+
+
+  float pi = 3.141592653589793;
+  uniform Contant{
+    vec4 u_ScreenParams;
+    float dirBlurStep;
+    float scaleBlurStep;
+    vec2 blurDirection;
+    vec2 u_NoisePos;
+    vec2 c1;
+    float u_Frequency;
+    float u_TwistRotFactor;
+    float u_TwistFactor;
+    float u_ScaleFactor;
+    float u_Distort;
+  };
 
   #if USE_TEXTURE
     in vec2 uv0;
@@ -74,95 +125,156 @@ CCProgram sprite-fs %{
     layout(set = 2, binding = 11) uniform sampler2D cc_spriteTexture;
   #endif
 
-  float box(in vec2 st,in vec2 size){
-    size = vec2(0.5) - size * 0.5;
-    vec2 uv1 = smoothstep(size,size + vec2(0.001),st);
-    vec2 uv2 = smoothstep(size,size + vec2(0.001),vec2(1.0 - st));
-    vec2 uv3 = uv1 * uv2;
-    return uv3.x  * uv3.y;
+  vec2 rotate(vec2 uv, float angle)
+  {
+    float theta = angle / 180.0 * pi;
+    mat2 rotMat2 = mat2(cos(theta), -sin(theta)
+                        ,sin(theta), cos(theta));
+    return rotMat2 * uv;
   }
 
-  float cross(in vec2 st,float size){
-    return box(st,vec2(size,size/3.0)) + box(st,vec2(size/3.0,size));
+
+  vec2 random2(vec2 st){
+    st = vec2( dot(st,vec2(127.1,311.7)),
+              dot(st,vec2(269.5,183.3)) );
+    return -1.0 + 2.0*fract(sin(st)*43758.5453123);
   }
 
-  mat2 rotate2d(float angle){
-    return mat2(cos(angle),-sin(angle),
-                sin(angle),cos(angle));
+  const mat2 mtx = mat2( 0.80,  0.60, -0.60,  0.80 );
+
+  float noise(vec2 st) {
+    vec2 i = floor(st);
+    vec2 f = fract(st);
+
+    vec2 u = f*f*(3.0-2.0*f);
+
+    return mix( mix( dot( random2(i + vec2(0.0,0.0) ), f - vec2(0.0,0.0) ),
+                     dot( random2(i + vec2(1.0,0.0) ), f - vec2(1.0,0.0) ), u.x),
+                mix( dot( random2(i + vec2(0.0,1.0) ), f - vec2(0.0,1.0) ),
+                     dot( random2(i + vec2(1.0,1.0) ), f - vec2(1.0,1.0) ), u.x), u.y);
   }
 
-  mat2 scale(vec2 _scale){
-    return mat2(_scale.x,0.0,
-                0.0,_scale.y);
+
+/* random number between 0 and 1 */
+  float random(in vec3 scale, in float seed) {
+    /* use the fragment position for randomness */
+    return fract(sin(dot(gl_FragCoord.xyz + seed, scale)) * 43758.5453 + seed);
   }
+
+  vec4 crossFade(sampler2D tex, in vec2 uv, in float dissolve) {
+    return texture(tex, uv).rgba;
+  }
+
+ vec4 directionBlur(sampler2D tex, vec2 resolution, vec2 uv, vec2 directionOfBlur, float intensity)
+  {
+    vec2 pixelStep = 1.0 / resolution * intensity;
+    float dircLength = length(directionOfBlur);
+    pixelStep.x = directionOfBlur.x * 1.0 / dircLength * pixelStep.x;
+    pixelStep.y = directionOfBlur.y * 1.0 / dircLength * pixelStep.y;
+
+    vec4 color = vec4(0);
+    const int num = 25;
+    for (int i = -num; i <= num; i++)
+    {
+        vec2 blurCoord = uv + pixelStep * float(i);
+        vec2 uvT = vec2(1.0 - abs(abs(blurCoord.x) - 1.0), 1.0 - abs(abs(blurCoord.y) - 1.0));
+        color += texture(tex, uvT);
+    }
+    color /= float(2 * num + 1);
+    return color;
+ }
+
+  vec4 getDirectionBlur(sampler2D tex,vec2 uv0,vec2 tmpBlurDirection)
+  {
+    vec2 resolution = vec2(u_ScreenParams.x, u_ScreenParams.y);
+    vec4 resultColor = directionBlur(tex, resolution, uv0, tmpBlurDirection, dirBlurStep);
+    vec4 retColor = vec4(resultColor.rgb, resultColor.a) * step(uv0.x, 2.0) * step(uv0.y, 2.0) * step(-1.0, uv0.x) * step(-1.0, uv0.y);
+    return retColor;
+  }
+
+  vec4 getScaleBlur(sampler2D tex,vec2 uv0, vec2 uv1)
+  {
+    vec4 color = vec4(0.0);
+    float total = 0.0;
+    vec2 toCenter = vec2(0.5, 0.5) - uv0;
+    float dissolve = 0.5;
+
+    /* randomize the lookup values to hide the fixed number of samples */
+    float offset = random(vec3(12.9898, 78.233, 151.7182), 0.0);
+    const int num = 25;
+    for (int t = 0; t <= num; t++) {
+        float percent = (float(t) + offset) / float(num);
+        float weight = 4.0 * (percent - percent * percent);
+
+        vec2 curUV = uv0 + toCenter * percent * scaleBlurStep;
+        vec2 curUV1 = uv1 + toCenter * percent * scaleBlurStep;
+        vec2 uvT = vec2(1.0 - abs(abs(curUV1.x) - 1.0), 1.0 - abs(abs(curUV1.y) - 1.0));
+        color += crossFade(tex, uvT, dissolve) * weight * step(curUV.x, 2.0) * step(curUV.y, 2.0) * step(-1.0, curUV.x) * step(-1.0, curUV.y);
+        // color += crossFade(uvT + toCenter * percent * blurStep, dissolve) * weight;
+        total += weight;
+    }
+    vec4 retColor = color / total;
+    return retColor;
+ }
+
+   vec2 fishEye(vec2 uv, float strength, vec2 point)
+   {
+    uv.x = 1. - uv.x;
+    uv += point;
+    float d = length(uv);
+    float z = sqrt(1. + d * d * strength);
+    float r = d/z;
+    float phi = atan(uv.y, uv.x);
+    uv = vec2(r * cos(phi), r * sin(phi));
+    uv -= point;
+    uv.x = 1. - uv.x;
+    return uv;
+   }
 
   vec4 frag () {
-    vec4 o = vec4(1, 1, 1, 1);
 
+
+    vec4 o = vec4(1, 1, 1, 1);
     #if USE_TEXTURE
       o *= CCSampleWithAlphaSeparated(cc_spriteTexture, uv0);
-      #if IS_GRAY
-        float gray  = 0.2126 * o.r + 0.7152 * o.g + 0.0722 * o.b;
-        o.r = o.g = o.b = gray;
-      #endif
     #endif
 
-    o *= color;
-    //  o.a *= 0.0;
-    //  float y = -pow( uv0.x, 2.0 ) + 1.0;
-    //  float c1 = smoothstep(y - 0.1, y, uv0.y);
-    //  float c2 = smoothstep(y, y + 0.1, uv0.y) ;
-    //  float c3 = c1 - c2; 
-    //  vec4  addColor = c3 * vec4(0.0,1.0,0.0,1.0);
-    //  o += addColor;
 
-    //  float y = -abs(sin(uv0.x * 20.0)) * 0.3 + 1.0;
-    //  float y = -uv0.x + 1.0;
-    //  float y = -smoothstep( 0.0, 1.0, uv0.x ) + 1.0;
-    //  float y = -(1.0 - cos(uv0.x * 3.14 / 2.0) ) + 1.0;
-    //  float y = -pow(uv0.x, 5.0) + 1.0;
-    //  float y = -(1.0 - sqrt(1.0 - pow(uv0.x, 2.0))) + 1.0;
-    //  float c1 = step( y - 0.01, uv0.y );
-    //  float c2 = step( y + 0.01, uv0.y );
-    //  float c3 = c1 - c2; 
-    //  vec4 startC = vec4(1.0,0.0,1.0,1.0);
-    //  vec4 endC = vec4(0.0,1.0,0.0,1.0);
-    //  vec4 c=vec4(0.0,1.0,0.0,1.0);
-    //  vec4  addColor = c3 * mix(startC,endC,uv0.x);
-    //  o += addColor;
+    vec2 fragCoord = TexCoords;
+    fragCoord.x *= u_ScreenParams.x/u_ScreenParams.y;
+    vec2 st1 = ((fragCoord)) / u_ScaleFactor * u_Frequency + u_NoisePos;
+    vec2 st2 = ((1. - fragCoord / u_ScaleFactor)) * u_Frequency + u_NoisePos;
+    vec2 pos1 = vec2(st1);
+    vec2 pos2 = vec2(st2);
 
-    // float a = step(0.1,uv0.x);
-    // float b = step(0.1,uv0.y);
-    // float c = step(0.1,1.0 - uv0.x);
-    // float d = step(0.1,1.0 - uv0.y);
-    // vec3 addColor=vec3(a * b * c * d);
-    // o *= vec4(addColor,1.0);
+    float x = noise(pos1);
+    float y = noise(pos2);
+    vec2 xy = rotate(vec2(x, y), u_TwistRotFactor);
+    vec2 uv1= (TexCoords - .5) / u_ScaleFactor + .5;
 
-    // vec2 uv = uv0 * 2.0 - 1.0;
-    // float distance =distance(abs(uv),vec2(0.3));
-    // vec4 addColor = vec4(vec3(fract(distance * 1.0)),1.0);
-    // o  *= addColor;
+    vec2 uv2 = uv1 - u_TwistFactor * xy;
+    fragCoord = fishEye(uv2, u_Distort * 6.0, c1);
 
-    // vec2 pos = vec2(0.5) - uv0;
-    // float r = length(pos) * 2.0;
-    // float a = atan( pos.y,pos.x);
-    // float f =  cos( a * 1.0);
-    // o *= vec4(1.0,0.0,0.0,f);
 
-    // vec2 uv = uv0 + vec2(cos(cc_time.x),cos(cc_time.x)) * 0.15;
-    // o *= vec4(vec3(cross(uv ,0.15)),1.0);
+    vec2 odd = mod(fragCoord, 2.0); 
+    fragCoord = mod(fragCoord, 1.0);
+    vec2 tmpBlurDirection = blurDirection;
+    if (odd.x > 1.0)
+    {
+        fragCoord.x = 1.0 - fragCoord.x;
+        tmpBlurDirection.x = -tmpBlurDirection.x;
+    }
+    if (odd.y > 1.0)
+    {
+        fragCoord.y = 1.0 - fragCoord.y;
+        tmpBlurDirection.y = -tmpBlurDirection.y;
+    }
 
-    // vec2 uv = uv0 - vec2(0.5);
-    // uv = rotate2d(sin(cc_time.x) * 3.14) * uv;
-    // uv = uv + vec2(0.5);
-    // o *= vec4(vec3(cross(uv ,0.4)),1.0);
-
-    // vec2 uv = uv0 - vec2(0.5);
-    // uv = scale(vec2(sin(cc_time.x) +1.0)) * uv;
-    // uv = uv + vec2(0.5);
-    // o *= vec4(vec3(cross(uv ,0.4)),1.0);
+    vec4 result = texture(u_inputTexture, fragCoord);
   
-    ALPHA_TEST(o);
-    return o;
+
+    // o *= color;
+    ALPHA_TEST(result);
+    return result;
   }
 }%

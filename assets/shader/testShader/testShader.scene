@@ -29,7 +29,7 @@
     "_prefab": null,
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 16
+      "__id__": 17
     },
     "_id": "082cce44-4e3c-4585-95fa-bfaee949e854"
   },
@@ -225,20 +225,20 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 13
-      },
-      {
         "__id__": 14
       },
       {
         "__id__": 15
+      },
+      {
+        "__id__": 16
       }
     ],
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 666.9999999999999,
-      "y": 375,
+      "y": 374.99999999999994,
       "z": 0
     },
     "_lrot": {
@@ -319,7 +319,7 @@
     "_priority": 1073741824,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 432.49684210526317,
+    "_orthoHeight": 1727.1023192360162,
     "_near": 1,
     "_far": 2000,
     "_color": {
@@ -362,6 +362,9 @@
       },
       {
         "__id__": 12
+      },
+      {
+        "__id__": 13
       }
     ],
     "_prefab": null,
@@ -437,7 +440,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "5d069a59-7281-4c4a-82ef-8d3c12d05efb@f9941",
+      "__uuid__": "835ddd27-e5ba-4123-99e4-5194ea4ef536@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -454,6 +457,18 @@
     "_useGrayscale": false,
     "_atlas": null,
     "_id": "16ApGmfQNFcp3vsjOUQ/H5"
+  },
+  {
+    "__type__": "9e253cJhCBPN5wZSIuwyKN3",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 10
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_progress": 0.7,
+    "_id": "d0unrSI4pBSZV8GM47I+jU"
   },
   {
     "__type__": "cc.UITransform",
@@ -504,8 +519,8 @@
     "_target": null,
     "_left": -1.1368683772161603e-13,
     "_right": -1.1368683772161603e-13,
-    "_top": 0,
-    "_bottom": 0,
+    "_top": -5.684341886080802e-14,
+    "_bottom": -5.684341886080802e-14,
     "_horizontalCenter": 0,
     "_verticalCenter": 0,
     "_isAbsLeft": true,
@@ -523,19 +538,19 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 17
-    },
-    "shadows": {
       "__id__": 18
     },
-    "_skybox": {
+    "shadows": {
       "__id__": 19
     },
-    "fog": {
+    "_skybox": {
       "__id__": 20
     },
-    "octree": {
+    "fog": {
       "__id__": 21
+    },
+    "octree": {
+      "__id__": 22
     }
   },
   {

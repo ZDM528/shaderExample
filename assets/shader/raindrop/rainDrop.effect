@@ -1,0 +1,111 @@
+// Copyright (c) 2017-2020 Xiamen Yaji Software Co., Ltd.
+CCEffect %{
+  techniques:
+  - passes:
+    - vert: sprite-vs:vert
+      frag: sprite-fs:frag
+      depthStencilState:
+        depthTest: false
+        depthWrite: false
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: src_alpha
+          blendDst: one_minus_src_alpha
+          blendDstAlpha: one_minus_src_alpha
+      rasterizerState:
+        cullMode: none
+      properties:
+        alphaThreshold: { value: 0.5 }
+        mainTexture: { value: white }
+        dropTexture: { value: white }
+        rainSpeed: { value: 2.0 , target: rainParam.x, editor: {mix: 1.0, max: 10.0 ,slide: true, step: 0.01, tooltip: "雨滴速度"}}
+        rainScale: {value: 0.015, target: rainParam.y, editor: {mix: 0.001, max: 0.1 ,slide: true, step: 0.001,tooltip: "雨滴密集程度"}}
+        rainShape: {value: 1.2,target: rainParam.z,  editor: {mix: 0.1, max: 2.0 ,slide: true, step: 0.01,tooltip: "雨滴圆滑程度"}}
+}%
+
+CCProgram sprite-vs %{
+  precision highp float;
+  #include <builtin/uniforms/cc-global>
+  #if USE_LOCAL
+    #include <builtin/uniforms/cc-local>
+  #endif
+  #if SAMPLE_FROM_RT
+    #include <common/common-define>
+  #endif
+  in vec3 a_position;
+  in vec2 a_texCoord;
+  in vec4 a_color;
+
+  out vec4 color;
+  out vec2 uv0;
+
+  vec4 vert () {
+    vec4 pos = vec4(a_position, 1);
+
+    #if USE_LOCAL
+      pos = cc_matWorld * pos;
+    #endif
+
+    #if USE_PIXEL_ALIGNMENT
+      pos = cc_matView * pos;
+      pos.xyz = floor(pos.xyz);
+      pos = cc_matProj * pos;
+    #else
+      pos = cc_matViewProj * pos;
+    #endif
+
+    uv0 = a_texCoord;
+    #if SAMPLE_FROM_RT
+      CC_HANDLE_RT_SAMPLE_FLIP(uv0);
+    #endif
+    color = a_color;
+
+    return pos;
+  }
+}%
+
+CCProgram sprite-fs %{
+  precision highp float;
+  #include <builtin/internal/embedded-alpha>
+  #include <builtin/internal/alpha-test>
+  #include <builtin/uniforms/cc-global>
+
+  in vec4 color;
+  in vec2 uv0;
+  uniform sampler2D mainTexture;
+  uniform sampler2D dropTexture;
+
+  uniform Param{
+    vec4 rainParam;
+  };
+
+  vec4 frag () {
+
+    float rainSpeed = rainParam.x;
+    float rainScale = rainParam.y;
+    float rainShape = rainParam.z;
+  
+    vec4 mainColor = texture( mainTexture, uv0, 2.0 );
+    vec2 n = texture(dropTexture,uv0 * rainShape).rg;
+
+    for(float r = 4.0; r > 0.0; r--){
+      vec2 x = vec2( 650.0,650.0 ) * r * rainScale;  // x  650 650 代表屏幕大小 ，rainScale可控制水滴密集大小 (网格大小)
+      vec2 p = 6.28 * uv0 * x;  // 6.28 2PI，周期性变化
+      p += (n-0.5) * 2.0; 
+      vec2 s = sin(p);
+      vec4 d = texture( dropTexture,floor( uv0 * x - 0.25 + 0.5) / x );
+      float t = (s.x + s.y) * max( 0.0, 1.0 - fract((cc_time.x + 2.0) * rainSpeed * (d.b + 0.1) + d.g) * 2.0);
+      if (d.r < (5.0- r) * 0.06 && t > .5) {
+          vec3 v = normalize(-vec3( cos(p), mix(0.2, 2.0, t-0.5)));
+          mainColor = texture(mainTexture, uv0 - v.xy * 0.3);
+      }
+    } 
+    ALPHA_TEST(mainColor);
+    return mainColor;
+  }
+}%
+
+
+//https://greentec.github.io/rain-drops-en/ 学习链接
+//https://www.shadertoy.com/view/ldSBWW#

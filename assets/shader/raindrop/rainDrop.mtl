@@ -32,8 +32,8 @@
         "__uuid__": "882e85e1-9eef-4da5-b0fb-700a723b6be2@6c48a",
         "__expectedType__": "cc.Texture2D"
       },
-      "rainSpeed": 3.06,
-      "rainScale": 0.038
+      "rainSpeed": 2.9,
+      "rainScale": 0.021
     }
   ]
 }

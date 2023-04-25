@@ -1,0 +1,187 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a",
+  "files": [],
+  "subMetas": {
+    "bcdb8": {
+      "importer": "gltf-mesh",
+      "uuid": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@bcdb8",
+      "displayName": "",
+      "id": "bcdb8",
+      "name": "Character_Male_Peasant_01_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 25
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5e49e": {
+      "importer": "gltf-embeded-image",
+      "uuid": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@5e49e",
+      "displayName": "",
+      "id": "5e49e",
+      "name": "base_color_texture-0.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "ef396": {
+      "importer": "gltf-embeded-image",
+      "uuid": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@ef396",
+      "displayName": "",
+      "id": "ef396",
+      "name": "base_color_texture-1.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "0a1ef": {
+      "importer": "texture",
+      "uuid": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@0a1ef",
+      "displayName": "",
+      "id": "0a1ef",
+      "name": "base_color_texture-0.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@5e49e"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "05da8": {
+      "importer": "texture",
+      "uuid": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@05da8",
+      "displayName": "",
+      "id": "05da8",
+      "name": "base_color_texture-1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@ef396"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "26a7b": {
+      "importer": "gltf-scene",
+      "uuid": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@26a7b",
+      "displayName": "",
+      "id": "26a7b",
+      "name": "Character_Male.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "base_color_texture",
+        "uri": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@5e49e"
+      },
+      {
+        "name": "base_color_texture",
+        "uri": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@ef396"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": false
+    },
+    "redirect": "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@26a7b",
+    "assetFinder": {
+      "meshes": [
+        "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@bcdb8"
+      ],
+      "skeletons": [
+        "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@438fe"
+      ],
+      "textures": [
+        "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@0a1ef",
+        "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@05da8"
+      ],
+      "materials": [
+        "f274ff54-324e-45a8-8c10-530b5bc341c8",
+        "dfc403ea-7f3f-4d94-8ad5-cba1370aa2c6",
+        "e4581c97-c72e-4efa-bf5b-92d4c53f82c7",
+        "0426a089-5bf4-4746-9e02-d1fec8754d7c",
+        "2eaeee37-0615-494f-b01b-ed7a107c95e8",
+        "cc89b770-0922-4cdc-9d9f-735d20144499",
+        "02d4e5ad-9b1c-42f1-bc27-18b105aa6bfd",
+        "deac11d2-7d65-4be5-96aa-f1fc028df6cc",
+        "2cf2e3b1-88e9-4d33-9871-058d27123cec",
+        "20fa185b-a7ac-4add-a2c7-876756088492",
+        "fbc67aef-7524-4b1a-8c7c-30e4f1ec9b60",
+        "432ffa16-dc75-4687-89d2-d85dc051e476"
+      ],
+      "scenes": [
+        "042dfd25-2bf0-4a9f-9064-9bcfbd0c102a@26a7b"
+      ]
+    },
+    "tangents": 1,
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/models/archer/Materials_Character_Male"
+  }
+}

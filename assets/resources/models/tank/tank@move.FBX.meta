@@ -1,0 +1,83 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "001172e8-fc3e-4d19-ae09-2abc6e96f4de",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "24c9f": {
+      "importer": "gltf-animation",
+      "uuid": "001172e8-fc3e-4d19-ae09-2abc6e96f4de@24c9f",
+      "displayName": "",
+      "id": "24c9f",
+      "name": "move.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.0666667222976685
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "65c15": {
+      "importer": "gltf-scene",
+      "uuid": "001172e8-fc3e-4d19-ae09-2abc6e96f4de@65c15",
+      "displayName": "",
+      "id": "65c15",
+      "name": "tank@move.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "allowMeshDataAccess": true,
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 1.0666667222976685,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "move",
+            "from": 0,
+            "to": 1.0666667222976685,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "001172e8-fc3e-4d19-ae09-2abc6e96f4de@65c15",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "001172e8-fc3e-4d19-ae09-2abc6e96f4de@65c15"
+      ]
+    }
+  }
+}

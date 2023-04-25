@@ -1,0 +1,93 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "3301a75e-6064-4df5-87b6-2879e3cf19ae",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "989ed": {
+      "importer": "gltf-animation",
+      "uuid": "3301a75e-6064-4df5-87b6-2879e3cf19ae@989ed",
+      "displayName": "",
+      "id": "989ed",
+      "name": "attack.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.800000011920929
+        },
+        "events": [
+          {
+            "frame": 0.1,
+            "func": "onAnimationEffectEvent",
+            "params": [],
+            "x": 41.625
+          },
+          {
+            "func": "onAnimationDamageEvent",
+            "params": [],
+            "frame": 0.7
+          }
+        ]
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "473e7": {
+      "importer": "gltf-scene",
+      "uuid": "3301a75e-6064-4df5-87b6-2879e3cf19ae@473e7",
+      "displayName": "",
+      "id": "473e7",
+      "name": "Character_Male@attack.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": false
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 0.800000011920929,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "attack",
+            "from": 0,
+            "to": 0.800000011920929,
+            "wrapMode": 0
+          }
+        ]
+      }
+    ],
+    "redirect": "3301a75e-6064-4df5-87b6-2879e3cf19ae@473e7",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "3301a75e-6064-4df5-87b6-2879e3cf19ae@473e7"
+      ]
+    }
+  }
+}

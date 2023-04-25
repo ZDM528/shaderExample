@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.SceneAsset",
-    "_name": "",
+    "_name": "cloud",
     "_objFlags": 0,
     "_native": "",
     "scene": {
@@ -269,19 +269,20 @@
       }
     ],
     "_visFlags": 0,
-    "lightmapSettings": {
-      "__id__": 9
-    },
+    "lightmapSettings": null,
     "_mesh": null,
     "_shadowCastingMode": 0,
     "_shadowReceivingMode": 1,
     "_shadowBias": 0,
     "_shadowNormalBias": 0,
     "_enableMorph": true,
-    "_id": "9fucodiuFInK4YTLWOvpXn"
+    "_id": "9fucodiuFInK4YTLWOvpXn",
+    "bakeSettings": {
+      "__id__": 9
+    }
   },
   {
-    "__type__": "cc.ModelLightmapSettings",
+    "__type__": "cc.ModelBakeSettings",
     "texture": null,
     "uvParam": {
       "__type__": "cc.Vec4",

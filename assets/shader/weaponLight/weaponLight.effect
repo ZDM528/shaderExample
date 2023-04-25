@@ -124,7 +124,7 @@ CCProgram standard-vs %{
     in vec2 a_texCoord1;
   #endif
 
-  #if CC_USE_LIGHTMAP && !USE_BATCHING && !CC_FORWARD_ADD
+  #if CC_USE_LIGHTMAP && !CC_FORWARD_ADD
     #include <legacy/lightingmap-vs>
   #endif
 
@@ -172,7 +172,7 @@ CCProgram standard-vs %{
     CC_TRANSFER_FOG(pos);
     CC_TRANSFER_SHADOW(pos);
 
-    #if CC_USE_LIGHTMAP && !USE_BATCHING && !CC_FORWARD_ADD
+    #if CC_USE_LIGHTMAP && !CC_FORWARD_ADD
       CCLightingMapCaclUV();
     #endif
 
@@ -186,7 +186,7 @@ CCProgram standard-fs %{
   #include <shared-ubos>
   #include <legacy/fog-fs>
   #include <legacy/standard-surface-entry>
-  #if CC_USE_LIGHTMAP && !USE_BATCHING && !CC_FORWARD_ADD
+  #if CC_USE_LIGHTMAP && !CC_FORWARD_ADD
     #include <legacy/lightingmap-fs>
   #endif
 

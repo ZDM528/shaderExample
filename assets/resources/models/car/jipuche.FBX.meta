@@ -1,0 +1,88 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "63b02523-fffc-400d-88aa-90a507f1da25",
+  "files": [],
+  "subMetas": {
+    "65901": {
+      "importer": "gltf-mesh",
+      "uuid": "63b02523-fffc-400d-88aa-90a507f1da25@65901",
+      "displayName": "",
+      "id": "65901",
+      "name": "jipuche_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1ce34": {
+      "importer": "gltf-mesh",
+      "uuid": "63b02523-fffc-400d-88aa-90a507f1da25@1ce34",
+      "displayName": "",
+      "id": "1ce34",
+      "name": "jipuche_luntai_Material0.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f83ad": {
+      "importer": "gltf-scene",
+      "uuid": "63b02523-fffc-400d-88aa-90a507f1da25@f83ad",
+      "displayName": "",
+      "id": "f83ad",
+      "name": "jipuche.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": false
+    },
+    "redirect": "63b02523-fffc-400d-88aa-90a507f1da25@f83ad",
+    "assetFinder": {
+      "meshes": [
+        "63b02523-fffc-400d-88aa-90a507f1da25@65901",
+        "63b02523-fffc-400d-88aa-90a507f1da25@1ce34"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "182f739e-4e03-4e58-939f-f6ef2d628d26",
+        "8cb6ba81-2b24-4303-ba62-d5f4821af7d1",
+        "90b82082-5ac6-4096-9a1c-e6696239f35b",
+        "0556e015-9f66-4a56-a2b8-a43a487ecfac",
+        "ffffc34d-ab69-4b14-8bf2-aa37f3179393",
+        "9068b349-c66f-4996-8415-84d5f17d6ba1"
+      ],
+      "scenes": [
+        "63b02523-fffc-400d-88aa-90a507f1da25@f83ad"
+      ]
+    },
+    "tangents": 1,
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/models/car/Materials_jipuche"
+  }
+}

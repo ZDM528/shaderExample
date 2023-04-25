@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.Material",
+  "_name": "Character07",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "1baf0fc9-befa-459c-8bdd-af1a450a0319",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      },
+      "depthStencilState": {}
+    }
+  ],
+  "_props": [
+    {
+      "albedoScale": {
+        "__type__": "cc.Vec3",
+        "x": 0.5529412031173706,
+        "y": 0.40392157435417175,
+        "z": 0.3019607961177826
+      },
+      "metallic": 0.4000000059604645,
+      "roughness": 0.7071067094802856
+    }
+  ]
+}

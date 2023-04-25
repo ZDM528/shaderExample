@@ -1,7 +1,10 @@
 {
-  "__version__": "1.3.3",
+  "__version__": "1.3.4",
   "splash-setting": {
     "totalTime": 0,
-    "displayWatermark": false
+    "watermarkLocation": "default"
+  },
+  "textureCompressConfig": {
+    "genMipmaps": false
   }
 }

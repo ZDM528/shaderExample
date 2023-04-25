@@ -1,0 +1,95 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "3be69e51-e8b8-4e46-9bbb-434aa8075e31",
+  "files": [],
+  "subMetas": {
+    "12610": {
+      "importer": "gltf-scene",
+      "uuid": "3be69e51-e8b8-4e46-9bbb-434aa8075e31@12610",
+      "displayName": "",
+      "id": "12610",
+      "name": "PT_Medieval_Longbow_01.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fdd48": {
+      "importer": "gltf-mesh",
+      "uuid": "3be69e51-e8b8-4e46-9bbb-434aa8075e31@fdd48",
+      "displayName": "",
+      "id": "fdd48",
+      "name": "Longbow_Material1.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e0453": {
+      "importer": "gltf-material",
+      "uuid": "3be69e51-e8b8-4e46-9bbb-434aa8075e31@e0453",
+      "displayName": "",
+      "id": "e0453",
+      "name": "Longbow01.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "928ac": {
+      "importer": "gltf-material",
+      "uuid": "3be69e51-e8b8-4e46-9bbb-434aa8075e31@928ac",
+      "displayName": "",
+      "id": "928ac",
+      "name": "Longbow02.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": false
+    },
+    "redirect": "3be69e51-e8b8-4e46-9bbb-434aa8075e31@12610",
+    "assetFinder": {
+      "meshes": [
+        "3be69e51-e8b8-4e46-9bbb-434aa8075e31@fdd48"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "3be69e51-e8b8-4e46-9bbb-434aa8075e31@e0453",
+        "3be69e51-e8b8-4e46-9bbb-434aa8075e31@928ac"
+      ],
+      "scenes": [
+        "3be69e51-e8b8-4e46-9bbb-434aa8075e31@12610"
+      ]
+    }
+  }
+}

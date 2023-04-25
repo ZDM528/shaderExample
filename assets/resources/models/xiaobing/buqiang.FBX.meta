@@ -1,0 +1,205 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "88066f83-4836-48a2-8198-a4cb48ab1f9a",
+  "files": [],
+  "subMetas": {
+    "11873": {
+      "importer": "gltf-material",
+      "uuid": "88066f83-4836-48a2-8198-a4cb48ab1f9a@11873",
+      "displayName": "",
+      "id": "11873",
+      "name": "Material #0.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c42ea": {
+      "importer": "gltf-mesh",
+      "uuid": "88066f83-4836-48a2-8198-a4cb48ab1f9a@c42ea",
+      "displayName": "",
+      "id": "c42ea",
+      "name": "gun.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "181cb": {
+      "importer": "gltf-embeded-image",
+      "uuid": "88066f83-4836-48a2-8198-a4cb48ab1f9a@181cb",
+      "displayName": "",
+      "id": "181cb",
+      "name": "贴图 #4.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "442db": {
+      "importer": "texture",
+      "uuid": "88066f83-4836-48a2-8198-a4cb48ab1f9a@442db",
+      "displayName": "",
+      "id": "442db",
+      "name": "贴图 #4.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/models/xiaobing/xiaobing_gun.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "faa96": {
+      "importer": "gltf-scene",
+      "uuid": "88066f83-4836-48a2-8198-a4cb48ab1f9a@faa96",
+      "displayName": "",
+      "id": "faa96",
+      "name": "buqiang.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "贴图 #4",
+        "remap": "db://assets/models/xiaobing/xiaobing_gun.jpg",
+        "uri": "88066f83-4836-48a2-8198-a4cb48ab1f9a@181cb"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "88066f83-4836-48a2-8198-a4cb48ab1f9a@faa96",
+    "assetFinder": {
+      "meshes": [
+        "88066f83-4836-48a2-8198-a4cb48ab1f9a@c42ea"
+      ],
+      "skeletons": [],
+      "textures": [
+        "88066f83-4836-48a2-8198-a4cb48ab1f9a@442db"
+      ],
+      "materials": [
+        "88066f83-4836-48a2-8198-a4cb48ab1f9a@11873"
+      ],
+      "scenes": [
+        "88066f83-4836-48a2-8198-a4cb48ab1f9a@faa96"
+      ]
+    },
+    "promoteSingleRootNode": true,
+    "materials": {
+      "88066f83-4836-48a2-8198-a4cb48ab1f9a@11873": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_INSTANCING": true,
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 202,
+              "g": 202,
+              "b": 202,
+              "a": 255
+            },
+            "mainTexture": {
+              "__uuid__": "59e15e4e-2645-4320-aa11-561f428dce6c@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

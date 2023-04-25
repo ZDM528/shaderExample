@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "7881dd5c-5f66-4e7e-aa41-265fc3b06ea2",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "73d50": {
+      "importer": "gltf-animation",
+      "uuid": "7881dd5c-5f66-4e7e-aa41-265fc3b06ea2@73d50",
+      "displayName": "",
+      "id": "73d50",
+      "name": "Die.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.6666666269302368
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "b4321": {
+      "importer": "gltf-scene",
+      "uuid": "7881dd5c-5f66-4e7e-aa41-265fc3b06ea2@b4321",
+      "displayName": "",
+      "id": "b4321",
+      "name": "xiaobing@die.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": false
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 1.6666666269302368,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Die",
+            "from": 0,
+            "to": 1.6666666269302368,
+            "wrapMode": 0
+          }
+        ]
+      }
+    ],
+    "redirect": "7881dd5c-5f66-4e7e-aa41-265fc3b06ea2@b4321",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "7881dd5c-5f66-4e7e-aa41-265fc3b06ea2@b4321"
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "9beb66a8-435e-420c-9b63-6b122baa33a2",
+  "files": [],
+  "subMetas": {
+    "c4597": {
+      "importer": "gltf-mesh",
+      "uuid": "9beb66a8-435e-420c-9b63-6b122baa33a2@c4597",
+      "displayName": "",
+      "id": "c4597",
+      "name": "mujia.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "017cf": {
+      "importer": "gltf-material",
+      "uuid": "9beb66a8-435e-420c-9b63-6b122baa33a2@017cf",
+      "displayName": "",
+      "id": "017cf",
+      "name": "beilou.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "75b8b": {
+      "importer": "gltf-scene",
+      "uuid": "9beb66a8-435e-420c-9b63-6b122baa33a2@75b8b",
+      "displayName": "",
+      "id": "75b8b",
+      "name": "mujia.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "9beb66a8-435e-420c-9b63-6b122baa33a2@75b8b",
+    "assetFinder": {
+      "meshes": [
+        "9beb66a8-435e-420c-9b63-6b122baa33a2@c4597"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "9beb66a8-435e-420c-9b63-6b122baa33a2@017cf"
+      ],
+      "scenes": [
+        "9beb66a8-435e-420c-9b63-6b122baa33a2@75b8b"
+      ]
+    }
+  }
+}

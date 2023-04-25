@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "c85a92d7-688c-4960-a68b-fca615d15045",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "2cd1c": {
+      "importer": "gltf-animation",
+      "uuid": "c85a92d7-688c-4960-a68b-fca615d15045@2cd1c",
+      "displayName": "",
+      "id": "2cd1c",
+      "name": "Attack.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 1.1666666269302368
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "25fa3": {
+      "importer": "gltf-scene",
+      "uuid": "c85a92d7-688c-4960-a68b-fca615d15045@25fa3",
+      "displayName": "",
+      "id": "25fa3",
+      "name": "xiaohongren@attack.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": false
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 1.1666666269302368,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Attack",
+            "from": 0,
+            "to": 1.1666666269302368,
+            "wrapMode": 0
+          }
+        ]
+      }
+    ],
+    "redirect": "c85a92d7-688c-4960-a68b-fca615d15045@25fa3",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "c85a92d7-688c-4960-a68b-fca615d15045@25fa3"
+      ]
+    }
+  }
+}

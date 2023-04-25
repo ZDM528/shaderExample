@@ -1,5 +1,5 @@
 {
-  "__version__": "1.0.6",
+  "__version__": "1.0.7",
   "modules": {
     "cache": {
       "base": {
@@ -106,12 +106,14 @@
       "base",
       "gfx-webgl",
       "gfx-webgl2",
+      "light-probe",
       "particle",
       "particle-2d",
       "primitive",
       "profiler",
       "skeletal-animation",
-      "ui"
+      "ui",
+      "websocket"
     ],
     "noDeprecatedFeatures": {
       "value": true,

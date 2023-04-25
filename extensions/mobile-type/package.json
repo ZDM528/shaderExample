@@ -1,0 +1,63 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "mobile-type",
+    "description": "i18n:mobile-type.description",
+    "main": "./dist/main.js",
+    "devDependencies": {},
+    "author": "hubluesky",
+    "editor": ">=3.3.0",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w"
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "MobileType",
+                "label": "Switch Portrait & Landscape",
+                "message": "PortraitAndLandscape"
+            },
+            {
+                "path": "MobileType",
+                "label": "IPhone6(1334x750)",
+                "message": "IPhone6"
+            },
+            {
+                "path": "MobileType",
+                "label": "IPhoneX(1624x750)",
+                "message": "IPhoneX"
+            },
+            {
+                "path": "MobileType",
+                "label": "IPad(2048x1536)",
+                "message": "IPad"
+            }
+        ],
+        "messages": {
+            "PortraitAndLandscape": {
+                "methods": [
+                    "PortraitAndLandscape"
+                ]
+            },
+            "IPhone6": {
+                "methods": [
+                    "IPhone6"
+                ]
+            },
+            "IPhoneX": {
+                "methods": [
+                    "IPhoneX"
+                ]
+            },
+            "IPad": {
+                "methods": [
+                    "IPad"
+                ]
+            }
+        },
+        "scene": {
+            "script": "./dist/scene.js"
+        }
+    }
+}

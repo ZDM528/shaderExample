@@ -1,0 +1,130 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "f3520f08-7a22-4375-a5a5-1987e1bf6219",
+  "files": [],
+  "subMetas": {
+    "20047": {
+      "importer": "gltf-material",
+      "uuid": "f3520f08-7a22-4375-a5a5-1987e1bf6219@20047",
+      "displayName": "",
+      "id": "20047",
+      "name": "gunshua01.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a5ea8": {
+      "importer": "gltf-mesh",
+      "uuid": "f3520f08-7a22-4375-a5a5-1987e1bf6219@a5ea8",
+      "displayName": "",
+      "id": "a5ea8",
+      "name": "gunshua02_Material0.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b99cc": {
+      "importer": "gltf-mesh",
+      "uuid": "f3520f08-7a22-4375-a5a5-1987e1bf6219@b99cc",
+      "displayName": "",
+      "id": "b99cc",
+      "name": "gunshua01.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "486e3": {
+      "importer": "gltf-material",
+      "uuid": "f3520f08-7a22-4375-a5a5-1987e1bf6219@486e3",
+      "displayName": "",
+      "id": "486e3",
+      "name": "gunshua02.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6eff1": {
+      "importer": "gltf-material",
+      "uuid": "f3520f08-7a22-4375-a5a5-1987e1bf6219@6eff1",
+      "displayName": "",
+      "id": "6eff1",
+      "name": "gunshua03.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "88b0c": {
+      "importer": "gltf-scene",
+      "uuid": "f3520f08-7a22-4375-a5a5-1987e1bf6219@88b0c",
+      "displayName": "",
+      "id": "88b0c",
+      "name": "gunshua.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": false
+    },
+    "redirect": "f3520f08-7a22-4375-a5a5-1987e1bf6219@88b0c",
+    "assetFinder": {
+      "meshes": [
+        "f3520f08-7a22-4375-a5a5-1987e1bf6219@a5ea8",
+        "f3520f08-7a22-4375-a5a5-1987e1bf6219@b99cc"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "f3520f08-7a22-4375-a5a5-1987e1bf6219@486e3",
+        "f3520f08-7a22-4375-a5a5-1987e1bf6219@6eff1",
+        "f3520f08-7a22-4375-a5a5-1987e1bf6219@20047"
+      ],
+      "scenes": [
+        "f3520f08-7a22-4375-a5a5-1987e1bf6219@88b0c"
+      ]
+    }
+  }
+}

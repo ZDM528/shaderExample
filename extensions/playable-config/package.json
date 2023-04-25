@@ -1,0 +1,82 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "playable-config",
+    "description": "i18n:playable-config.description",
+    "main": "./dist/main.js",
+    "devDependencies": {
+        "@types/node": "^16.0.1"
+    },
+    "author": "hubluesky",
+    "editor": ">=3.3.0",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w"
+    },
+    "contributions": {
+        "profile": {
+            "editor": {
+                "langConfigDevtool": {
+                    "label": "语言配置表转换工具"
+                },
+                "langConfigPath": {
+                    "default": "project://assets/resources/config/languages.json",
+                    "label": "语言配置表"
+                },
+                "gameConfigDevtool": {
+                    "label": "素材配置表转换工具"
+                },
+                "gameConfigPath": {
+                    "default": "project://assets/resources/config/gameConfig.json",
+                    "label": "素材配置表"
+                },
+                "gameInterfacePath": {
+                    "default": "project://assets/scripts/GameConfig.ts",
+                    "label": "素材配置声明文件"
+                }
+            }
+        },
+        "preferences": {
+            "properties": {
+                "langConfigDevtool": {
+                    "ui": "ui-file",
+                    "value": "E:/workspace",
+                    "attributes": {
+                        "value": "E:/workspace",
+                        "type": "directory"
+                    }
+                },
+                "langConfigPath": {
+                    "ui": "ui-file",
+                    "attributes": {
+                        "type": "file",
+                        "extensions": "json",
+                        "protocols": "project"
+                    }
+                },
+                "gameConfigDevtool": {
+                    "ui": "ui-file",
+                    "attributes": {
+                        "type": "directory"
+                    }
+                },
+                "gameConfigPath": {
+                    "ui": "ui-file",
+                    "attributes": {
+                        "type": "file",
+                        "extensions": "json",
+                        "protocols": "project"
+                    }
+                },
+                "gameInterfacePath": {
+                    "ui": "ui-file",
+                    "attributes": {
+                        "type": "file",
+                        "extensions": "ts",
+                        "protocols": "project"
+                    }
+                }
+            }
+        }
+    }
+}

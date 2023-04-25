@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.0",
+  "ver": "2.3.4",
   "importer": "fbx",
   "imported": true,
   "uuid": "9dc579dc-db00-456f-9a84-e4ccdbf82e4d",
@@ -192,7 +192,7 @@
       "uuid": "9dc579dc-db00-456f-9a84-e4ccdbf82e4d@ad95a",
       "displayName": "",
       "id": "ad95a",
-      "name": "E3D-Syana.FBX.prefab",
+      "name": "E3D-Syana.prefab",
       "ver": "1.0.12",
       "imported": true,
       "files": [

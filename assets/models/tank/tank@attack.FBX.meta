@@ -1,0 +1,115 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d2d6c759-5aed-4cff-9aee-0d0d1f208625",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "989ed": {
+      "importer": "gltf-animation",
+      "uuid": "d2d6c759-5aed-4cff-9aee-0d0d1f208625@989ed",
+      "displayName": "",
+      "id": "989ed",
+      "name": "attack.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.46666666865348816
+        },
+        "events": [
+          {
+            "frame": 0.1,
+            "func": "onAnimationEffectEvent",
+            "params": []
+          },
+          {
+            "frame": 0.16666666666666666,
+            "func": "",
+            "params": []
+          },
+          {
+            "frame": 0.16666666666666666,
+            "func": "onAnimationEffectEvent",
+            "params": []
+          },
+          {
+            "frame": 0.16666666666666666,
+            "func": "onAnimationDamageEvent",
+            "params": []
+          },
+          {
+            "frame": 0.36666666666666664,
+            "func": "onAnimationDamageEvent",
+            "params": []
+          }
+        ],
+        "speed": 2,
+        "embeddedPlayers": [],
+        "editorExtras": {
+          "embeddedPlayerGroups": []
+        }
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "0a381": {
+      "importer": "gltf-scene",
+      "uuid": "d2d6c759-5aed-4cff-9aee-0d0d1f208625@0a381",
+      "displayName": "",
+      "id": "0a381",
+      "name": "tank@attack.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "allowMeshDataAccess": true,
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 0.46666666865348816,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "attack",
+            "from": 0,
+            "to": 0.46666666865348816,
+            "wrapMode": 0,
+            "speed": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "d2d6c759-5aed-4cff-9aee-0d0d1f208625@0a381",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "d2d6c759-5aed-4cff-9aee-0d0d1f208625@0a381"
+      ]
+    }
+  }
+}

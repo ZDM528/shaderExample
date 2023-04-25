@@ -1,0 +1,83 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "afb9ae3c-6775-49de-b038-d56e181568fe",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "9292d": {
+      "importer": "gltf-animation",
+      "uuid": "afb9ae3c-6775-49de-b038-d56e181568fe@9292d",
+      "displayName": "",
+      "id": "9292d",
+      "name": "Run.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.6666666865348816
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "2a084": {
+      "importer": "gltf-scene",
+      "uuid": "afb9ae3c-6775-49de-b038-d56e181568fe@2a084",
+      "displayName": "",
+      "id": "2a084",
+      "name": "model_dazhuang@run.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "allowMeshDataAccess": true,
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 0.6666666865348816,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Run",
+            "from": 0,
+            "to": 0.6666666865348816,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "afb9ae3c-6775-49de-b038-d56e181568fe@2a084",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "afb9ae3c-6775-49de-b038-d56e181568fe@2a084"
+      ]
+    }
+  }
+}

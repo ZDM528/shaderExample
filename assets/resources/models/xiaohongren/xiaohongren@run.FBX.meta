@@ -1,0 +1,81 @@
+{
+  "ver": "2.3.4",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "bdd85546-73c5-45e4-a935-c4a308742f12",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "9292d": {
+      "importer": "gltf-animation",
+      "uuid": "bdd85546-73c5-45e4-a935-c4a308742f12@9292d",
+      "displayName": "",
+      "id": "9292d",
+      "name": "Run.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.5333333611488342
+        },
+        "events": []
+      },
+      "ver": "1.0.16",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "a0cb2": {
+      "importer": "gltf-scene",
+      "uuid": "bdd85546-73c5-45e4-a935-c4a308742f12@a0cb2",
+      "displayName": "",
+      "id": "a0cb2",
+      "name": "xiaohongren@run.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 0.5333333611488342,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Run",
+            "from": 0,
+            "to": 0.5333333611488342,
+            "wrapMode": 2
+          }
+        ]
+      }
+    ],
+    "redirect": "bdd85546-73c5-45e4-a935-c4a308742f12@a0cb2",
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "bdd85546-73c5-45e4-a935-c4a308742f12@a0cb2"
+      ]
+    }
+  }
+}

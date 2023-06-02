@@ -16,6 +16,14 @@
     {
       "name": "canvas_19",
       "value": 524288
+    },
+    {
+      "name": "sceneDepth",
+      "value": 1
+    },
+    {
+      "name": "sceenFog",
+      "value": 2
     }
   ]
 }

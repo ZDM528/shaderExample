@@ -176,7 +176,7 @@ CCProgram surface-vertex %{
       float offsetScale = dissloveParam.y;
       float offsetThreshold = dissloveParam.z;
       position = position + normalize(In.normal) * clamp(( dissloveThreshold - offsetThreshold ) , 0.0 , 1.0 )  * offsetScale; // 膨胀效果
-      // position = position + dissolveDirection.xyz * clamp(( dissloveThreshold - offsetThreshold), 0.0,1.0 )  * offsetScale  ; // 偏移效果
+      // position = position + dissolveDirection.xyz * clamp(( dissloveThreshold - offsetThreshold), 0.0,1.0 )  * offsetScale; // 偏移效果
       // position = position + dissolveDirection.xyz * clamp(( dissloveThreshold - offsetThreshold), 0.0,1.0 )  * offsetScale + normalize(In.normal) * clamp(( dissloveThreshold - offsetThreshold ) , 0.0 , 1.0 )  * offsetScale ; // 偏移膨胀效果
 
       return position;
@@ -263,7 +263,7 @@ CCProgram surface-fragment %{
   }
 
   #define CC_SURFACES_FRAGMENT_ALPHA_CLIP_ONLY
-  void SurfacesFragmentAlphaClipOnly()  // 处理阴影透明度
+  void SurfacesFragmentAlphaClipOnly() 
   { 
     #if USE_ALPHA_TEST
       float alpha = albedo.ALPHA_TEST_CHANNEL;
@@ -277,7 +277,7 @@ CCProgram surface-fragment %{
       if (alpha < albedoScaleAndCutoff.w) discard;
     #endif
 
-    #if USE_NOSIDE_MAP
+    #if USE_NOSIDE_MAP   // 处理阴影透明度
         vec4 noiseColor = texture( noiseMap , v_uv ); 
         if( noiseColor.r < dissloveThreshold ){
           discard;

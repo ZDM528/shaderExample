@@ -1,0 +1,158 @@
+// Effect Syntax Guide: https://docs.cocos.com/creator/manual/zh/shader/index.html
+
+CCEffect %{
+  techniques:
+  - name: opaque
+    passes:
+    - vert: unlit-vs:vert # builtin header
+      frag: unlit-fs:frag
+      properties: &props
+        mainTexture:    { value: white }
+        mainColor:      { value: [1, 1, 1, 1], editor: { type: color } }
+        depthTexture: {value: white }
+        fogStart:     {value: 0.0}
+        fogEnd:       {value: 1.0}
+        fogDensity:   {value: 1.0}
+        fogColor:     {value: [1, 1, 1, 1], linear: true, editor: {type: color }}
+        fogAtten:     {value: 1.0}
+  - name: transparent
+    passes:
+    - vert: unlit-vs:vert # builtin header
+      frag: unlit-fs:frag
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: src_alpha
+          blendDst: one_minus_src_alpha
+          blendSrcAlpha: src_alpha
+          blendDstAlpha: one_minus_src_alpha
+      properties: *props
+}%
+
+CCProgram unlit-vs %{
+
+
+  precision highp float;
+  #include <legacy/input-standard>
+  #include <builtin/uniforms/cc-global>
+  #include <legacy/local-batch>
+  #include <legacy/input-standard>
+  #include <legacy/fog-vs>
+  #include <legacy/shadow-map-vs>
+
+  in vec4 a_color;
+  #if HAS_SECOND_UV
+    in vec2 a_texCoord1;
+  #endif
+
+  out vec3 v_position;
+  out vec3 v_normal;
+  out vec3 v_tangent;
+  out vec3 v_bitangent;
+  out vec2 v_uv;
+  out vec2 v_uv1;
+  out vec4 v_color;
+
+
+
+  vec4 vert () {
+    StandardVertInput In;
+    CCVertInput(In);
+
+    mat4 matWorld, matWorldIT;
+    CCGetWorldMatrixFull(matWorld, matWorldIT);
+
+    vec4 pos = matWorld * In.position;
+
+    v_position = pos.xyz;
+    v_normal = normalize((matWorldIT * vec4(In.normal, 0.0)).xyz);
+    v_tangent = normalize((matWorld * vec4(In.tangent.xyz, 0.0)).xyz);
+    v_bitangent = cross(v_normal, v_tangent) * In.tangent.w; // note the cross order
+
+    v_uv = a_texCoord;
+    #if HAS_SECOND_UV
+      v_uv1 = a_texCoord1;
+    #endif
+    v_color = a_color;
+
+    CC_TRANSFER_FOG(pos);
+    CC_TRANSFER_SHADOW(pos);
+
+    // return cc_matProj * (cc_matView * matWorld) * In.position;
+    return vec4(sign(In.position.x),sign(In.position.y),0.0,1.0);
+} 
+}%
+
+CCProgram unlit-fs %{
+  precision highp float;
+  #include <legacy/output>
+  #include <legacy/fog-fs>
+
+  in vec2 v_uv;
+  in vec3 v_position;
+
+  uniform sampler2D mainTexture;
+  uniform sampler2D depthTexture;
+
+
+  uniform Constant {
+    vec4 mainColor;
+    vec4 fogColor;
+    mat4 cameraProjInv;
+    vec4 cameraWorldPos;
+    float fogStart;  
+    float fogEnd;
+    float fogDensity;
+    float fogAtten;
+  };
+
+  
+  float LinearEyeDepth(float depth){
+    float near = cc_nearFar.x;
+    float far = cc_nearFar.y;
+    float zc0 = ( near-far )/near;
+    float zc1 = far/near;
+    vec4 ZbufferParams = vec4(zc0,zc1,zc0/far,zc1/far);
+    float linearDepth = 1.0/(ZbufferParams.z * depth +ZbufferParams.w );
+    return linearDepth;
+  }
+
+  // float LinearFog1(vec4 pos, vec3 cameraPos, float fogStart, float fogEnd) {
+  //   vec4 wPos = pos;
+  //   float cam_dis = distance(cameraPos, wPos.xyz);
+  //   return clamp((fogEnd - cam_dis) / (fogEnd - fogStart), 0., 1.);
+  // }
+
+  float ExpFog1(vec4 pos, vec3 cameraPos, float fogStart, float fogDensity, float fogAtten) {
+    vec4 wPos = pos;
+    float cam_dis = max(distance(cameraPos, wPos.xyz) - fogStart, 0.0) / fogAtten * 4.;
+    float f = exp(-cam_dis * fogDensity);
+    return f;
+  }
+
+  // float ExpSquaredFog1(vec4 pos, vec3 cameraPos, float fogStart, float fogDensity, float fogAtten) {
+  //   vec4 wPos = pos;
+  //   float cam_dis = max(distance(cameraPos, wPos.xyz) - fogStart, 0.0) / fogAtten * 4.;
+  //   float f = exp(-cam_dis * cam_dis * fogDensity * fogDensity);
+  //   return f;
+  // }
+
+  vec4 frag () {
+      vec4 col = mainColor * texture(mainTexture, v_uv);
+      float depth = LinearEyeDepth( texture(depthTexture,v_uv).r );
+      vec4 ndcPos;
+      ndcPos.x = 2.0 * v_uv.x -1.0;
+      ndcPos.y = 2.0 * v_uv.y -1.0;
+      ndcPos.z = 2.0 * depth -1.0;
+      ndcPos.w = 1.0 ;
+      
+      vec4 worldPos = cameraProjInv * ndcPos;
+      worldPos /= worldPos.w;
+
+      float fogFactor = ExpFog1(worldPos,cameraWorldPos.xyz,fogStart,fogDensity,fogAtten);
+      col.rgb = mix(fogColor.rgb,col.rgb,fogFactor);
+      col.a = 1.0;
+
+     return CCFragOutput(col);
+  }
+}%

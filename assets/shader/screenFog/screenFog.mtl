@@ -1,0 +1,44 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "bb968906-8509-4946-837a-4e8311576656",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "mainTexture": {
+        "__uuid__": "62e0614e-efd9-4f77-9a27-ffbc6f8bc40b",
+        "__expectedType__": "cc.RenderTexture"
+      },
+      "fogStart": 1,
+      "fogEnd": 250,
+      "fogDensity": 0.001,
+      "fogColor": {
+        "__type__": "cc.Color",
+        "r": 255,
+        "g": 197,
+        "b": 206,
+        "a": 255
+      },
+      "fogAtten": 150
+    }
+  ]
+}

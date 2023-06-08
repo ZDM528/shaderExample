@@ -4,14 +4,36 @@
   "_objFlags": 0,
   "_native": "",
   "_effectAsset": {
-    "__uuid__": "bb968906-8509-4946-837a-4e8311576656",
+    "__uuid__": "b3113216-46dc-483c-a24e-e68d82e5f546",
     "__expectedType__": "cc.EffectAsset"
   },
   "_techIdx": 0,
   "_defines": [
+    {
+      "USE_ALBEDO_MAP": true
+    },
+    {},
     {}
   ],
   "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    },
     {
       "rasterizerState": {},
       "depthStencilState": {},
@@ -39,6 +61,8 @@
         "a": 255
       },
       "fogAtten": 150
-    }
+    },
+    {},
+    {}
   ]
 }

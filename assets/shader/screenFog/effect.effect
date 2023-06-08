@@ -70,6 +70,9 @@ CCProgram unlit-vs %{
     v_bitangent = cross(v_normal, v_tangent) * In.tangent.w; // note the cross order
 
     v_uv = a_texCoord;
+    #if SWIPT_UVY
+      v_uv.y = 1.0- v_uv.y;
+    #endif
     #if HAS_SECOND_UV
       v_uv1 = a_texCoord1;
     #endif
@@ -141,6 +144,7 @@ CCProgram unlit-fs %{
       vec4 col = mainColor * texture(mainTexture, v_uv);
       float depth = LinearEyeDepth( texture(depthTexture,v_uv).r );
       vec4 ndcPos;
+
       ndcPos.x = 2.0 * v_uv.x -1.0;
       ndcPos.y = 2.0 * v_uv.y -1.0;
       ndcPos.z = 2.0 * depth -1.0;

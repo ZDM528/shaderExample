@@ -24,6 +24,10 @@
     {
       "name": "sceenFog",
       "value": 2
+    },
+    {
+      "name": "borderShader",
+      "value": 4
     }
   ]
 }

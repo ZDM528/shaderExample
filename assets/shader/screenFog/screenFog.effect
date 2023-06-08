@@ -101,7 +101,7 @@ CCProgram surface-vertex %{
 
   #define CC_SURFACES_VERTEX_MODIFY_CLIP_POS
   vec4 SurfacesVertexModifyClipPos(in SurfacesStandardVertexIntermediate In){
-     In.clipPos = vec4(sign(In.worldPos.x),sign(In.worldPos.y),0.0,1.0);
+     In.clipPos = vec4(sign(In.position.x),sign(In.position.y),0.0,1.0);
     return In.clipPos;
   }
   
@@ -165,25 +165,26 @@ CCProgram surface-fragment %{
   vec4 SurfacesFragmentModifyBaseColorAndTransparency()
   {
     vec4 baseColor = albedo;
-    
+
     #if USE_ALBEDO_MAP
-      vec4 texColor = texture(albedoMap, ALBEDO_UV);
+      vec2 uv=vec2(ALBEDO_UV.x,1.0-ALBEDO_UV.y);
+      vec4 texColor = texture(albedoMap, uv);
       texColor.rgb = SRGBToLinear(texColor.rgb);
       baseColor *= texColor;
-      float depth = LinearEyeDepth( texture(depthTexture,ALBEDO_UV).r );
+      // float depth = LinearEyeDepth( texture(depthTexture,uv).r );
 
-      vec4 ndcPos;
-      ndcPos.x = 2.0 * ALBEDO_UV.x -1.0;
-      ndcPos.y = 2.0 * ALBEDO_UV.y -1.0;
-      ndcPos.z = 2.0 * depth -1.0;
-      ndcPos.w = 1.0 ;
+      // vec4 ndcPos;
+      // ndcPos.x = 2.0 * uv.x -1.0;
+      // ndcPos.y = 2.0 * uv.y -1.0;
+      // ndcPos.z = 2.0 * depth -1.0;
+      // ndcPos.w = 1.0 ;
       
-      vec4 worldPos = cameraProjInv * ndcPos;
-      worldPos /= worldPos.w;
+      // vec4 worldPos = cameraProjInv * ndcPos;
+      // worldPos /= worldPos.w;
 
-      float fogFactor = ExpFog1(worldPos,cameraWorldPos.xyz,fogStart,fogDensity,fogAtten);
-      baseColor.rgb = mix(fogColor.rgb,baseColor.rgb,fogFactor);
-      baseColor.a=1.0;
+      // float fogFactor = ExpFog1(worldPos,cameraWorldPos.xyz,fogStart,fogDensity,fogAtten);
+      // baseColor.rgb = mix(fogColor.rgb,baseColor.rgb,fogFactor);
+      // baseColor.a=1.0;
 
     #endif
 

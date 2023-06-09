@@ -1,6 +1,6 @@
-import { Component, Enum, game, Node, Quat, Vec3, _decorator } from 'cc';
-import { EDITOR_WITHOUT_RUN } from '../extenstion/CocosExtenstion';
+import { Component, Enum, Node, Quat, Vec3, _decorator } from 'cc';
 import Spherical from '../math/Spherical';
+import { EDITOR_WITHOUT_RUN } from '../extenstion/CocosExtenstion';
 const { ccclass, property, playOnFocus, executeInEditMode } = _decorator;
 
 export enum OribitFollowMode {
@@ -12,8 +12,8 @@ export enum OribitFollowMode {
 
 const vec3Temp1 = new Vec3();
 const vec3Temp2 = new Vec3();
-const vec3Temp3 = new Vec3();
 const quatTemp1 = new Quat();
+const tempSpherical = new Spherical();
 
 @ccclass('OrbitFollowTarget')
 @executeInEditMode
@@ -23,89 +23,101 @@ export class OrbitFollowTarget extends Component {
     private preview: boolean = false;
 
     @property(Node)
-    public target: Node = null;
-    @property({ type: Enum(OribitFollowMode) })
+    public target: Node | Vec3 = null;
+
+    @property({ type: Enum(OribitFollowMode), tooltip: "跟随模式" })
     public followMode: OribitFollowMode = OribitFollowMode.LookTarget;
-    @property({ slide: true, min: 0, max: 90, tooltip: "与Y轴之间的夹角" })
-    public get phi(): number { return this.spherical.phi * Math.RADIAN_TO_DEGREE; }
-    public set phi(value: number) {
-        this.spherical.phi = value * Math.DEGREE_TO_RADIAN;
-        this.spherical.makeSafe();
-    }
-    @property({
-        slide: true, min: -360, max: +360, tooltip: "基于XZ平面的Y轴旋转", visible: function (this: OrbitFollowTarget) {
-            return this.followMode == OribitFollowMode.LookTarget;
-        }
-    })
-    public get theta(): number { return this.spherical.theta * Math.RADIAN_TO_DEGREE; }
-    public set theta(value: number) {
-        this.spherical.theta = value * Math.DEGREE_TO_RADIAN;
-    }
+
+    @property
+    private _polarAngle: number = Math.QUARTER_PI;
+    @property({ slide: true, min: 0, max: 90, tooltip: "极角，与Y轴之间的夹角" })
+    public get polarAngle(): number { return this._polarAngle * Math.RADIAN_TO_DEGREE; }
+    public set polarAngle(value: number) { this._polarAngle = Spherical.makeSafePhi(value * Math.DEGREE_TO_RADIAN); }
+
+    @property
+    private _azimuthAngle: number = 0;
+    @property({ slide: true, min: -180, max: +180, tooltip: "方位角度，基于XZ平面的Y轴旋转" })
+    public get azimuthAngle(): number { return this._azimuthAngle * Math.RADIAN_TO_DEGREE; }
+    public set azimuthAngle(value: number) { this._azimuthAngle = value * Math.DEGREE_TO_RADIAN; }
+
+    @property
+    private _radialDistance: number = 15;
     @property({ min: 0, tooltip: "球面半径，可以理解为与目标的距离" })
-    public get radius(): number { return this.spherical.radius; }
-    public set radius(value: number) {
-        this.spherical.radius = value;
-    }
+    public get radialDistance(): number { return this._radialDistance; }
+    public set radialDistance(value: number) { this._radialDistance = value; }
+
     @property({ tooltip: "相机视角的偏移" })
     public readonly viewOffset = new Vec3();
 
-    @property
-    public smoothPositionTime: number = 0.2;
-    @property
-    public smoothAngularTime: number = 0;
+    @property({ slide: true, min: 0.001, max: 1, step: 0.001, tooltip: "阻尼系数，相机平滑转动的插件数据，数值越小，转动越慢，数值越大，转动越快。" })
+    public dampingFactor: number = 0.1;
 
-    @property({ visible: false })
-    private readonly spherical = new Spherical(5, 30 * Math.DEGREE_TO_RADIAN, 0);
-    private readonly currentVelocity = new Vec3();
-    private readonly angularVelocity = { current: 0 };
+    /** 相机当前看向目标的坐标。 */
+    public get lookatPosition(): Readonly<Vec3> { return this.lastPosition; }
+
+    private readonly lastPosition = new Vec3();
+    private readonly lastSpherical = new Spherical();
+
+    onEnable(): void {
+        this.computeLookatPosition();
+    }
 
     lateUpdate(deltaTime: number): void {
         if (EDITOR_WITHOUT_RUN && !this.preview) return;
-        if (this.target == null) return;
-        this.smoothToTarget(this.smoothPositionTime, this.smoothAngularTime, deltaTime);
+
+        if (this.target == null || this.dampingFactor <= 0) return;
+        this.smoothToTarget(this.dampingFactor);
+    }
+
+    public computeLookatPosition(): void {
+        const euler = this.node.eulerAngles;
+        this.lastSpherical.phi = (euler.x * Math.DEGREE_TO_RADIAN + Math.HALF_PI) % Math.TWO_PI;
+        this.lastSpherical.theta = euler.y * Math.DEGREE_TO_RADIAN;
+
+        const rotation = Quat.fromEuler(quatTemp1, euler.x, euler.y, 0);
+        const targetOffset = Vec3.transformQuat(vec3Temp2, this.viewOffset, rotation);
+
+        const direction = Vec3.transformQuat(vec3Temp1, Vec3.FORWARD, rotation);
+
+        const position = direction.multiplyScalar(this.radialDistance);
+        const targetPosition = position.add(this.node.position).subtract(targetOffset);
+        this.lastPosition.set(targetPosition);
     }
 
     public forceSettle(): void {
         if (this.target == null) return;
-        this.smoothToTarget(0.001, 0.001);
+        this.smoothToTarget(1);
     }
 
-    private smoothToTarget(smoothPositionTime: number, smoothAngularTime: number, deltaTime = game.deltaTime): void {
+    public getTargetPosition(): Readonly<Vec3> {
+        return this.target instanceof Node ? this.target.worldPosition : this.target as Vec3;
+    }
+
+    private smoothToTarget(dampingFactor: number): void {
+        let azimuthAngle = this._azimuthAngle;
         switch (this.followMode) {
             case OribitFollowMode.LockForward: {
-                let euler = Quat.toEuler(vec3Temp1, this.target.worldRotation);
-                this.theta = euler.y + 180;
+                if (this.target instanceof Node) {
+                    let euler = Quat.toEuler(vec3Temp1, this.target.worldRotation);
+                    azimuthAngle = (azimuthAngle + (euler.y + 180) * Math.DEGREE_TO_RADIAN) % Math.TWO_PI;
+                }
             } break;
         }
 
-        let targetPosition = vec3Temp3.set(this.target.worldPosition);
-        let position = this.spherical.toCoords(vec3Temp1);
-        position = Vec3.add(vec3Temp1, position, targetPosition);
+        const spherical = tempSpherical;
 
-        if (this.viewOffset.x != 0) {
-            let viewOffsetX = Vec3.transformQuat(vec3Temp2, vec3Temp2.set(this.viewOffset.x, 0, 0), this.node.rotation);
-            targetPosition = targetPosition.add(viewOffsetX);
-            position.add(viewOffsetX);
-        }
-        if (this.viewOffset.y != 0) {
-            targetPosition.y += this.viewOffset.y;
-            position.y += this.viewOffset.y;
-        }
-        if (this.viewOffset.z != 0) {
-            let direction = Vec3.subtract(vec3Temp2, this.node.position, this.target.worldPosition);
-            direction.y = 0;
-            let length = direction.length();
-            if (length > 0) {
-                direction.multiplyScalar(this.viewOffset.z / length);
-                targetPosition = targetPosition.add(direction);
-                position.add(direction);
-            }
-        }
+        spherical.theta = this.lastSpherical.theta = Math.lerpRadian(this.lastSpherical.theta, azimuthAngle, dampingFactor);
+        spherical.phi = this.lastSpherical.phi = Math.lerp(this.lastSpherical.phi, this._polarAngle, dampingFactor);
+        spherical.radius = this.lastSpherical.radius = Math.lerp(this.lastSpherical.radius, this.radialDistance, dampingFactor);
 
-        this.node.position = smoothPositionTime == 0 ? position : this.node.position.smoothDamp(position, this.currentVelocity, smoothPositionTime, Infinity, deltaTime);
+        this.node.rotation = Quat.fromEuler(quatTemp1, (spherical.phi - Math.HALF_PI) * Math.RADIAN_TO_DEGREE, spherical.theta * Math.RADIAN_TO_DEGREE, 0);
 
-        let direction = Vec3.subtract(vec3Temp2, position, targetPosition).normalize();
-        let rotation = Quat.fromViewUp(quatTemp1, direction, Vec3.UP);
-        this.node.rotation = smoothAngularTime == 0 ? rotation : this.node.rotation.smoothDamp(rotation, this.angularVelocity, smoothAngularTime, Infinity, deltaTime);
+        let targetPosition = this.getTargetPosition();
+        targetPosition = this.lastPosition.lerp(targetPosition, dampingFactor);
+        const targetOffset = Vec3.transformQuat(vec3Temp2, this.viewOffset, this.node.rotation);
+        targetPosition = targetOffset.add(targetPosition);
+
+        let position = spherical.toCoords(vec3Temp1);
+        this.node.position = position.add(targetPosition);
     }
 }

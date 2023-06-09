@@ -159,6 +159,22 @@ declare global {
         smoothDampRadian(current: number, target: number, velocity: { current: number }, smoothTime: number, maxSpeed?: number, deltaTime?: number): number;
 
         /**
+         * Lerp but makes sure the values interpolate correctly when they wrap around 360 degrees.
+         * @param current start angle
+         * @param target end angle
+         * @param t progress, must be 0 ~ 1
+         */
+        lerpDegree(current: number, target: number, t: number): number;
+
+        /**
+         * Lerp but makes sure the values interpolate correctly when they wrap around 360 degrees.
+         * @param current start angle
+         * @param target end angle
+         * @param t progress, must be 0 ~ 1
+         */
+        lerpRadian(current: number, target: number, t: number): number;
+
+        /**
          * Loops the value t, so that it is never larger than length and never smaller than 0.
          * @param t 
          * @param length 
@@ -206,8 +222,7 @@ declare global {
         last: T | null;
         at(index: number): T;
         isEmpty(): boolean;
-        remove(item: T): T;
-        remove(item: T): T;
+        remove(item: T): boolean;
         removeAt(index: number): T;
         contains(item: T): boolean;
         clear(): void;
@@ -215,6 +230,7 @@ declare global {
     interface ReadonlyArray<T> {
         readonly first: T | null;
         readonly last: T | null;
+        at(index: number): T;
         isEmpty(): boolean;
         contains(item: T): boolean;
     }
@@ -314,10 +330,14 @@ declare global {
 
     type AnyFunction = (...args: any[]) => any;
     type AnyConstructor<T = any> = new (...args: any[]) => T;
+    type AnyAbstractConstructor<T = any> = abstract new (...args: any[]) => T;
     type ObjectExclude<T, E> = { [k in keyof T]: T[k] extends E ? never : k }[keyof T];
     type ObjectInclude<T, E> = { [k in keyof T]: T[k] extends E ? k : never }[keyof T];
     type ObjectProperties<T> = ObjectExclude<T, Function>;
     type ObjectFunctions<T> = ObjectInclude<T, Function>;
+
+    type Enumerate<N extends number, Acc extends number[] = []> = Acc['length'] extends N ? Acc[number] : Enumerate<N, [...Acc, Acc['length']]>;
+    type UintRange<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>;
 }
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Math
@@ -483,6 +503,18 @@ Math.smoothDampRadian = (current: number, target: number, velocity: { current: n
     return Math.smoothDamp(current, target, velocity, smoothTime, maxSpeed, deltaTime);
 }
 
+Math.lerpDegree = (current: number, target: number, t: number): number => {
+    let delta = Math.repeat(target - current, 360);
+    if (delta > 180) delta -= 360;
+    return current + delta * t;
+}
+
+Math.lerpRadian = (current: number, target: number, t: number): number => {
+    let delta = Math.repeat(target - current, Math.TWO_PI);
+    if (delta > Math.PI) delta -= Math.TWO_PI;
+    return current + delta * t;
+}
+
 Math.repeat = (t: number, length: number): number => {
     return Math.clamp(t - Math.floor(t / length) * length, 0.0, length);
 }
@@ -550,10 +582,11 @@ Array.prototype.isEmpty = function <T>(this: T[]): boolean {
     return this.length == 0;
 }
 
-Array.prototype.remove = function <T>(this: T[], item: T): T {
+Array.prototype.remove = function <T>(this: T[], item: T): boolean {
     let index = this.indexOf(item);
-    if (index == -1) return null;
-    return this.splice(index, 1)[0];
+    if (index == -1) return false;
+    this.splice(index, 1);
+    return true;
 }
 
 Array.prototype.removeAt = function <T>(this: T[], index: number): T {

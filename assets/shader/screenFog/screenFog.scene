@@ -380,7 +380,7 @@
     "_shutter": 7,
     "_iso": 0,
     "_screenScale": 1,
-    "_visibility": 4,
+    "_visibility": 2,
     "_targetTexture": null,
     "_cameraType": -1,
     "_trackingType": 0,
@@ -11404,7 +11404,7 @@
       "__id__": 1
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 1166
@@ -11535,7 +11535,7 @@
       "__id__": 1
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1171

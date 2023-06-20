@@ -28,6 +28,10 @@
     {
       "name": "borderShader",
       "value": 4
+    },
+    {
+      "name": "waterDepth",
+      "value": 8
     }
   ]
 }

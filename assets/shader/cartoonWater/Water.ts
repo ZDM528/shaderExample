@@ -1,8 +1,10 @@
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, Component } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('Water')
 export class Water extends Component {
+
+    
     start() {
 
     }

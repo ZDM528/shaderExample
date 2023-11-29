@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.12",
   "importer": "gltf",
   "imported": true,
   "uuid": "715f29ae-6ee2-4be5-946c-47ca5a6d31de",
@@ -14,9 +14,10 @@
       "id": "10816",
       "name": "Object_151.mesh",
       "userData": {
-        "gltfIndex": 120
+        "gltfIndex": 120,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -31,9 +32,10 @@
       "id": "14571",
       "name": "Object_116.mesh",
       "userData": {
-        "gltfIndex": 109
+        "gltfIndex": 109,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -48,9 +50,10 @@
       "id": "18861",
       "name": "Object_50.mesh",
       "userData": {
-        "gltfIndex": 97
+        "gltfIndex": 97,
+        "triangleCount": 1184
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -65,9 +68,10 @@
       "id": "36389",
       "name": "Object_34.mesh",
       "userData": {
-        "gltfIndex": 90
+        "gltfIndex": 90,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -82,9 +86,10 @@
       "id": "41300",
       "name": "Object_137.mesh",
       "userData": {
-        "gltfIndex": 130
+        "gltfIndex": 130,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -99,9 +104,10 @@
       "id": "43063",
       "name": "Object_19.mesh",
       "userData": {
-        "gltfIndex": 75
+        "gltfIndex": 75,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -116,9 +122,10 @@
       "id": "51363",
       "name": "Object_97.mesh",
       "userData": {
-        "gltfIndex": 46
+        "gltfIndex": 46,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -133,9 +140,10 @@
       "id": "53772",
       "name": "Object_121.mesh",
       "userData": {
-        "gltfIndex": 127
+        "gltfIndex": 127,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -150,9 +158,10 @@
       "id": "56585",
       "name": "Object_64.mesh",
       "userData": {
-        "gltfIndex": 13
+        "gltfIndex": 13,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -167,9 +176,10 @@
       "id": "59764",
       "name": "Object_158.mesh",
       "userData": {
-        "gltfIndex": 136
+        "gltfIndex": 136,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -184,9 +194,10 @@
       "id": "60293",
       "name": "Object_115.mesh",
       "userData": {
-        "gltfIndex": 125
+        "gltfIndex": 125,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -201,9 +212,10 @@
       "id": "64423",
       "name": "Object_94.mesh",
       "userData": {
-        "gltfIndex": 44
+        "gltfIndex": 44,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -218,9 +230,10 @@
       "id": "86733",
       "name": "Object_31.mesh",
       "userData": {
-        "gltfIndex": 87
+        "gltfIndex": 87,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -235,9 +248,10 @@
       "id": "db32a",
       "name": "Object_1.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 2128
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -252,9 +266,10 @@
       "id": "ba1aa",
       "name": "Object_2.mesh",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "triangleCount": 4728
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -269,9 +284,10 @@
       "id": "f5a6c",
       "name": "Object_53.mesh",
       "userData": {
-        "gltfIndex": 2
+        "gltfIndex": 2,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -286,9 +302,10 @@
       "id": "d5dd0",
       "name": "Object_54.mesh",
       "userData": {
-        "gltfIndex": 3
+        "gltfIndex": 3,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -303,9 +320,10 @@
       "id": "5e5e6",
       "name": "Object_55.mesh",
       "userData": {
-        "gltfIndex": 4
+        "gltfIndex": 4,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -320,9 +338,10 @@
       "id": "c0af5",
       "name": "Object_56.mesh",
       "userData": {
-        "gltfIndex": 5
+        "gltfIndex": 5,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -337,9 +356,10 @@
       "id": "e7275",
       "name": "Object_57.mesh",
       "userData": {
-        "gltfIndex": 6
+        "gltfIndex": 6,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -354,9 +374,10 @@
       "id": "4eca0",
       "name": "Object_58.mesh",
       "userData": {
-        "gltfIndex": 7
+        "gltfIndex": 7,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -371,9 +392,10 @@
       "id": "62d03",
       "name": "Object_59.mesh",
       "userData": {
-        "gltfIndex": 8
+        "gltfIndex": 8,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -388,9 +410,10 @@
       "id": "2c73e",
       "name": "Object_60.mesh",
       "userData": {
-        "gltfIndex": 9
+        "gltfIndex": 9,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -405,9 +428,10 @@
       "id": "7bc74",
       "name": "Object_61.mesh",
       "userData": {
-        "gltfIndex": 10
+        "gltfIndex": 10,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -422,9 +446,10 @@
       "id": "bf125",
       "name": "Object_62.mesh",
       "userData": {
-        "gltfIndex": 11
+        "gltfIndex": 11,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -439,9 +464,10 @@
       "id": "791b2",
       "name": "Object_63.mesh",
       "userData": {
-        "gltfIndex": 12
+        "gltfIndex": 12,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -456,9 +482,10 @@
       "id": "ae873",
       "name": "Object_65.mesh",
       "userData": {
-        "gltfIndex": 14
+        "gltfIndex": 14,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -473,9 +500,10 @@
       "id": "5a425",
       "name": "Object_66.mesh",
       "userData": {
-        "gltfIndex": 15
+        "gltfIndex": 15,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -490,9 +518,10 @@
       "id": "66f0b",
       "name": "Object_67.mesh",
       "userData": {
-        "gltfIndex": 16
+        "gltfIndex": 16,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -507,9 +536,10 @@
       "id": "24b7d",
       "name": "Object_68.mesh",
       "userData": {
-        "gltfIndex": 17
+        "gltfIndex": 17,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -524,9 +554,10 @@
       "id": "3ee7f",
       "name": "Object_69.mesh",
       "userData": {
-        "gltfIndex": 18
+        "gltfIndex": 18,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -541,9 +572,10 @@
       "id": "582d1",
       "name": "Object_70.mesh",
       "userData": {
-        "gltfIndex": 19
+        "gltfIndex": 19,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -558,9 +590,10 @@
       "id": "d8c03",
       "name": "Object_71.mesh",
       "userData": {
-        "gltfIndex": 20
+        "gltfIndex": 20,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -575,9 +608,10 @@
       "id": "3c0cf",
       "name": "Object_72.mesh",
       "userData": {
-        "gltfIndex": 21
+        "gltfIndex": 21,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -592,9 +626,10 @@
       "id": "5623f",
       "name": "Object_96.mesh",
       "userData": {
-        "gltfIndex": 22
+        "gltfIndex": 22,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -609,9 +644,10 @@
       "id": "ca207",
       "name": "Object_73.mesh",
       "userData": {
-        "gltfIndex": 23
+        "gltfIndex": 23,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -626,9 +662,10 @@
       "id": "36c12",
       "name": "Object_74.mesh",
       "userData": {
-        "gltfIndex": 24
+        "gltfIndex": 24,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -643,9 +680,10 @@
       "id": "b702b",
       "name": "Object_75.mesh",
       "userData": {
-        "gltfIndex": 25
+        "gltfIndex": 25,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -660,9 +698,10 @@
       "id": "9dab9",
       "name": "Object_76.mesh",
       "userData": {
-        "gltfIndex": 26
+        "gltfIndex": 26,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -677,9 +716,10 @@
       "id": "e4b41",
       "name": "Object_77.mesh",
       "userData": {
-        "gltfIndex": 27
+        "gltfIndex": 27,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -694,9 +734,10 @@
       "id": "280f0",
       "name": "Object_92.mesh",
       "userData": {
-        "gltfIndex": 28
+        "gltfIndex": 28,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -711,9 +752,10 @@
       "id": "6eafb",
       "name": "Object_78.mesh",
       "userData": {
-        "gltfIndex": 29
+        "gltfIndex": 29,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -728,9 +770,10 @@
       "id": "a221c",
       "name": "Object_79.mesh",
       "userData": {
-        "gltfIndex": 30
+        "gltfIndex": 30,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -745,9 +788,10 @@
       "id": "bcc96",
       "name": "Object_80.mesh",
       "userData": {
-        "gltfIndex": 31
+        "gltfIndex": 31,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -762,9 +806,10 @@
       "id": "6dcbb",
       "name": "Object_81.mesh",
       "userData": {
-        "gltfIndex": 32
+        "gltfIndex": 32,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -779,9 +824,10 @@
       "id": "c54d9",
       "name": "Object_82.mesh",
       "userData": {
-        "gltfIndex": 33
+        "gltfIndex": 33,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -796,9 +842,10 @@
       "id": "2a6a9",
       "name": "Object_83.mesh",
       "userData": {
-        "gltfIndex": 34
+        "gltfIndex": 34,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -813,9 +860,10 @@
       "id": "d531b",
       "name": "Object_84.mesh",
       "userData": {
-        "gltfIndex": 35
+        "gltfIndex": 35,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -830,9 +878,10 @@
       "id": "7e094",
       "name": "Object_85.mesh",
       "userData": {
-        "gltfIndex": 36
+        "gltfIndex": 36,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -847,9 +896,10 @@
       "id": "0a798",
       "name": "Object_86.mesh",
       "userData": {
-        "gltfIndex": 37
+        "gltfIndex": 37,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -864,9 +914,10 @@
       "id": "c6a7c",
       "name": "Object_87.mesh",
       "userData": {
-        "gltfIndex": 38
+        "gltfIndex": 38,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -881,9 +932,10 @@
       "id": "6de31",
       "name": "Object_88.mesh",
       "userData": {
-        "gltfIndex": 39
+        "gltfIndex": 39,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -898,9 +950,10 @@
       "id": "44cc0",
       "name": "Object_89.mesh",
       "userData": {
-        "gltfIndex": 40
+        "gltfIndex": 40,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -915,9 +968,10 @@
       "id": "4c1e2",
       "name": "Object_90.mesh",
       "userData": {
-        "gltfIndex": 41
+        "gltfIndex": 41,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -932,9 +986,10 @@
       "id": "84b8d",
       "name": "Object_91.mesh",
       "userData": {
-        "gltfIndex": 42
+        "gltfIndex": 42,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -949,9 +1004,10 @@
       "id": "797d3",
       "name": "Object_93.mesh",
       "userData": {
-        "gltfIndex": 43
+        "gltfIndex": 43,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -966,9 +1022,10 @@
       "id": "ae0c6",
       "name": "Object_95.mesh",
       "userData": {
-        "gltfIndex": 45
+        "gltfIndex": 45,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -983,9 +1040,10 @@
       "id": "3d29d",
       "name": "Object_98.mesh",
       "userData": {
-        "gltfIndex": 47
+        "gltfIndex": 47,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1000,9 +1058,10 @@
       "id": "8ec85",
       "name": "Object_99.mesh",
       "userData": {
-        "gltfIndex": 48
+        "gltfIndex": 48,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1017,9 +1076,10 @@
       "id": "c4996",
       "name": "Object_100.mesh",
       "userData": {
-        "gltfIndex": 49
+        "gltfIndex": 49,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1034,9 +1094,10 @@
       "id": "d8a2b",
       "name": "Object_101.mesh",
       "userData": {
-        "gltfIndex": 50
+        "gltfIndex": 50,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1051,9 +1112,10 @@
       "id": "cb3ef",
       "name": "Object_102.mesh",
       "userData": {
-        "gltfIndex": 51
+        "gltfIndex": 51,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1068,9 +1130,10 @@
       "id": "e9554",
       "name": "Object_103.mesh",
       "userData": {
-        "gltfIndex": 52
+        "gltfIndex": 52,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1085,9 +1148,10 @@
       "id": "19e32",
       "name": "Object_104.mesh",
       "userData": {
-        "gltfIndex": 53
+        "gltfIndex": 53,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1102,9 +1166,10 @@
       "id": "d19bb",
       "name": "Object_52.mesh",
       "userData": {
-        "gltfIndex": 54
+        "gltfIndex": 54,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1119,9 +1184,10 @@
       "id": "24dc8",
       "name": "Object_38.mesh",
       "userData": {
-        "gltfIndex": 55
+        "gltfIndex": 55,
+        "triangleCount": 898
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1136,9 +1202,10 @@
       "id": "768af",
       "name": "Object_40.mesh",
       "userData": {
-        "gltfIndex": 56
+        "gltfIndex": 56,
+        "triangleCount": 898
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1153,9 +1220,10 @@
       "id": "7e5e7",
       "name": "Object_42.mesh",
       "userData": {
-        "gltfIndex": 57
+        "gltfIndex": 57,
+        "triangleCount": 898
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1170,9 +1238,10 @@
       "id": "f0713",
       "name": "Object_44.mesh",
       "userData": {
-        "gltfIndex": 58
+        "gltfIndex": 58,
+        "triangleCount": 898
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1187,9 +1256,10 @@
       "id": "9888b",
       "name": "Object_3.mesh",
       "userData": {
-        "gltfIndex": 59
+        "gltfIndex": 59,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1204,9 +1274,10 @@
       "id": "e1aed",
       "name": "Object_4.mesh",
       "userData": {
-        "gltfIndex": 60
+        "gltfIndex": 60,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1221,9 +1292,10 @@
       "id": "450f5",
       "name": "Object_5.mesh",
       "userData": {
-        "gltfIndex": 61
+        "gltfIndex": 61,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1238,9 +1310,10 @@
       "id": "cbb8e",
       "name": "Object_6.mesh",
       "userData": {
-        "gltfIndex": 62
+        "gltfIndex": 62,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1255,9 +1328,10 @@
       "id": "d0cb9",
       "name": "Object_7.mesh",
       "userData": {
-        "gltfIndex": 63
+        "gltfIndex": 63,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1272,9 +1346,10 @@
       "id": "6d525",
       "name": "Object_8.mesh",
       "userData": {
-        "gltfIndex": 64
+        "gltfIndex": 64,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1289,9 +1364,10 @@
       "id": "2bea5",
       "name": "Object_9.mesh",
       "userData": {
-        "gltfIndex": 65
+        "gltfIndex": 65,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1306,9 +1382,10 @@
       "id": "0c2c6",
       "name": "Object_10.mesh",
       "userData": {
-        "gltfIndex": 66
+        "gltfIndex": 66,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1323,9 +1400,10 @@
       "id": "67dce",
       "name": "Object_11.mesh",
       "userData": {
-        "gltfIndex": 67
+        "gltfIndex": 67,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1340,9 +1418,10 @@
       "id": "48db6",
       "name": "Object_12.mesh",
       "userData": {
-        "gltfIndex": 68
+        "gltfIndex": 68,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1357,9 +1436,10 @@
       "id": "1604c",
       "name": "Object_13.mesh",
       "userData": {
-        "gltfIndex": 69
+        "gltfIndex": 69,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1374,9 +1454,10 @@
       "id": "2908b",
       "name": "Object_14.mesh",
       "userData": {
-        "gltfIndex": 70
+        "gltfIndex": 70,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1391,9 +1472,10 @@
       "id": "319fe",
       "name": "Object_15.mesh",
       "userData": {
-        "gltfIndex": 71
+        "gltfIndex": 71,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1408,9 +1490,10 @@
       "id": "6c277",
       "name": "Object_16.mesh",
       "userData": {
-        "gltfIndex": 72
+        "gltfIndex": 72,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1425,9 +1508,10 @@
       "id": "8fce1",
       "name": "Object_17.mesh",
       "userData": {
-        "gltfIndex": 73
+        "gltfIndex": 73,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1442,9 +1526,10 @@
       "id": "a7e80",
       "name": "Object_18.mesh",
       "userData": {
-        "gltfIndex": 74
+        "gltfIndex": 74,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1459,9 +1544,10 @@
       "id": "0b61d",
       "name": "Object_20.mesh",
       "userData": {
-        "gltfIndex": 76
+        "gltfIndex": 76,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1476,9 +1562,10 @@
       "id": "4d525",
       "name": "Object_21.mesh",
       "userData": {
-        "gltfIndex": 77
+        "gltfIndex": 77,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1493,9 +1580,10 @@
       "id": "037f5",
       "name": "Object_22.mesh",
       "userData": {
-        "gltfIndex": 78
+        "gltfIndex": 78,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1510,9 +1598,10 @@
       "id": "496ea",
       "name": "Object_23.mesh",
       "userData": {
-        "gltfIndex": 79
+        "gltfIndex": 79,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1527,9 +1616,10 @@
       "id": "c629e",
       "name": "Object_24.mesh",
       "userData": {
-        "gltfIndex": 80
+        "gltfIndex": 80,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1544,9 +1634,10 @@
       "id": "3f207",
       "name": "Object_25.mesh",
       "userData": {
-        "gltfIndex": 81
+        "gltfIndex": 81,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1561,9 +1652,10 @@
       "id": "08a1d",
       "name": "Object_26.mesh",
       "userData": {
-        "gltfIndex": 82
+        "gltfIndex": 82,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1578,9 +1670,10 @@
       "id": "7a977",
       "name": "Object_27.mesh",
       "userData": {
-        "gltfIndex": 83
+        "gltfIndex": 83,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1595,9 +1688,10 @@
       "id": "c10f5",
       "name": "Object_28.mesh",
       "userData": {
-        "gltfIndex": 84
+        "gltfIndex": 84,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1612,9 +1706,10 @@
       "id": "82be1",
       "name": "Object_29.mesh",
       "userData": {
-        "gltfIndex": 85
+        "gltfIndex": 85,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1629,9 +1724,10 @@
       "id": "9962b",
       "name": "Object_30.mesh",
       "userData": {
-        "gltfIndex": 86
+        "gltfIndex": 86,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1646,9 +1742,10 @@
       "id": "83ef6",
       "name": "Object_32.mesh",
       "userData": {
-        "gltfIndex": 88
+        "gltfIndex": 88,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1663,9 +1760,10 @@
       "id": "0a005",
       "name": "Object_33.mesh",
       "userData": {
-        "gltfIndex": 89
+        "gltfIndex": 89,
+        "triangleCount": 680
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1680,9 +1778,10 @@
       "id": "f8f56",
       "name": "Object_165.mesh",
       "userData": {
-        "gltfIndex": 91
+        "gltfIndex": 91,
+        "triangleCount": 2268
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1697,9 +1796,10 @@
       "id": "349d8",
       "name": "Object_46.mesh",
       "userData": {
-        "gltfIndex": 92
+        "gltfIndex": 92,
+        "triangleCount": 468
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1714,9 +1814,10 @@
       "id": "5e6e6",
       "name": "Object_105.mesh",
       "userData": {
-        "gltfIndex": 93
+        "gltfIndex": 93,
+        "triangleCount": 2421
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1731,9 +1832,10 @@
       "id": "41ddb",
       "name": "Object_45.mesh",
       "userData": {
-        "gltfIndex": 94
+        "gltfIndex": 94,
+        "triangleCount": 2511
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1748,9 +1850,10 @@
       "id": "2e995",
       "name": "Object_48.mesh",
       "userData": {
-        "gltfIndex": 95
+        "gltfIndex": 95,
+        "triangleCount": 3812
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1765,9 +1868,10 @@
       "id": "c6f02",
       "name": "Object_47.mesh",
       "userData": {
-        "gltfIndex": 96
+        "gltfIndex": 96,
+        "triangleCount": 3812
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1782,9 +1886,10 @@
       "id": "79c41",
       "name": "Object_51.mesh",
       "userData": {
-        "gltfIndex": 98
+        "gltfIndex": 98,
+        "triangleCount": 1184
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1799,9 +1904,10 @@
       "id": "0c84c",
       "name": "Object_49.mesh",
       "userData": {
-        "gltfIndex": 99
+        "gltfIndex": 99,
+        "triangleCount": 1184
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1816,9 +1922,10 @@
       "id": "7aa41",
       "name": "Object_123.mesh",
       "userData": {
-        "gltfIndex": 100
+        "gltfIndex": 100,
+        "triangleCount": 80
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1833,9 +1940,10 @@
       "id": "249e6",
       "name": "Object_124.mesh",
       "userData": {
-        "gltfIndex": 101
+        "gltfIndex": 101,
+        "triangleCount": 80
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1850,9 +1958,10 @@
       "id": "ec10a",
       "name": "Object_125.mesh",
       "userData": {
-        "gltfIndex": 102
+        "gltfIndex": 102,
+        "triangleCount": 80
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1867,9 +1976,10 @@
       "id": "7133b",
       "name": "Object_126.mesh",
       "userData": {
-        "gltfIndex": 103
+        "gltfIndex": 103,
+        "triangleCount": 80
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1884,9 +1994,10 @@
       "id": "fce30",
       "name": "Object_127.mesh",
       "userData": {
-        "gltfIndex": 104
+        "gltfIndex": 104,
+        "triangleCount": 80
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1901,9 +2012,10 @@
       "id": "5ff4c",
       "name": "Object_128.mesh",
       "userData": {
-        "gltfIndex": 105
+        "gltfIndex": 105,
+        "triangleCount": 80
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1918,9 +2030,10 @@
       "id": "77a78",
       "name": "Object_129.mesh",
       "userData": {
-        "gltfIndex": 106
+        "gltfIndex": 106,
+        "triangleCount": 80
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1935,9 +2048,10 @@
       "id": "0e63a",
       "name": "Object_135.mesh",
       "userData": {
-        "gltfIndex": 107
+        "gltfIndex": 107,
+        "triangleCount": 80
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1952,9 +2066,10 @@
       "id": "aad2e",
       "name": "Object_112.mesh",
       "userData": {
-        "gltfIndex": 108
+        "gltfIndex": 108,
+        "triangleCount": 80
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1969,9 +2084,10 @@
       "id": "09b61",
       "name": "Object_118.mesh",
       "userData": {
-        "gltfIndex": 110
+        "gltfIndex": 110,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1986,9 +2102,10 @@
       "id": "488a5",
       "name": "Object_119.mesh",
       "userData": {
-        "gltfIndex": 111
+        "gltfIndex": 111,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2003,9 +2120,10 @@
       "id": "4c8d1",
       "name": "Object_130.mesh",
       "userData": {
-        "gltfIndex": 112
+        "gltfIndex": 112,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2020,9 +2138,10 @@
       "id": "d3a82",
       "name": "Object_133.mesh",
       "userData": {
-        "gltfIndex": 113
+        "gltfIndex": 113,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2037,9 +2156,10 @@
       "id": "fd534",
       "name": "Object_134.mesh",
       "userData": {
-        "gltfIndex": 114
+        "gltfIndex": 114,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2054,9 +2174,10 @@
       "id": "08da6",
       "name": "Object_138.mesh",
       "userData": {
-        "gltfIndex": 115
+        "gltfIndex": 115,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2071,9 +2192,10 @@
       "id": "c100c",
       "name": "Object_146.mesh",
       "userData": {
-        "gltfIndex": 116
+        "gltfIndex": 116,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2088,9 +2210,10 @@
       "id": "6d2b6",
       "name": "Object_142.mesh",
       "userData": {
-        "gltfIndex": 117
+        "gltfIndex": 117,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2105,9 +2228,10 @@
       "id": "3885b",
       "name": "Object_145.mesh",
       "userData": {
-        "gltfIndex": 118
+        "gltfIndex": 118,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2122,9 +2246,10 @@
       "id": "d05ae",
       "name": "Object_150.mesh",
       "userData": {
-        "gltfIndex": 119
+        "gltfIndex": 119,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2139,9 +2264,10 @@
       "id": "2fd08",
       "name": "Object_154.mesh",
       "userData": {
-        "gltfIndex": 121
+        "gltfIndex": 121,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2156,9 +2282,10 @@
       "id": "f41c4",
       "name": "Object_159.mesh",
       "userData": {
-        "gltfIndex": 122
+        "gltfIndex": 122,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2173,9 +2300,10 @@
       "id": "f28c5",
       "name": "Object_111.mesh",
       "userData": {
-        "gltfIndex": 123
+        "gltfIndex": 123,
+        "triangleCount": 220
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2190,9 +2318,10 @@
       "id": "5a4da",
       "name": "Object_114.mesh",
       "userData": {
-        "gltfIndex": 124
+        "gltfIndex": 124,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2207,9 +2336,10 @@
       "id": "7f59e",
       "name": "Object_120.mesh",
       "userData": {
-        "gltfIndex": 126
+        "gltfIndex": 126,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2224,9 +2354,10 @@
       "id": "f9c3c",
       "name": "Object_131.mesh",
       "userData": {
-        "gltfIndex": 128
+        "gltfIndex": 128,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2241,9 +2372,10 @@
       "id": "954f8",
       "name": "Object_132.mesh",
       "userData": {
-        "gltfIndex": 129
+        "gltfIndex": 129,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2258,9 +2390,10 @@
       "id": "2c8ab",
       "name": "Object_140.mesh",
       "userData": {
-        "gltfIndex": 131
+        "gltfIndex": 131,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2275,9 +2408,10 @@
       "id": "c507c",
       "name": "Object_148.mesh",
       "userData": {
-        "gltfIndex": 132
+        "gltfIndex": 132,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2292,9 +2426,10 @@
       "id": "25f89",
       "name": "Object_144.mesh",
       "userData": {
-        "gltfIndex": 133
+        "gltfIndex": 133,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2309,9 +2444,10 @@
       "id": "439a6",
       "name": "Object_153.mesh",
       "userData": {
-        "gltfIndex": 134
+        "gltfIndex": 134,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2326,9 +2462,10 @@
       "id": "3cce5",
       "name": "Object_156.mesh",
       "userData": {
-        "gltfIndex": 135
+        "gltfIndex": 135,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2343,9 +2480,10 @@
       "id": "a0624",
       "name": "Object_110.mesh",
       "userData": {
-        "gltfIndex": 137
+        "gltfIndex": 137,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2360,9 +2498,10 @@
       "id": "3b8e6",
       "name": "Object_113.mesh",
       "userData": {
-        "gltfIndex": 138
+        "gltfIndex": 138,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2377,9 +2516,10 @@
       "id": "f7780",
       "name": "Object_117.mesh",
       "userData": {
-        "gltfIndex": 139
+        "gltfIndex": 139,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2394,9 +2534,10 @@
       "id": "3a1de",
       "name": "Object_122.mesh",
       "userData": {
-        "gltfIndex": 140
+        "gltfIndex": 140,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2411,9 +2552,10 @@
       "id": "4564d",
       "name": "Object_136.mesh",
       "userData": {
-        "gltfIndex": 141
+        "gltfIndex": 141,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2428,9 +2570,10 @@
       "id": "fa101",
       "name": "Object_139.mesh",
       "userData": {
-        "gltfIndex": 142
+        "gltfIndex": 142,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2445,9 +2588,10 @@
       "id": "ba4e5",
       "name": "Object_141.mesh",
       "userData": {
-        "gltfIndex": 143
+        "gltfIndex": 143,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2462,9 +2606,10 @@
       "id": "05c16",
       "name": "Object_143.mesh",
       "userData": {
-        "gltfIndex": 144
+        "gltfIndex": 144,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2479,9 +2624,10 @@
       "id": "a5fd2",
       "name": "Object_147.mesh",
       "userData": {
-        "gltfIndex": 145
+        "gltfIndex": 145,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2496,9 +2642,10 @@
       "id": "eea21",
       "name": "Object_149.mesh",
       "userData": {
-        "gltfIndex": 146
+        "gltfIndex": 146,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2513,9 +2660,10 @@
       "id": "f0db6",
       "name": "Object_152.mesh",
       "userData": {
-        "gltfIndex": 147
+        "gltfIndex": 147,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2530,9 +2678,10 @@
       "id": "8c1c8",
       "name": "Object_155.mesh",
       "userData": {
-        "gltfIndex": 148
+        "gltfIndex": 148,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2547,9 +2696,10 @@
       "id": "43b63",
       "name": "Object_157.mesh",
       "userData": {
-        "gltfIndex": 149
+        "gltfIndex": 149,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2564,9 +2714,10 @@
       "id": "a8705",
       "name": "Object_109.mesh",
       "userData": {
-        "gltfIndex": 150
+        "gltfIndex": 150,
+        "triangleCount": 500
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2581,9 +2732,10 @@
       "id": "490bb",
       "name": "Object_108.mesh",
       "userData": {
-        "gltfIndex": 151
+        "gltfIndex": 151,
+        "triangleCount": 5476
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2598,9 +2750,10 @@
       "id": "74ea6",
       "name": "Object_37.mesh",
       "userData": {
-        "gltfIndex": 152
+        "gltfIndex": 152,
+        "triangleCount": 2702
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2615,9 +2768,10 @@
       "id": "87ab0",
       "name": "Object_39.mesh",
       "userData": {
-        "gltfIndex": 153
+        "gltfIndex": 153,
+        "triangleCount": 2702
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2632,9 +2786,10 @@
       "id": "a0a24",
       "name": "Object_41.mesh",
       "userData": {
-        "gltfIndex": 154
+        "gltfIndex": 154,
+        "triangleCount": 2702
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2649,9 +2804,10 @@
       "id": "d72a8",
       "name": "Object_43.mesh",
       "userData": {
-        "gltfIndex": 155
+        "gltfIndex": 155,
+        "triangleCount": 2702
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2666,9 +2822,10 @@
       "id": "cb24e",
       "name": "Object_106.mesh",
       "userData": {
-        "gltfIndex": 156
+        "gltfIndex": 156,
+        "triangleCount": 852
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2683,9 +2840,10 @@
       "id": "078e8",
       "name": "Object_107.mesh",
       "userData": {
-        "gltfIndex": 157
+        "gltfIndex": 157,
+        "triangleCount": 852
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2700,9 +2858,10 @@
       "id": "bd8a9",
       "name": "Object_36.mesh",
       "userData": {
-        "gltfIndex": 158
+        "gltfIndex": 158,
+        "triangleCount": 620
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2717,9 +2876,10 @@
       "id": "148f0",
       "name": "Object_35.mesh",
       "userData": {
-        "gltfIndex": 159
+        "gltfIndex": 159,
+        "triangleCount": 2922
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2734,9 +2894,10 @@
       "id": "a4acf",
       "name": "Object_161.mesh",
       "userData": {
-        "gltfIndex": 160
+        "gltfIndex": 160,
+        "triangleCount": 856
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2751,9 +2912,10 @@
       "id": "8cd2f",
       "name": "Object_162.mesh",
       "userData": {
-        "gltfIndex": 161
+        "gltfIndex": 161,
+        "triangleCount": 856
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2768,9 +2930,10 @@
       "id": "93be8",
       "name": "Object_163.mesh",
       "userData": {
-        "gltfIndex": 162
+        "gltfIndex": 162,
+        "triangleCount": 856
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2785,9 +2948,10 @@
       "id": "d0ed7",
       "name": "Object_160.mesh",
       "userData": {
-        "gltfIndex": 163
+        "gltfIndex": 163,
+        "triangleCount": 856
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2802,9 +2966,10 @@
       "id": "51a8e",
       "name": "Object_164.mesh",
       "userData": {
-        "gltfIndex": 164
+        "gltfIndex": 164,
+        "triangleCount": 3147
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2828,7 +2993,7 @@
         },
         "events": []
       },
-      "ver": "1.0.16",
+      "ver": "1.0.17",
       "imported": true,
       "files": [
         ".cconb"
@@ -2848,8 +3013,8 @@
         "magfilter": "linear",
         "mipfilter": "linear",
         "anisotropy": 0,
-        "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/models/village/lpb_gradient_baseColor.jpg"
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "f0b5f91e-47b7-4fc5-9ffa-a186fe66984b"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -2883,7 +3048,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -2895,7 +3060,7 @@
     "imageMetas": [
       {
         "name": "lpb_gradient_baseColor",
-        "remap": "db://assets/models/village/lpb_gradient_baseColor.jpg",
+        "remap": "f0b5f91e-47b7-4fc5-9ffa-a186fe66984b",
         "uri": "db://assets/models/village/lpb_gradient_baseColor.jpg"
       }
     ],
@@ -2909,7 +3074,8 @@
             "name": "Animation",
             "from": 0,
             "to": 12.5,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "63e6e"
           }
         ]
       }
@@ -3178,6 +3344,24 @@
           {}
         ]
       }
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.12",
   "importer": "fbx",
   "imported": true,
   "uuid": "d9acf247-5403-4002-bc34-f77eb4583003",
@@ -12,9 +12,10 @@
       "id": "bcdb8",
       "name": "Character_Male_Peasant_01_Material0.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 2162
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -46,7 +47,10 @@
       "id": "5e49e",
       "name": "base_color_texture-0.image",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -63,7 +67,10 @@
       "id": "ef396",
       "name": "base_color_texture-1.image",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -128,7 +135,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -148,7 +155,8 @@
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": false
+      "smartMaterialEnabled": false,
+      "matchMeshNames": false
     },
     "redirect": "d9acf247-5403-4002-bc34-f77eb4583003@26a7b",
     "assetFinder": {
@@ -182,6 +190,24 @@
     },
     "tangents": 1,
     "dumpMaterials": true,
-    "materialDumpDir": "db://assets/models/archer/Materials_Character_Male"
+    "materialDumpDir": "db://assets/models/archer/Materials_Character_Male",
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    }
   }
 }

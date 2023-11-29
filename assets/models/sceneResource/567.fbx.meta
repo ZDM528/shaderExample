@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.12",
   "importer": "fbx",
   "imported": true,
   "uuid": "3aeac991-caa1-492b-ae67-4030c16ad161",
@@ -14,9 +14,10 @@
       "id": "11149",
       "name": "Box351-422.mesh",
       "userData": {
-        "gltfIndex": 422
+        "gltfIndex": 422,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -31,9 +32,10 @@
       "id": "12480",
       "name": "Sun036-506.mesh",
       "userData": {
-        "gltfIndex": 506
+        "gltfIndex": 506,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -48,9 +50,10 @@
       "id": "12636",
       "name": "Box289-259.mesh",
       "userData": {
-        "gltfIndex": 259
+        "gltfIndex": 259,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -65,9 +68,10 @@
       "id": "12900",
       "name": "Object005-351.mesh",
       "userData": {
-        "gltfIndex": 351
+        "gltfIndex": 351,
+        "triangleCount": 520
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -82,9 +86,10 @@
       "id": "13977",
       "name": "Line021-180.mesh",
       "userData": {
-        "gltfIndex": 180
+        "gltfIndex": 180,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -99,9 +104,10 @@
       "id": "14964",
       "name": "Box163-159.mesh",
       "userData": {
-        "gltfIndex": 159
+        "gltfIndex": 159,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -116,9 +122,10 @@
       "id": "15527",
       "name": "Box085-99.mesh",
       "userData": {
-        "gltfIndex": 99
+        "gltfIndex": 99,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -133,9 +140,10 @@
       "id": "16520",
       "name": "Box081-97.mesh",
       "userData": {
-        "gltfIndex": 97
+        "gltfIndex": 97,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -150,9 +158,10 @@
       "id": "16753",
       "name": "Box094-108.mesh",
       "userData": {
-        "gltfIndex": 108
+        "gltfIndex": 108,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -167,9 +176,10 @@
       "id": "16921",
       "name": "Box053-69.mesh",
       "userData": {
-        "gltfIndex": 69
+        "gltfIndex": 69,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -184,9 +194,10 @@
       "id": "16949",
       "name": "Box347-388.mesh",
       "userData": {
-        "gltfIndex": 388
+        "gltfIndex": 388,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -201,9 +212,10 @@
       "id": "18309",
       "name": "Sun042-512.mesh",
       "userData": {
-        "gltfIndex": 512
+        "gltfIndex": 512,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -218,9 +230,10 @@
       "id": "24010",
       "name": "Box136-18.mesh",
       "userData": {
-        "gltfIndex": 18
+        "gltfIndex": 18,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -235,9 +248,10 @@
       "id": "29940",
       "name": "Cylinder074-383.mesh",
       "userData": {
-        "gltfIndex": 383
+        "gltfIndex": 383,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -284,9 +298,10 @@
       "id": "36743",
       "name": "Box338-346.mesh",
       "userData": {
-        "gltfIndex": 346
+        "gltfIndex": 346,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -301,9 +316,10 @@
       "id": "37428",
       "name": "Box355-426.mesh",
       "userData": {
-        "gltfIndex": 426
+        "gltfIndex": 426,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -318,9 +334,10 @@
       "id": "38460",
       "name": "Box344-380.mesh",
       "userData": {
-        "gltfIndex": 380
+        "gltfIndex": 380,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -335,9 +352,10 @@
       "id": "41044",
       "name": "Helix002-447.mesh",
       "userData": {
-        "gltfIndex": 447
+        "gltfIndex": 447,
+        "triangleCount": 1906
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -352,9 +370,10 @@
       "id": "43078",
       "name": "Box127-133.mesh",
       "userData": {
-        "gltfIndex": 133
+        "gltfIndex": 133,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -369,9 +388,10 @@
       "id": "50239",
       "name": "Box342-350.mesh",
       "userData": {
-        "gltfIndex": 350
+        "gltfIndex": 350,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -386,9 +406,10 @@
       "id": "51282",
       "name": "Object004-296.mesh",
       "userData": {
-        "gltfIndex": 296
+        "gltfIndex": 296,
+        "triangleCount": 248
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -403,9 +424,10 @@
       "id": "54408",
       "name": "Box145-184.mesh",
       "userData": {
-        "gltfIndex": 184
+        "gltfIndex": 184,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -420,9 +442,10 @@
       "id": "54764",
       "name": "Box161-157.mesh",
       "userData": {
-        "gltfIndex": 157
+        "gltfIndex": 157,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -437,9 +460,10 @@
       "id": "58625",
       "name": "Cylinder010-11.mesh",
       "userData": {
-        "gltfIndex": 11
+        "gltfIndex": 11,
+        "triangleCount": 46
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -454,9 +478,10 @@
       "id": "61932",
       "name": "Arc003-216.mesh",
       "userData": {
-        "gltfIndex": 216
+        "gltfIndex": 216,
+        "triangleCount": 268
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -471,9 +496,10 @@
       "id": "62754",
       "name": "Box050-66.mesh",
       "userData": {
-        "gltfIndex": 66
+        "gltfIndex": 66,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -488,9 +514,10 @@
       "id": "67334",
       "name": "Sun-470.mesh",
       "userData": {
-        "gltfIndex": 470
+        "gltfIndex": 470,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -505,9 +532,10 @@
       "id": "67743",
       "name": "Line005-170.mesh",
       "userData": {
-        "gltfIndex": 170
+        "gltfIndex": 170,
+        "triangleCount": 212
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -522,9 +550,10 @@
       "id": "68246",
       "name": "Sun006-476.mesh",
       "userData": {
-        "gltfIndex": 476
+        "gltfIndex": 476,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -539,9 +568,10 @@
       "id": "72574",
       "name": "Object014_Material0-552.mesh",
       "userData": {
-        "gltfIndex": 552
+        "gltfIndex": 552,
+        "triangleCount": 2944
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -556,9 +586,10 @@
       "id": "74363",
       "name": "Line019-179.mesh",
       "userData": {
-        "gltfIndex": 179
+        "gltfIndex": 179,
+        "triangleCount": 432
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -573,9 +604,10 @@
       "id": "76570",
       "name": "Sun005-475.mesh",
       "userData": {
-        "gltfIndex": 475
+        "gltfIndex": 475,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -590,9 +622,10 @@
       "id": "76956",
       "name": "Box023-39.mesh",
       "userData": {
-        "gltfIndex": 39
+        "gltfIndex": 39,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -623,9 +656,10 @@
       "id": "79108",
       "name": "Box264-225.mesh",
       "userData": {
-        "gltfIndex": 225
+        "gltfIndex": 225,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -640,9 +674,10 @@
       "id": "80055",
       "name": "Box268-255.mesh",
       "userData": {
-        "gltfIndex": 255
+        "gltfIndex": 255,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -657,9 +692,10 @@
       "id": "83626",
       "name": "Box153-192.mesh",
       "userData": {
-        "gltfIndex": 192
+        "gltfIndex": 192,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -674,9 +710,10 @@
       "id": "84205",
       "name": "Box284-243.mesh",
       "userData": {
-        "gltfIndex": 243
+        "gltfIndex": 243,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -707,9 +744,10 @@
       "id": "88969",
       "name": "Line070-371.mesh",
       "userData": {
-        "gltfIndex": 371
+        "gltfIndex": 371,
+        "triangleCount": 48
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -724,9 +762,10 @@
       "id": "89994",
       "name": "Box295-265.mesh",
       "userData": {
-        "gltfIndex": 265
+        "gltfIndex": 265,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -757,9 +796,10 @@
       "id": "94464",
       "name": "Sun034-504.mesh",
       "userData": {
-        "gltfIndex": 504
+        "gltfIndex": 504,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -774,9 +814,10 @@
       "id": "94526",
       "name": "Cylinder053-282.mesh",
       "userData": {
-        "gltfIndex": 282
+        "gltfIndex": 282,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -791,9 +832,10 @@
       "id": "96134",
       "name": "Box054-70.mesh",
       "userData": {
-        "gltfIndex": 70
+        "gltfIndex": 70,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -808,9 +850,10 @@
       "id": "96227",
       "name": "Cylinder021-207.mesh",
       "userData": {
-        "gltfIndex": 207
+        "gltfIndex": 207,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -841,9 +884,10 @@
       "id": "97452",
       "name": "Line088-442.mesh",
       "userData": {
-        "gltfIndex": 442
+        "gltfIndex": 442,
+        "triangleCount": 28
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -858,9 +902,10 @@
       "id": "98445",
       "name": "Sun066-530.mesh",
       "userData": {
-        "gltfIndex": 530
+        "gltfIndex": 530,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -875,9 +920,10 @@
       "id": "9d289",
       "name": "Terrian_Material0-0.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 590
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -892,9 +938,10 @@
       "id": "bb496",
       "name": "Box003-1.mesh",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "triangleCount": 1784
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -909,9 +956,10 @@
       "id": "f0194",
       "name": "Cylinder001-2.mesh",
       "userData": {
-        "gltfIndex": 2
+        "gltfIndex": 2,
+        "triangleCount": 46
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -926,9 +974,10 @@
       "id": "1e47a",
       "name": "Cylinder002-3.mesh",
       "userData": {
-        "gltfIndex": 3
+        "gltfIndex": 3,
+        "triangleCount": 46
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -943,9 +992,10 @@
       "id": "5a1f8",
       "name": "Cylinder003-4.mesh",
       "userData": {
-        "gltfIndex": 4
+        "gltfIndex": 4,
+        "triangleCount": 46
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -960,9 +1010,10 @@
       "id": "c35dd",
       "name": "Cylinder004-5.mesh",
       "userData": {
-        "gltfIndex": 5
+        "gltfIndex": 5,
+        "triangleCount": 46
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -977,9 +1028,10 @@
       "id": "a1ae2",
       "name": "Cylinder005-6.mesh",
       "userData": {
-        "gltfIndex": 6
+        "gltfIndex": 6,
+        "triangleCount": 46
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -994,9 +1046,10 @@
       "id": "7fa94",
       "name": "Cylinder006-7.mesh",
       "userData": {
-        "gltfIndex": 7
+        "gltfIndex": 7,
+        "triangleCount": 46
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1011,9 +1064,10 @@
       "id": "0c218",
       "name": "Cylinder007-8.mesh",
       "userData": {
-        "gltfIndex": 8
+        "gltfIndex": 8,
+        "triangleCount": 46
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1028,9 +1082,10 @@
       "id": "5efb7",
       "name": "Cylinder008-9.mesh",
       "userData": {
-        "gltfIndex": 9
+        "gltfIndex": 9,
+        "triangleCount": 46
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1045,9 +1100,10 @@
       "id": "93d0e",
       "name": "Cylinder009-10.mesh",
       "userData": {
-        "gltfIndex": 10
+        "gltfIndex": 10,
+        "triangleCount": 46
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1062,9 +1118,10 @@
       "id": "116af",
       "name": "Plane001-12.mesh",
       "userData": {
-        "gltfIndex": 12
+        "gltfIndex": 12,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1079,9 +1136,10 @@
       "id": "471cf",
       "name": "Object-13.mesh",
       "userData": {
-        "gltfIndex": 13
+        "gltfIndex": 13,
+        "triangleCount": 60
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1096,9 +1154,10 @@
       "id": "ed0a6",
       "name": "Line011-14.mesh",
       "userData": {
-        "gltfIndex": 14
+        "gltfIndex": 14,
+        "triangleCount": 608
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1113,9 +1172,10 @@
       "id": "ed7d1",
       "name": "Line013-15.mesh",
       "userData": {
-        "gltfIndex": 15
+        "gltfIndex": 15,
+        "triangleCount": 628
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1130,9 +1190,10 @@
       "id": "610f6",
       "name": "Line014_Material0-16.mesh",
       "userData": {
-        "gltfIndex": 16
+        "gltfIndex": 16,
+        "triangleCount": 956
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1147,9 +1208,10 @@
       "id": "2260e",
       "name": "Line015-17.mesh",
       "userData": {
-        "gltfIndex": 17
+        "gltfIndex": 17,
+        "triangleCount": 7824
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1164,9 +1226,10 @@
       "id": "5680e",
       "name": "Cylinder011_Material0-19.mesh",
       "userData": {
-        "gltfIndex": 19
+        "gltfIndex": 19,
+        "triangleCount": 312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1181,9 +1244,10 @@
       "id": "2becc",
       "name": "Line020-20.mesh",
       "userData": {
-        "gltfIndex": 20
+        "gltfIndex": 20,
+        "triangleCount": 174
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1198,9 +1262,10 @@
       "id": "eadf0",
       "name": "Box004-21.mesh",
       "userData": {
-        "gltfIndex": 21
+        "gltfIndex": 21,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1215,9 +1280,10 @@
       "id": "8bcc8",
       "name": "Box005-22.mesh",
       "userData": {
-        "gltfIndex": 22
+        "gltfIndex": 22,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1232,9 +1298,10 @@
       "id": "03982",
       "name": "Box006-23.mesh",
       "userData": {
-        "gltfIndex": 23
+        "gltfIndex": 23,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1249,9 +1316,10 @@
       "id": "08be8",
       "name": "Box007-24.mesh",
       "userData": {
-        "gltfIndex": 24
+        "gltfIndex": 24,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1266,9 +1334,10 @@
       "id": "103af",
       "name": "Box008-25.mesh",
       "userData": {
-        "gltfIndex": 25
+        "gltfIndex": 25,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1283,9 +1352,10 @@
       "id": "5157a",
       "name": "Box009-26.mesh",
       "userData": {
-        "gltfIndex": 26
+        "gltfIndex": 26,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1300,9 +1370,10 @@
       "id": "dc1c9",
       "name": "Box010-27.mesh",
       "userData": {
-        "gltfIndex": 27
+        "gltfIndex": 27,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1317,9 +1388,10 @@
       "id": "c09b1",
       "name": "Box011-28.mesh",
       "userData": {
-        "gltfIndex": 28
+        "gltfIndex": 28,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1334,9 +1406,10 @@
       "id": "eb15b",
       "name": "Box012-29.mesh",
       "userData": {
-        "gltfIndex": 29
+        "gltfIndex": 29,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1351,9 +1424,10 @@
       "id": "38af3",
       "name": "Box014-30.mesh",
       "userData": {
-        "gltfIndex": 30
+        "gltfIndex": 30,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1368,9 +1442,10 @@
       "id": "e4045",
       "name": "Box015-31.mesh",
       "userData": {
-        "gltfIndex": 31
+        "gltfIndex": 31,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1385,9 +1460,10 @@
       "id": "36bc8",
       "name": "Box016-32.mesh",
       "userData": {
-        "gltfIndex": 32
+        "gltfIndex": 32,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1402,9 +1478,10 @@
       "id": "b8752",
       "name": "Box017-33.mesh",
       "userData": {
-        "gltfIndex": 33
+        "gltfIndex": 33,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1419,9 +1496,10 @@
       "id": "b54e9",
       "name": "Box018-34.mesh",
       "userData": {
-        "gltfIndex": 34
+        "gltfIndex": 34,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1436,9 +1514,10 @@
       "id": "aaea0",
       "name": "Box019-35.mesh",
       "userData": {
-        "gltfIndex": 35
+        "gltfIndex": 35,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1453,9 +1532,10 @@
       "id": "f9351",
       "name": "Box020-36.mesh",
       "userData": {
-        "gltfIndex": 36
+        "gltfIndex": 36,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1470,9 +1550,10 @@
       "id": "5e6ef",
       "name": "Box021-37.mesh",
       "userData": {
-        "gltfIndex": 37
+        "gltfIndex": 37,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1487,9 +1568,10 @@
       "id": "dcaf2",
       "name": "Box022-38.mesh",
       "userData": {
-        "gltfIndex": 38
+        "gltfIndex": 38,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1504,9 +1586,10 @@
       "id": "97fea",
       "name": "Box024-40.mesh",
       "userData": {
-        "gltfIndex": 40
+        "gltfIndex": 40,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1521,9 +1604,10 @@
       "id": "6b553",
       "name": "Box025-41.mesh",
       "userData": {
-        "gltfIndex": 41
+        "gltfIndex": 41,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1538,9 +1622,10 @@
       "id": "f9cc1",
       "name": "Box026-42.mesh",
       "userData": {
-        "gltfIndex": 42
+        "gltfIndex": 42,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1555,9 +1640,10 @@
       "id": "5568d",
       "name": "Box027-43.mesh",
       "userData": {
-        "gltfIndex": 43
+        "gltfIndex": 43,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1572,9 +1658,10 @@
       "id": "7d528",
       "name": "Box028-44.mesh",
       "userData": {
-        "gltfIndex": 44
+        "gltfIndex": 44,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1589,9 +1676,10 @@
       "id": "08219",
       "name": "Box029-45.mesh",
       "userData": {
-        "gltfIndex": 45
+        "gltfIndex": 45,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1606,9 +1694,10 @@
       "id": "8470c",
       "name": "Box030-46.mesh",
       "userData": {
-        "gltfIndex": 46
+        "gltfIndex": 46,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1623,9 +1712,10 @@
       "id": "af6f4",
       "name": "Box031-47.mesh",
       "userData": {
-        "gltfIndex": 47
+        "gltfIndex": 47,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1640,9 +1730,10 @@
       "id": "ae2aa",
       "name": "Box032-48.mesh",
       "userData": {
-        "gltfIndex": 48
+        "gltfIndex": 48,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1657,9 +1748,10 @@
       "id": "abbbf",
       "name": "Box033-49.mesh",
       "userData": {
-        "gltfIndex": 49
+        "gltfIndex": 49,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1674,9 +1766,10 @@
       "id": "810df",
       "name": "Box034-50.mesh",
       "userData": {
-        "gltfIndex": 50
+        "gltfIndex": 50,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1691,9 +1784,10 @@
       "id": "42ce4",
       "name": "Box035-51.mesh",
       "userData": {
-        "gltfIndex": 51
+        "gltfIndex": 51,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1708,9 +1802,10 @@
       "id": "bef25",
       "name": "Box036-52.mesh",
       "userData": {
-        "gltfIndex": 52
+        "gltfIndex": 52,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1725,9 +1820,10 @@
       "id": "d948b",
       "name": "Box037-53.mesh",
       "userData": {
-        "gltfIndex": 53
+        "gltfIndex": 53,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1742,9 +1838,10 @@
       "id": "f41d6",
       "name": "Box038-54.mesh",
       "userData": {
-        "gltfIndex": 54
+        "gltfIndex": 54,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1759,9 +1856,10 @@
       "id": "202de",
       "name": "Box039-55.mesh",
       "userData": {
-        "gltfIndex": 55
+        "gltfIndex": 55,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1776,9 +1874,10 @@
       "id": "49b9c",
       "name": "Box040-56.mesh",
       "userData": {
-        "gltfIndex": 56
+        "gltfIndex": 56,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1793,9 +1892,10 @@
       "id": "23b83",
       "name": "Box041-57.mesh",
       "userData": {
-        "gltfIndex": 57
+        "gltfIndex": 57,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1810,9 +1910,10 @@
       "id": "5c2a9",
       "name": "Box042-58.mesh",
       "userData": {
-        "gltfIndex": 58
+        "gltfIndex": 58,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1827,9 +1928,10 @@
       "id": "ea2a4",
       "name": "Box043-59.mesh",
       "userData": {
-        "gltfIndex": 59
+        "gltfIndex": 59,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1844,9 +1946,10 @@
       "id": "ab212",
       "name": "Box044-60.mesh",
       "userData": {
-        "gltfIndex": 60
+        "gltfIndex": 60,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1861,9 +1964,10 @@
       "id": "bb748",
       "name": "Box045-61.mesh",
       "userData": {
-        "gltfIndex": 61
+        "gltfIndex": 61,
+        "triangleCount": 48
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1878,9 +1982,10 @@
       "id": "540f5",
       "name": "Box046-62.mesh",
       "userData": {
-        "gltfIndex": 62
+        "gltfIndex": 62,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1895,9 +2000,10 @@
       "id": "031e1",
       "name": "Box047-63.mesh",
       "userData": {
-        "gltfIndex": 63
+        "gltfIndex": 63,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1912,9 +2018,10 @@
       "id": "0b024",
       "name": "Box048-64.mesh",
       "userData": {
-        "gltfIndex": 64
+        "gltfIndex": 64,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1929,9 +2036,10 @@
       "id": "a62fe",
       "name": "Box049-65.mesh",
       "userData": {
-        "gltfIndex": 65
+        "gltfIndex": 65,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1946,9 +2054,10 @@
       "id": "ab1a3",
       "name": "Box051-67.mesh",
       "userData": {
-        "gltfIndex": 67
+        "gltfIndex": 67,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1963,9 +2072,10 @@
       "id": "8a01d",
       "name": "Box052-68.mesh",
       "userData": {
-        "gltfIndex": 68
+        "gltfIndex": 68,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1980,9 +2090,10 @@
       "id": "1191e",
       "name": "Box055-71.mesh",
       "userData": {
-        "gltfIndex": 71
+        "gltfIndex": 71,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -1997,9 +2108,10 @@
       "id": "07015",
       "name": "Box056-72.mesh",
       "userData": {
-        "gltfIndex": 72
+        "gltfIndex": 72,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2014,9 +2126,10 @@
       "id": "9edec",
       "name": "Box057-73.mesh",
       "userData": {
-        "gltfIndex": 73
+        "gltfIndex": 73,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2031,9 +2144,10 @@
       "id": "45b90",
       "name": "Box058-74.mesh",
       "userData": {
-        "gltfIndex": 74
+        "gltfIndex": 74,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2048,9 +2162,10 @@
       "id": "cd80c",
       "name": "Box059-75.mesh",
       "userData": {
-        "gltfIndex": 75
+        "gltfIndex": 75,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2065,9 +2180,10 @@
       "id": "8afe5",
       "name": "Box060-76.mesh",
       "userData": {
-        "gltfIndex": 76
+        "gltfIndex": 76,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2082,9 +2198,10 @@
       "id": "18f32",
       "name": "Box061-77.mesh",
       "userData": {
-        "gltfIndex": 77
+        "gltfIndex": 77,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2099,9 +2216,10 @@
       "id": "9c667",
       "name": "Box062-78.mesh",
       "userData": {
-        "gltfIndex": 78
+        "gltfIndex": 78,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2116,9 +2234,10 @@
       "id": "3d6ea",
       "name": "Box063-79.mesh",
       "userData": {
-        "gltfIndex": 79
+        "gltfIndex": 79,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2133,9 +2252,10 @@
       "id": "126d2",
       "name": "Box064-80.mesh",
       "userData": {
-        "gltfIndex": 80
+        "gltfIndex": 80,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2150,9 +2270,10 @@
       "id": "a9dfb",
       "name": "Box065-81.mesh",
       "userData": {
-        "gltfIndex": 81
+        "gltfIndex": 81,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2167,9 +2288,10 @@
       "id": "936fa",
       "name": "Box066-82.mesh",
       "userData": {
-        "gltfIndex": 82
+        "gltfIndex": 82,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2184,9 +2306,10 @@
       "id": "49bbd",
       "name": "Box067-83.mesh",
       "userData": {
-        "gltfIndex": 83
+        "gltfIndex": 83,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2201,9 +2324,10 @@
       "id": "dac11",
       "name": "Box068-84.mesh",
       "userData": {
-        "gltfIndex": 84
+        "gltfIndex": 84,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2218,9 +2342,10 @@
       "id": "1d224",
       "name": "Box069-85.mesh",
       "userData": {
-        "gltfIndex": 85
+        "gltfIndex": 85,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2235,9 +2360,10 @@
       "id": "0319e",
       "name": "Box070-86.mesh",
       "userData": {
-        "gltfIndex": 86
+        "gltfIndex": 86,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2252,9 +2378,10 @@
       "id": "98b7a",
       "name": "Box071-87.mesh",
       "userData": {
-        "gltfIndex": 87
+        "gltfIndex": 87,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2269,9 +2396,10 @@
       "id": "60b56",
       "name": "Box072-88.mesh",
       "userData": {
-        "gltfIndex": 88
+        "gltfIndex": 88,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2286,9 +2414,10 @@
       "id": "f3a3c",
       "name": "Box073-89.mesh",
       "userData": {
-        "gltfIndex": 89
+        "gltfIndex": 89,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2303,9 +2432,10 @@
       "id": "b0621",
       "name": "Box074-90.mesh",
       "userData": {
-        "gltfIndex": 90
+        "gltfIndex": 90,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2320,9 +2450,10 @@
       "id": "5cf1f",
       "name": "Box075-91.mesh",
       "userData": {
-        "gltfIndex": 91
+        "gltfIndex": 91,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2337,9 +2468,10 @@
       "id": "9aa85",
       "name": "Box076-92.mesh",
       "userData": {
-        "gltfIndex": 92
+        "gltfIndex": 92,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2354,9 +2486,10 @@
       "id": "55eb9",
       "name": "Box077-93.mesh",
       "userData": {
-        "gltfIndex": 93
+        "gltfIndex": 93,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2371,9 +2504,10 @@
       "id": "b5a79",
       "name": "Box078-94.mesh",
       "userData": {
-        "gltfIndex": 94
+        "gltfIndex": 94,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2388,9 +2522,10 @@
       "id": "d8a36",
       "name": "Box079-95.mesh",
       "userData": {
-        "gltfIndex": 95
+        "gltfIndex": 95,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2405,9 +2540,10 @@
       "id": "d5c22",
       "name": "Box080-96.mesh",
       "userData": {
-        "gltfIndex": 96
+        "gltfIndex": 96,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2422,9 +2558,10 @@
       "id": "813cb",
       "name": "Box082-98.mesh",
       "userData": {
-        "gltfIndex": 98
+        "gltfIndex": 98,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2439,9 +2576,10 @@
       "id": "08347",
       "name": "Box086-100.mesh",
       "userData": {
-        "gltfIndex": 100
+        "gltfIndex": 100,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2456,9 +2594,10 @@
       "id": "fdc3e",
       "name": "Box087-101.mesh",
       "userData": {
-        "gltfIndex": 101
+        "gltfIndex": 101,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2473,9 +2612,10 @@
       "id": "2b4bb",
       "name": "Box088-102.mesh",
       "userData": {
-        "gltfIndex": 102
+        "gltfIndex": 102,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2490,9 +2630,10 @@
       "id": "5ebd1",
       "name": "Box089-103.mesh",
       "userData": {
-        "gltfIndex": 103
+        "gltfIndex": 103,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2507,9 +2648,10 @@
       "id": "5d5da",
       "name": "Box090-104.mesh",
       "userData": {
-        "gltfIndex": 104
+        "gltfIndex": 104,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2524,9 +2666,10 @@
       "id": "bc508",
       "name": "Box091-105.mesh",
       "userData": {
-        "gltfIndex": 105
+        "gltfIndex": 105,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2541,9 +2684,10 @@
       "id": "c9916",
       "name": "Box092-106.mesh",
       "userData": {
-        "gltfIndex": 106
+        "gltfIndex": 106,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2558,9 +2702,10 @@
       "id": "a5687",
       "name": "Box093-107.mesh",
       "userData": {
-        "gltfIndex": 107
+        "gltfIndex": 107,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2575,9 +2720,10 @@
       "id": "58b4b",
       "name": "Box095-109.mesh",
       "userData": {
-        "gltfIndex": 109
+        "gltfIndex": 109,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2592,9 +2738,10 @@
       "id": "3f819",
       "name": "Box096-110.mesh",
       "userData": {
-        "gltfIndex": 110
+        "gltfIndex": 110,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2609,9 +2756,10 @@
       "id": "16ad7",
       "name": "Box097-111.mesh",
       "userData": {
-        "gltfIndex": 111
+        "gltfIndex": 111,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2626,9 +2774,10 @@
       "id": "4df6c",
       "name": "Box098-112.mesh",
       "userData": {
-        "gltfIndex": 112
+        "gltfIndex": 112,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2643,9 +2792,10 @@
       "id": "ab800",
       "name": "Box099-113.mesh",
       "userData": {
-        "gltfIndex": 113
+        "gltfIndex": 113,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2660,9 +2810,10 @@
       "id": "ea096",
       "name": "Box100-114.mesh",
       "userData": {
-        "gltfIndex": 114
+        "gltfIndex": 114,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2677,9 +2828,10 @@
       "id": "5a951",
       "name": "Box101-115.mesh",
       "userData": {
-        "gltfIndex": 115
+        "gltfIndex": 115,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2694,9 +2846,10 @@
       "id": "8d4a3",
       "name": "Box102-116.mesh",
       "userData": {
-        "gltfIndex": 116
+        "gltfIndex": 116,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2711,9 +2864,10 @@
       "id": "d37b2",
       "name": "Box103-117.mesh",
       "userData": {
-        "gltfIndex": 117
+        "gltfIndex": 117,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2728,9 +2882,10 @@
       "id": "6a08d",
       "name": "Box104-118.mesh",
       "userData": {
-        "gltfIndex": 118
+        "gltfIndex": 118,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2745,9 +2900,10 @@
       "id": "7ef0d",
       "name": "Box105-119.mesh",
       "userData": {
-        "gltfIndex": 119
+        "gltfIndex": 119,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2762,9 +2918,10 @@
       "id": "0917b",
       "name": "Box106-120.mesh",
       "userData": {
-        "gltfIndex": 120
+        "gltfIndex": 120,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2779,9 +2936,10 @@
       "id": "d9802",
       "name": "Box107-121.mesh",
       "userData": {
-        "gltfIndex": 121
+        "gltfIndex": 121,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2796,9 +2954,10 @@
       "id": "c31fd",
       "name": "Box108-122.mesh",
       "userData": {
-        "gltfIndex": 122
+        "gltfIndex": 122,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2813,9 +2972,10 @@
       "id": "4506c",
       "name": "Box109-123.mesh",
       "userData": {
-        "gltfIndex": 123
+        "gltfIndex": 123,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2830,9 +2990,10 @@
       "id": "72f8b",
       "name": "Box110-124.mesh",
       "userData": {
-        "gltfIndex": 124
+        "gltfIndex": 124,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2847,9 +3008,10 @@
       "id": "794b1",
       "name": "Box111-125.mesh",
       "userData": {
-        "gltfIndex": 125
+        "gltfIndex": 125,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2864,9 +3026,10 @@
       "id": "8583d",
       "name": "Box112-126.mesh",
       "userData": {
-        "gltfIndex": 126
+        "gltfIndex": 126,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2881,9 +3044,10 @@
       "id": "b8727",
       "name": "Box113-127.mesh",
       "userData": {
-        "gltfIndex": 127
+        "gltfIndex": 127,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2898,9 +3062,10 @@
       "id": "4a899",
       "name": "Box114-128.mesh",
       "userData": {
-        "gltfIndex": 128
+        "gltfIndex": 128,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2915,9 +3080,10 @@
       "id": "806b0",
       "name": "Box115-129.mesh",
       "userData": {
-        "gltfIndex": 129
+        "gltfIndex": 129,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2932,9 +3098,10 @@
       "id": "ec700",
       "name": "Box116-130.mesh",
       "userData": {
-        "gltfIndex": 130
+        "gltfIndex": 130,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2949,9 +3116,10 @@
       "id": "d981d",
       "name": "Box117-131.mesh",
       "userData": {
-        "gltfIndex": 131
+        "gltfIndex": 131,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2966,9 +3134,10 @@
       "id": "d7455",
       "name": "Box126-132.mesh",
       "userData": {
-        "gltfIndex": 132
+        "gltfIndex": 132,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -2983,9 +3152,10 @@
       "id": "f56e0",
       "name": "Box128-134.mesh",
       "userData": {
-        "gltfIndex": 134
+        "gltfIndex": 134,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3000,9 +3170,10 @@
       "id": "483fc",
       "name": "Box129-135.mesh",
       "userData": {
-        "gltfIndex": 135
+        "gltfIndex": 135,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3017,9 +3188,10 @@
       "id": "83d6f",
       "name": "Box130-136.mesh",
       "userData": {
-        "gltfIndex": 136
+        "gltfIndex": 136,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3034,9 +3206,10 @@
       "id": "98e4e",
       "name": "Box131-137.mesh",
       "userData": {
-        "gltfIndex": 137
+        "gltfIndex": 137,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3051,9 +3224,10 @@
       "id": "4d240",
       "name": "Box132-138.mesh",
       "userData": {
-        "gltfIndex": 138
+        "gltfIndex": 138,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3068,9 +3242,10 @@
       "id": "36c96",
       "name": "Box133-139.mesh",
       "userData": {
-        "gltfIndex": 139
+        "gltfIndex": 139,
+        "triangleCount": 108
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3085,9 +3260,10 @@
       "id": "e1f81",
       "name": "Box134-140.mesh",
       "userData": {
-        "gltfIndex": 140
+        "gltfIndex": 140,
+        "triangleCount": 108
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3102,9 +3278,10 @@
       "id": "d5b65",
       "name": "Box135-141.mesh",
       "userData": {
-        "gltfIndex": 141
+        "gltfIndex": 141,
+        "triangleCount": 108
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3119,9 +3296,10 @@
       "id": "d708a",
       "name": "Box137-142.mesh",
       "userData": {
-        "gltfIndex": 142
+        "gltfIndex": 142,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3136,9 +3314,10 @@
       "id": "ed83c",
       "name": "Box138-143.mesh",
       "userData": {
-        "gltfIndex": 143
+        "gltfIndex": 143,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3153,9 +3332,10 @@
       "id": "631d7",
       "name": "Box139-144.mesh",
       "userData": {
-        "gltfIndex": 144
+        "gltfIndex": 144,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3170,9 +3350,10 @@
       "id": "177ee",
       "name": "Box140-145.mesh",
       "userData": {
-        "gltfIndex": 145
+        "gltfIndex": 145,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3187,9 +3368,10 @@
       "id": "5dfda",
       "name": "Box141-146.mesh",
       "userData": {
-        "gltfIndex": 146
+        "gltfIndex": 146,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3204,9 +3386,10 @@
       "id": "0fb62",
       "name": "Box125-147.mesh",
       "userData": {
-        "gltfIndex": 147
+        "gltfIndex": 147,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3221,9 +3404,10 @@
       "id": "83d93",
       "name": "Box123-148.mesh",
       "userData": {
-        "gltfIndex": 148
+        "gltfIndex": 148,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3238,9 +3422,10 @@
       "id": "4e469",
       "name": "Box122-149.mesh",
       "userData": {
-        "gltfIndex": 149
+        "gltfIndex": 149,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3255,9 +3440,10 @@
       "id": "0758f",
       "name": "Box121-150.mesh",
       "userData": {
-        "gltfIndex": 150
+        "gltfIndex": 150,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3272,9 +3458,10 @@
       "id": "0e6bf",
       "name": "Box120-151.mesh",
       "userData": {
-        "gltfIndex": 151
+        "gltfIndex": 151,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3289,9 +3476,10 @@
       "id": "3e001",
       "name": "Box119-152.mesh",
       "userData": {
-        "gltfIndex": 152
+        "gltfIndex": 152,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3306,9 +3494,10 @@
       "id": "03f52",
       "name": "Box118-153.mesh",
       "userData": {
-        "gltfIndex": 153
+        "gltfIndex": 153,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3323,9 +3512,10 @@
       "id": "df04d",
       "name": "Box124-154.mesh",
       "userData": {
-        "gltfIndex": 154
+        "gltfIndex": 154,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3340,9 +3530,10 @@
       "id": "a8834",
       "name": "Box159-155.mesh",
       "userData": {
-        "gltfIndex": 155
+        "gltfIndex": 155,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3357,9 +3548,10 @@
       "id": "e05d9",
       "name": "Box160-156.mesh",
       "userData": {
-        "gltfIndex": 156
+        "gltfIndex": 156,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3374,9 +3566,10 @@
       "id": "8e2eb",
       "name": "Box162-158.mesh",
       "userData": {
-        "gltfIndex": 158
+        "gltfIndex": 158,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3391,9 +3584,10 @@
       "id": "e2acf",
       "name": "Box164-160.mesh",
       "userData": {
-        "gltfIndex": 160
+        "gltfIndex": 160,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3408,9 +3602,10 @@
       "id": "f798c",
       "name": "Box165-161.mesh",
       "userData": {
-        "gltfIndex": 161
+        "gltfIndex": 161,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3425,9 +3620,10 @@
       "id": "bed74",
       "name": "Box166-162.mesh",
       "userData": {
-        "gltfIndex": 162
+        "gltfIndex": 162,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3442,9 +3638,10 @@
       "id": "1a1b8",
       "name": "Box167-163.mesh",
       "userData": {
-        "gltfIndex": 163
+        "gltfIndex": 163,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3459,9 +3656,10 @@
       "id": "0fdb9",
       "name": "Box168-164.mesh",
       "userData": {
-        "gltfIndex": 164
+        "gltfIndex": 164,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3476,9 +3674,10 @@
       "id": "8eba3",
       "name": "Line012-165.mesh",
       "userData": {
-        "gltfIndex": 165
+        "gltfIndex": 165,
+        "triangleCount": 608
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3493,9 +3692,10 @@
       "id": "24ac1",
       "name": "Line001-166.mesh",
       "userData": {
-        "gltfIndex": 166
+        "gltfIndex": 166,
+        "triangleCount": 316
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3510,9 +3710,10 @@
       "id": "a1ec8",
       "name": "Line002-167.mesh",
       "userData": {
-        "gltfIndex": 167
+        "gltfIndex": 167,
+        "triangleCount": 420
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3527,9 +3728,10 @@
       "id": "2ef90",
       "name": "Line003-168.mesh",
       "userData": {
-        "gltfIndex": 168
+        "gltfIndex": 168,
+        "triangleCount": 428
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3544,9 +3746,10 @@
       "id": "fcb33",
       "name": "Line004-169.mesh",
       "userData": {
-        "gltfIndex": 169
+        "gltfIndex": 169,
+        "triangleCount": 304
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3561,9 +3764,10 @@
       "id": "95bc8",
       "name": "Line006-171.mesh",
       "userData": {
-        "gltfIndex": 171
+        "gltfIndex": 171,
+        "triangleCount": 300
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3578,9 +3782,10 @@
       "id": "a9a6b",
       "name": "Line007-172.mesh",
       "userData": {
-        "gltfIndex": 172
+        "gltfIndex": 172,
+        "triangleCount": 212
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3595,9 +3800,10 @@
       "id": "b416d",
       "name": "Line008-173.mesh",
       "userData": {
-        "gltfIndex": 173
+        "gltfIndex": 173,
+        "triangleCount": 420
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3612,9 +3818,10 @@
       "id": "ec7d9",
       "name": "Line009-174.mesh",
       "userData": {
-        "gltfIndex": 174
+        "gltfIndex": 174,
+        "triangleCount": 300
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3629,9 +3836,10 @@
       "id": "80d4d",
       "name": "Line010-175.mesh",
       "userData": {
-        "gltfIndex": 175
+        "gltfIndex": 175,
+        "triangleCount": 296
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3646,9 +3854,10 @@
       "id": "6eee0",
       "name": "Line016-176.mesh",
       "userData": {
-        "gltfIndex": 176
+        "gltfIndex": 176,
+        "triangleCount": 212
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3663,9 +3872,10 @@
       "id": "84c11",
       "name": "Line017-177.mesh",
       "userData": {
-        "gltfIndex": 177
+        "gltfIndex": 177,
+        "triangleCount": 428
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3680,9 +3890,10 @@
       "id": "aa610",
       "name": "Line018-178.mesh",
       "userData": {
-        "gltfIndex": 178
+        "gltfIndex": 178,
+        "triangleCount": 288
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3697,9 +3908,10 @@
       "id": "d8f8e",
       "name": "Box142-181.mesh",
       "userData": {
-        "gltfIndex": 181
+        "gltfIndex": 181,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3714,9 +3926,10 @@
       "id": "cf7b9",
       "name": "Box143-182.mesh",
       "userData": {
-        "gltfIndex": 182
+        "gltfIndex": 182,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3731,9 +3944,10 @@
       "id": "5ad9b",
       "name": "Box144-183.mesh",
       "userData": {
-        "gltfIndex": 183
+        "gltfIndex": 183,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3748,9 +3962,10 @@
       "id": "b6725",
       "name": "Box146-185.mesh",
       "userData": {
-        "gltfIndex": 185
+        "gltfIndex": 185,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3765,9 +3980,10 @@
       "id": "adeec",
       "name": "Box147-186.mesh",
       "userData": {
-        "gltfIndex": 186
+        "gltfIndex": 186,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3782,9 +3998,10 @@
       "id": "d43a3",
       "name": "Box148-187.mesh",
       "userData": {
-        "gltfIndex": 187
+        "gltfIndex": 187,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3799,9 +4016,10 @@
       "id": "f5438",
       "name": "Box149-188.mesh",
       "userData": {
-        "gltfIndex": 188
+        "gltfIndex": 188,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3816,9 +4034,10 @@
       "id": "42b45",
       "name": "Box150-189.mesh",
       "userData": {
-        "gltfIndex": 189
+        "gltfIndex": 189,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3833,9 +4052,10 @@
       "id": "4011a",
       "name": "Box151-190.mesh",
       "userData": {
-        "gltfIndex": 190
+        "gltfIndex": 190,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3850,9 +4070,10 @@
       "id": "ec8bd",
       "name": "Box152-191.mesh",
       "userData": {
-        "gltfIndex": 191
+        "gltfIndex": 191,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3867,9 +4088,10 @@
       "id": "e59aa",
       "name": "Box154-193.mesh",
       "userData": {
-        "gltfIndex": 193
+        "gltfIndex": 193,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3884,9 +4106,10 @@
       "id": "b3269",
       "name": "Box155-194.mesh",
       "userData": {
-        "gltfIndex": 194
+        "gltfIndex": 194,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3901,9 +4124,10 @@
       "id": "4a894",
       "name": "Box156-195.mesh",
       "userData": {
-        "gltfIndex": 195
+        "gltfIndex": 195,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3918,9 +4142,10 @@
       "id": "5438e",
       "name": "Box157-196.mesh",
       "userData": {
-        "gltfIndex": 196
+        "gltfIndex": 196,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3935,9 +4160,10 @@
       "id": "f8503",
       "name": "Box158-197.mesh",
       "userData": {
-        "gltfIndex": 197
+        "gltfIndex": 197,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3952,9 +4178,10 @@
       "id": "fb5db",
       "name": "Cylinder012-198.mesh",
       "userData": {
-        "gltfIndex": 198
+        "gltfIndex": 198,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3969,9 +4196,10 @@
       "id": "97a63",
       "name": "Cylinder013-199.mesh",
       "userData": {
-        "gltfIndex": 199
+        "gltfIndex": 199,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -3986,9 +4214,10 @@
       "id": "f17e2",
       "name": "Cylinder014-200.mesh",
       "userData": {
-        "gltfIndex": 200
+        "gltfIndex": 200,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4003,9 +4232,10 @@
       "id": "7e095",
       "name": "Cylinder015-201.mesh",
       "userData": {
-        "gltfIndex": 201
+        "gltfIndex": 201,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4020,9 +4250,10 @@
       "id": "2d593",
       "name": "Cylinder016-202.mesh",
       "userData": {
-        "gltfIndex": 202
+        "gltfIndex": 202,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4037,9 +4268,10 @@
       "id": "d3957",
       "name": "Cylinder017-203.mesh",
       "userData": {
-        "gltfIndex": 203
+        "gltfIndex": 203,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4054,9 +4286,10 @@
       "id": "a5a3e",
       "name": "Cylinder018-204.mesh",
       "userData": {
-        "gltfIndex": 204
+        "gltfIndex": 204,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4071,9 +4304,10 @@
       "id": "ba9ef",
       "name": "Cylinder019-205.mesh",
       "userData": {
-        "gltfIndex": 205
+        "gltfIndex": 205,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4088,9 +4322,10 @@
       "id": "1fb52",
       "name": "Cylinder020-206.mesh",
       "userData": {
-        "gltfIndex": 206
+        "gltfIndex": 206,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4105,9 +4340,10 @@
       "id": "3228c",
       "name": "Cylinder022-208.mesh",
       "userData": {
-        "gltfIndex": 208
+        "gltfIndex": 208,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4122,9 +4358,10 @@
       "id": "2450e",
       "name": "Cone001-209.mesh",
       "userData": {
-        "gltfIndex": 209
+        "gltfIndex": 209,
+        "triangleCount": 284
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4139,9 +4376,10 @@
       "id": "4ff89",
       "name": "Sphere001-210.mesh",
       "userData": {
-        "gltfIndex": 210
+        "gltfIndex": 210,
+        "triangleCount": 48
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4156,9 +4394,10 @@
       "id": "9db14",
       "name": "Line022_Material0-211.mesh",
       "userData": {
-        "gltfIndex": 211
+        "gltfIndex": 211,
+        "triangleCount": 1052
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4173,9 +4412,10 @@
       "id": "147fb",
       "name": "Line023-212.mesh",
       "userData": {
-        "gltfIndex": 212
+        "gltfIndex": 212,
+        "triangleCount": 626
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4190,9 +4430,10 @@
       "id": "80b93",
       "name": "Box169-213.mesh",
       "userData": {
-        "gltfIndex": 213
+        "gltfIndex": 213,
+        "triangleCount": 44
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4207,9 +4448,10 @@
       "id": "3bccd",
       "name": "Box170_Material0-214.mesh",
       "userData": {
-        "gltfIndex": 214
+        "gltfIndex": 214,
+        "triangleCount": 836
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4224,9 +4466,10 @@
       "id": "9d9ab",
       "name": "Arc002-215.mesh",
       "userData": {
-        "gltfIndex": 215
+        "gltfIndex": 215,
+        "triangleCount": 268
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4241,9 +4484,10 @@
       "id": "56af3",
       "name": "Box171-217.mesh",
       "userData": {
-        "gltfIndex": 217
+        "gltfIndex": 217,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4258,9 +4502,10 @@
       "id": "88ee2",
       "name": "Box172-218.mesh",
       "userData": {
-        "gltfIndex": 218
+        "gltfIndex": 218,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4275,9 +4520,10 @@
       "id": "e2b84",
       "name": "Box173-219.mesh",
       "userData": {
-        "gltfIndex": 219
+        "gltfIndex": 219,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4292,9 +4538,10 @@
       "id": "a333f",
       "name": "Box174-220.mesh",
       "userData": {
-        "gltfIndex": 220
+        "gltfIndex": 220,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4309,9 +4556,10 @@
       "id": "1ec15",
       "name": "Box175-221.mesh",
       "userData": {
-        "gltfIndex": 221
+        "gltfIndex": 221,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4326,9 +4574,10 @@
       "id": "b1213",
       "name": "Box176-222.mesh",
       "userData": {
-        "gltfIndex": 222
+        "gltfIndex": 222,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4343,9 +4592,10 @@
       "id": "ee8cb",
       "name": "Box262-223.mesh",
       "userData": {
-        "gltfIndex": 223
+        "gltfIndex": 223,
+        "triangleCount": 1784
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4360,9 +4610,10 @@
       "id": "67b5b",
       "name": "Box263-224.mesh",
       "userData": {
-        "gltfIndex": 224
+        "gltfIndex": 224,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4377,9 +4628,10 @@
       "id": "d79f4",
       "name": "Box265-226.mesh",
       "userData": {
-        "gltfIndex": 226
+        "gltfIndex": 226,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4394,9 +4646,10 @@
       "id": "8bf6f",
       "name": "Box266-227.mesh",
       "userData": {
-        "gltfIndex": 227
+        "gltfIndex": 227,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4411,9 +4664,10 @@
       "id": "f3cea",
       "name": "Box267-228.mesh",
       "userData": {
-        "gltfIndex": 228
+        "gltfIndex": 228,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4428,9 +4682,10 @@
       "id": "e6c93",
       "name": "Cylinder052-229.mesh",
       "userData": {
-        "gltfIndex": 229
+        "gltfIndex": 229,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4445,9 +4700,10 @@
       "id": "7e0f7",
       "name": "Box269-230.mesh",
       "userData": {
-        "gltfIndex": 230
+        "gltfIndex": 230,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4462,9 +4718,10 @@
       "id": "52c09",
       "name": "Box270-231.mesh",
       "userData": {
-        "gltfIndex": 231
+        "gltfIndex": 231,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4479,9 +4736,10 @@
       "id": "c7021",
       "name": "Box271-232.mesh",
       "userData": {
-        "gltfIndex": 232
+        "gltfIndex": 232,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4496,9 +4754,10 @@
       "id": "cc532",
       "name": "Box272-233.mesh",
       "userData": {
-        "gltfIndex": 233
+        "gltfIndex": 233,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4513,9 +4772,10 @@
       "id": "5691c",
       "name": "Box273-234.mesh",
       "userData": {
-        "gltfIndex": 234
+        "gltfIndex": 234,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4530,9 +4790,10 @@
       "id": "5d47f",
       "name": "Box274-235.mesh",
       "userData": {
-        "gltfIndex": 235
+        "gltfIndex": 235,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4547,9 +4808,10 @@
       "id": "f4872",
       "name": "Box275-236.mesh",
       "userData": {
-        "gltfIndex": 236
+        "gltfIndex": 236,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4564,9 +4826,10 @@
       "id": "66b35",
       "name": "Box276-237.mesh",
       "userData": {
-        "gltfIndex": 237
+        "gltfIndex": 237,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4581,9 +4844,10 @@
       "id": "5c8fc",
       "name": "Box277-238.mesh",
       "userData": {
-        "gltfIndex": 238
+        "gltfIndex": 238,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4598,9 +4862,10 @@
       "id": "bd5bc",
       "name": "Box278-239.mesh",
       "userData": {
-        "gltfIndex": 239
+        "gltfIndex": 239,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4615,9 +4880,10 @@
       "id": "53adc",
       "name": "Plane002-240.mesh",
       "userData": {
-        "gltfIndex": 240
+        "gltfIndex": 240,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4632,9 +4898,10 @@
       "id": "4cd96",
       "name": "Cylinder051-241.mesh",
       "userData": {
-        "gltfIndex": 241
+        "gltfIndex": 241,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4649,9 +4916,10 @@
       "id": "1fd89",
       "name": "Cylinder050-242.mesh",
       "userData": {
-        "gltfIndex": 242
+        "gltfIndex": 242,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4666,9 +4934,10 @@
       "id": "db376",
       "name": "Box285-244.mesh",
       "userData": {
-        "gltfIndex": 244
+        "gltfIndex": 244,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4683,9 +4952,10 @@
       "id": "fa759",
       "name": "Box286-245.mesh",
       "userData": {
-        "gltfIndex": 245
+        "gltfIndex": 245,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4700,9 +4970,10 @@
       "id": "b2377",
       "name": "Box287-246.mesh",
       "userData": {
-        "gltfIndex": 246
+        "gltfIndex": 246,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4717,9 +4988,10 @@
       "id": "a37c2",
       "name": "Cylinder043-247.mesh",
       "userData": {
-        "gltfIndex": 247
+        "gltfIndex": 247,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4734,9 +5006,10 @@
       "id": "7f3a3",
       "name": "Cylinder044-248.mesh",
       "userData": {
-        "gltfIndex": 248
+        "gltfIndex": 248,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4751,9 +5024,10 @@
       "id": "bc430",
       "name": "Cylinder045-249.mesh",
       "userData": {
-        "gltfIndex": 249
+        "gltfIndex": 249,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4768,9 +5042,10 @@
       "id": "28d90",
       "name": "Cylinder046-250.mesh",
       "userData": {
-        "gltfIndex": 250
+        "gltfIndex": 250,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4785,9 +5060,10 @@
       "id": "cd529",
       "name": "Cylinder047-251.mesh",
       "userData": {
-        "gltfIndex": 251
+        "gltfIndex": 251,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4802,9 +5078,10 @@
       "id": "a081a",
       "name": "Cylinder048-252.mesh",
       "userData": {
-        "gltfIndex": 252
+        "gltfIndex": 252,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4819,9 +5096,10 @@
       "id": "adc12",
       "name": "Cylinder049-253.mesh",
       "userData": {
-        "gltfIndex": 253
+        "gltfIndex": 253,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4836,9 +5114,10 @@
       "id": "d3d16",
       "name": "Box282-254.mesh",
       "userData": {
-        "gltfIndex": 254
+        "gltfIndex": 254,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4853,9 +5132,10 @@
       "id": "6994d",
       "name": "Box279-256.mesh",
       "userData": {
-        "gltfIndex": 256
+        "gltfIndex": 256,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4870,9 +5150,10 @@
       "id": "c4be0",
       "name": "Box283-257.mesh",
       "userData": {
-        "gltfIndex": 257
+        "gltfIndex": 257,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4887,9 +5168,10 @@
       "id": "5175f",
       "name": "Box288-258.mesh",
       "userData": {
-        "gltfIndex": 258
+        "gltfIndex": 258,
+        "triangleCount": 1784
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4904,9 +5186,10 @@
       "id": "ff1e6",
       "name": "Box290-260.mesh",
       "userData": {
-        "gltfIndex": 260
+        "gltfIndex": 260,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4921,9 +5204,10 @@
       "id": "79c75",
       "name": "Box291-261.mesh",
       "userData": {
-        "gltfIndex": 261
+        "gltfIndex": 261,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4938,9 +5222,10 @@
       "id": "8017c",
       "name": "Box292-262.mesh",
       "userData": {
-        "gltfIndex": 262
+        "gltfIndex": 262,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4955,9 +5240,10 @@
       "id": "78e7d",
       "name": "Box293-263.mesh",
       "userData": {
-        "gltfIndex": 263
+        "gltfIndex": 263,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4972,9 +5258,10 @@
       "id": "c9e90",
       "name": "Box294-264.mesh",
       "userData": {
-        "gltfIndex": 264
+        "gltfIndex": 264,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -4989,9 +5276,10 @@
       "id": "c2055",
       "name": "Box296-266.mesh",
       "userData": {
-        "gltfIndex": 266
+        "gltfIndex": 266,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5006,9 +5294,10 @@
       "id": "54faf",
       "name": "Box297-267.mesh",
       "userData": {
-        "gltfIndex": 267
+        "gltfIndex": 267,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5023,9 +5312,10 @@
       "id": "ab9c2",
       "name": "Box298-268.mesh",
       "userData": {
-        "gltfIndex": 268
+        "gltfIndex": 268,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5040,9 +5330,10 @@
       "id": "9d710",
       "name": "Box299-269.mesh",
       "userData": {
-        "gltfIndex": 269
+        "gltfIndex": 269,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5057,9 +5348,10 @@
       "id": "c62f2",
       "name": "Box300-270.mesh",
       "userData": {
-        "gltfIndex": 270
+        "gltfIndex": 270,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5074,9 +5366,10 @@
       "id": "bd862",
       "name": "Box301-271.mesh",
       "userData": {
-        "gltfIndex": 271
+        "gltfIndex": 271,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5091,9 +5384,10 @@
       "id": "c764d",
       "name": "Box302-272.mesh",
       "userData": {
-        "gltfIndex": 272
+        "gltfIndex": 272,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5108,9 +5402,10 @@
       "id": "301d2",
       "name": "Box303-273.mesh",
       "userData": {
-        "gltfIndex": 273
+        "gltfIndex": 273,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5125,9 +5420,10 @@
       "id": "921c6",
       "name": "Box304-274.mesh",
       "userData": {
-        "gltfIndex": 274
+        "gltfIndex": 274,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5142,9 +5438,10 @@
       "id": "d1245",
       "name": "Box305-275.mesh",
       "userData": {
-        "gltfIndex": 275
+        "gltfIndex": 275,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5159,9 +5456,10 @@
       "id": "eb7c0",
       "name": "Box306-276.mesh",
       "userData": {
-        "gltfIndex": 276
+        "gltfIndex": 276,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5176,9 +5474,10 @@
       "id": "8bcdc",
       "name": "Box307-277.mesh",
       "userData": {
-        "gltfIndex": 277
+        "gltfIndex": 277,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5193,9 +5492,10 @@
       "id": "4cbca",
       "name": "Box308-278.mesh",
       "userData": {
-        "gltfIndex": 278
+        "gltfIndex": 278,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5210,9 +5510,10 @@
       "id": "8934c",
       "name": "Box309-279.mesh",
       "userData": {
-        "gltfIndex": 279
+        "gltfIndex": 279,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5227,9 +5528,10 @@
       "id": "b2656",
       "name": "Box310-280.mesh",
       "userData": {
-        "gltfIndex": 280
+        "gltfIndex": 280,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5244,9 +5546,10 @@
       "id": "0dbab",
       "name": "Box311-281.mesh",
       "userData": {
-        "gltfIndex": 281
+        "gltfIndex": 281,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5261,9 +5564,10 @@
       "id": "bc390",
       "name": "Cylinder054-283.mesh",
       "userData": {
-        "gltfIndex": 283
+        "gltfIndex": 283,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5278,9 +5582,10 @@
       "id": "a9f95",
       "name": "Cylinder055-284.mesh",
       "userData": {
-        "gltfIndex": 284
+        "gltfIndex": 284,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5295,9 +5600,10 @@
       "id": "886ae",
       "name": "Cylinder056-285.mesh",
       "userData": {
-        "gltfIndex": 285
+        "gltfIndex": 285,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5312,9 +5618,10 @@
       "id": "a434d",
       "name": "Cylinder057-286.mesh",
       "userData": {
-        "gltfIndex": 286
+        "gltfIndex": 286,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5329,9 +5636,10 @@
       "id": "3f629",
       "name": "Cylinder058-287.mesh",
       "userData": {
-        "gltfIndex": 287
+        "gltfIndex": 287,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5346,9 +5654,10 @@
       "id": "bff92",
       "name": "Cylinder059-288.mesh",
       "userData": {
-        "gltfIndex": 288
+        "gltfIndex": 288,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5363,9 +5672,10 @@
       "id": "4b902",
       "name": "Cylinder060-289.mesh",
       "userData": {
-        "gltfIndex": 289
+        "gltfIndex": 289,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5380,9 +5690,10 @@
       "id": "eb615",
       "name": "Cylinder061-290.mesh",
       "userData": {
-        "gltfIndex": 290
+        "gltfIndex": 290,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5397,9 +5708,10 @@
       "id": "ac31b",
       "name": "Cylinder062-291.mesh",
       "userData": {
-        "gltfIndex": 291
+        "gltfIndex": 291,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5414,9 +5726,10 @@
       "id": "7b694",
       "name": "Plane003-292.mesh",
       "userData": {
-        "gltfIndex": 292
+        "gltfIndex": 292,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5431,9 +5744,10 @@
       "id": "558bf",
       "name": "Cylinder042-293.mesh",
       "userData": {
-        "gltfIndex": 293
+        "gltfIndex": 293,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5448,9 +5762,10 @@
       "id": "e38ab",
       "name": "Cylinder041-294.mesh",
       "userData": {
-        "gltfIndex": 294
+        "gltfIndex": 294,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5465,9 +5780,10 @@
       "id": "cff97",
       "name": "Box261-295.mesh",
       "userData": {
-        "gltfIndex": 295
+        "gltfIndex": 295,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5482,9 +5798,10 @@
       "id": "12b92",
       "name": "Box260-297.mesh",
       "userData": {
-        "gltfIndex": 297
+        "gltfIndex": 297,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5499,9 +5816,10 @@
       "id": "424de",
       "name": "Box259-298.mesh",
       "userData": {
-        "gltfIndex": 298
+        "gltfIndex": 298,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5516,9 +5834,10 @@
       "id": "7d0e3",
       "name": "Box258-299.mesh",
       "userData": {
-        "gltfIndex": 299
+        "gltfIndex": 299,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5533,9 +5852,10 @@
       "id": "aa212",
       "name": "Box257-300.mesh",
       "userData": {
-        "gltfIndex": 300
+        "gltfIndex": 300,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5550,9 +5870,10 @@
       "id": "e5d77",
       "name": "Box216-301.mesh",
       "userData": {
-        "gltfIndex": 301
+        "gltfIndex": 301,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5567,9 +5888,10 @@
       "id": "7528c",
       "name": "Box251-302.mesh",
       "userData": {
-        "gltfIndex": 302
+        "gltfIndex": 302,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5584,9 +5906,10 @@
       "id": "3ad18",
       "name": "Box254-303.mesh",
       "userData": {
-        "gltfIndex": 303
+        "gltfIndex": 303,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5601,9 +5924,10 @@
       "id": "0942c",
       "name": "Box253-304.mesh",
       "userData": {
-        "gltfIndex": 304
+        "gltfIndex": 304,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5618,9 +5942,10 @@
       "id": "70e34",
       "name": "Object002-305.mesh",
       "userData": {
-        "gltfIndex": 305
+        "gltfIndex": 305,
+        "triangleCount": 520
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5635,9 +5960,10 @@
       "id": "32cda",
       "name": "Box255-306.mesh",
       "userData": {
-        "gltfIndex": 306
+        "gltfIndex": 306,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5652,9 +5978,10 @@
       "id": "cd10c",
       "name": "Box256-307.mesh",
       "userData": {
-        "gltfIndex": 307
+        "gltfIndex": 307,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5669,9 +5996,10 @@
       "id": "0283e",
       "name": "Box252-308.mesh",
       "userData": {
-        "gltfIndex": 308
+        "gltfIndex": 308,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5686,9 +6014,10 @@
       "id": "e1d3b",
       "name": "Box312-309.mesh",
       "userData": {
-        "gltfIndex": 309
+        "gltfIndex": 309,
+        "triangleCount": 1784
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5703,9 +6032,10 @@
       "id": "b1e6d",
       "name": "Box313-310.mesh",
       "userData": {
-        "gltfIndex": 310
+        "gltfIndex": 310,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5720,9 +6050,10 @@
       "id": "35e75",
       "name": "Box314-311.mesh",
       "userData": {
-        "gltfIndex": 311
+        "gltfIndex": 311,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5737,9 +6068,10 @@
       "id": "646a9",
       "name": "Box315-312.mesh",
       "userData": {
-        "gltfIndex": 312
+        "gltfIndex": 312,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5754,9 +6086,10 @@
       "id": "1a826",
       "name": "Box316-313.mesh",
       "userData": {
-        "gltfIndex": 313
+        "gltfIndex": 313,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5771,9 +6104,10 @@
       "id": "9f367",
       "name": "Box317-314.mesh",
       "userData": {
-        "gltfIndex": 314
+        "gltfIndex": 314,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5788,9 +6122,10 @@
       "id": "77c7d",
       "name": "Box318-315.mesh",
       "userData": {
-        "gltfIndex": 315
+        "gltfIndex": 315,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5805,9 +6140,10 @@
       "id": "3a29d",
       "name": "Box319-316.mesh",
       "userData": {
-        "gltfIndex": 316
+        "gltfIndex": 316,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5822,9 +6158,10 @@
       "id": "babc7",
       "name": "Box320-317.mesh",
       "userData": {
-        "gltfIndex": 317
+        "gltfIndex": 317,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5839,9 +6176,10 @@
       "id": "fb6c3",
       "name": "Box321-318.mesh",
       "userData": {
-        "gltfIndex": 318
+        "gltfIndex": 318,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5856,9 +6194,10 @@
       "id": "528cd",
       "name": "Box322-319.mesh",
       "userData": {
-        "gltfIndex": 319
+        "gltfIndex": 319,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5873,9 +6212,10 @@
       "id": "f4a56",
       "name": "Box323-320.mesh",
       "userData": {
-        "gltfIndex": 320
+        "gltfIndex": 320,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5890,9 +6230,10 @@
       "id": "7dc49",
       "name": "Box324-321.mesh",
       "userData": {
-        "gltfIndex": 321
+        "gltfIndex": 321,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5907,9 +6248,10 @@
       "id": "304d1",
       "name": "Box325-322.mesh",
       "userData": {
-        "gltfIndex": 322
+        "gltfIndex": 322,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5924,9 +6266,10 @@
       "id": "3832b",
       "name": "Box326-323.mesh",
       "userData": {
-        "gltfIndex": 323
+        "gltfIndex": 323,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5941,9 +6284,10 @@
       "id": "3ff08",
       "name": "Box327-324.mesh",
       "userData": {
-        "gltfIndex": 324
+        "gltfIndex": 324,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5958,9 +6302,10 @@
       "id": "3801e",
       "name": "Box328-325.mesh",
       "userData": {
-        "gltfIndex": 325
+        "gltfIndex": 325,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5975,9 +6320,10 @@
       "id": "3dd73",
       "name": "Box329-326.mesh",
       "userData": {
-        "gltfIndex": 326
+        "gltfIndex": 326,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -5992,9 +6338,10 @@
       "id": "1c7dc",
       "name": "Box330-327.mesh",
       "userData": {
-        "gltfIndex": 327
+        "gltfIndex": 327,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6009,9 +6356,10 @@
       "id": "d5edb",
       "name": "Box331-328.mesh",
       "userData": {
-        "gltfIndex": 328
+        "gltfIndex": 328,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6026,9 +6374,10 @@
       "id": "e5566",
       "name": "Box332-329.mesh",
       "userData": {
-        "gltfIndex": 329
+        "gltfIndex": 329,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6043,9 +6392,10 @@
       "id": "e22a7",
       "name": "Box333-330.mesh",
       "userData": {
-        "gltfIndex": 330
+        "gltfIndex": 330,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6060,9 +6410,10 @@
       "id": "7a40c",
       "name": "Box334-331.mesh",
       "userData": {
-        "gltfIndex": 331
+        "gltfIndex": 331,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6077,9 +6428,10 @@
       "id": "f9af7",
       "name": "Box335-332.mesh",
       "userData": {
-        "gltfIndex": 332
+        "gltfIndex": 332,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6094,9 +6446,10 @@
       "id": "7a759",
       "name": "Cylinder063-333.mesh",
       "userData": {
-        "gltfIndex": 333
+        "gltfIndex": 333,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6111,9 +6464,10 @@
       "id": "afe3e",
       "name": "Cylinder064-334.mesh",
       "userData": {
-        "gltfIndex": 334
+        "gltfIndex": 334,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6128,9 +6482,10 @@
       "id": "c30bf",
       "name": "Cylinder065-335.mesh",
       "userData": {
-        "gltfIndex": 335
+        "gltfIndex": 335,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6145,9 +6500,10 @@
       "id": "2418b",
       "name": "Cylinder066-336.mesh",
       "userData": {
-        "gltfIndex": 336
+        "gltfIndex": 336,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6162,9 +6518,10 @@
       "id": "da149",
       "name": "Cylinder067-337.mesh",
       "userData": {
-        "gltfIndex": 337
+        "gltfIndex": 337,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6179,9 +6536,10 @@
       "id": "c7c65",
       "name": "Cylinder068-338.mesh",
       "userData": {
-        "gltfIndex": 338
+        "gltfIndex": 338,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6196,9 +6554,10 @@
       "id": "6635c",
       "name": "Cylinder069-339.mesh",
       "userData": {
-        "gltfIndex": 339
+        "gltfIndex": 339,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6213,9 +6572,10 @@
       "id": "9e13f",
       "name": "Cylinder070-340.mesh",
       "userData": {
-        "gltfIndex": 340
+        "gltfIndex": 340,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6230,9 +6590,10 @@
       "id": "260b5",
       "name": "Cylinder071-341.mesh",
       "userData": {
-        "gltfIndex": 341
+        "gltfIndex": 341,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6247,9 +6608,10 @@
       "id": "ecebd",
       "name": "Cylinder072-342.mesh",
       "userData": {
-        "gltfIndex": 342
+        "gltfIndex": 342,
+        "triangleCount": 72
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6264,9 +6626,10 @@
       "id": "e65cc",
       "name": "Plane004-343.mesh",
       "userData": {
-        "gltfIndex": 343
+        "gltfIndex": 343,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6281,9 +6644,10 @@
       "id": "68d0d",
       "name": "Box336-344.mesh",
       "userData": {
-        "gltfIndex": 344
+        "gltfIndex": 344,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6298,9 +6662,10 @@
       "id": "afbed",
       "name": "Box337-345.mesh",
       "userData": {
-        "gltfIndex": 345
+        "gltfIndex": 345,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6315,9 +6680,10 @@
       "id": "037e6",
       "name": "Box339-347.mesh",
       "userData": {
-        "gltfIndex": 347
+        "gltfIndex": 347,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6332,9 +6698,10 @@
       "id": "a92ef",
       "name": "Box340-348.mesh",
       "userData": {
-        "gltfIndex": 348
+        "gltfIndex": 348,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6349,9 +6716,10 @@
       "id": "79e02",
       "name": "Box341-349.mesh",
       "userData": {
-        "gltfIndex": 349
+        "gltfIndex": 349,
+        "triangleCount": 332
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6366,9 +6734,10 @@
       "id": "7fc96",
       "name": "Plane005-352.mesh",
       "userData": {
-        "gltfIndex": 352
+        "gltfIndex": 352,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6383,9 +6752,10 @@
       "id": "4855b",
       "name": "Plane006-353.mesh",
       "userData": {
-        "gltfIndex": 353
+        "gltfIndex": 353,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6400,9 +6770,10 @@
       "id": "73b7b",
       "name": "Plane007-354.mesh",
       "userData": {
-        "gltfIndex": 354
+        "gltfIndex": 354,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6417,9 +6788,10 @@
       "id": "bc8da",
       "name": "Plane008-355.mesh",
       "userData": {
-        "gltfIndex": 355
+        "gltfIndex": 355,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6434,9 +6806,10 @@
       "id": "66a9d",
       "name": "Plane009-356.mesh",
       "userData": {
-        "gltfIndex": 356
+        "gltfIndex": 356,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6451,9 +6824,10 @@
       "id": "ef13b",
       "name": "Plane010-357.mesh",
       "userData": {
-        "gltfIndex": 357
+        "gltfIndex": 357,
+        "triangleCount": 92
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6468,9 +6842,10 @@
       "id": "fd108",
       "name": "Plane018-358.mesh",
       "userData": {
-        "gltfIndex": 358
+        "gltfIndex": 358,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6485,9 +6860,10 @@
       "id": "c5df7",
       "name": "Plane021-359.mesh",
       "userData": {
-        "gltfIndex": 359
+        "gltfIndex": 359,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6502,9 +6878,10 @@
       "id": "3f484",
       "name": "Plane020-360.mesh",
       "userData": {
-        "gltfIndex": 360
+        "gltfIndex": 360,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6519,9 +6896,10 @@
       "id": "ec29e",
       "name": "Plane019-361.mesh",
       "userData": {
-        "gltfIndex": 361
+        "gltfIndex": 361,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6536,9 +6914,10 @@
       "id": "85fc9",
       "name": "Line061_Material0-362.mesh",
       "userData": {
-        "gltfIndex": 362
+        "gltfIndex": 362,
+        "triangleCount": 256
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6553,9 +6932,10 @@
       "id": "5cab4",
       "name": "Line062_Material0-363.mesh",
       "userData": {
-        "gltfIndex": 363
+        "gltfIndex": 363,
+        "triangleCount": 508
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6570,9 +6950,10 @@
       "id": "99d48",
       "name": "Line063_Material0-364.mesh",
       "userData": {
-        "gltfIndex": 364
+        "gltfIndex": 364,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6587,9 +6968,10 @@
       "id": "459d0",
       "name": "Line064-365.mesh",
       "userData": {
-        "gltfIndex": 365
+        "gltfIndex": 365,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6604,9 +6986,10 @@
       "id": "92cd7",
       "name": "Line065-366.mesh",
       "userData": {
-        "gltfIndex": 366
+        "gltfIndex": 366,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6621,9 +7004,10 @@
       "id": "965c4",
       "name": "Line066-367.mesh",
       "userData": {
-        "gltfIndex": 367
+        "gltfIndex": 367,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6638,9 +7022,10 @@
       "id": "50f6a",
       "name": "Line067-368.mesh",
       "userData": {
-        "gltfIndex": 368
+        "gltfIndex": 368,
+        "triangleCount": 212
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6655,9 +7040,10 @@
       "id": "073dd",
       "name": "Line068-369.mesh",
       "userData": {
-        "gltfIndex": 369
+        "gltfIndex": 369,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6672,9 +7058,10 @@
       "id": "ca9f6",
       "name": "Line069_Material0-370.mesh",
       "userData": {
-        "gltfIndex": 370
+        "gltfIndex": 370,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6689,9 +7076,10 @@
       "id": "35df3",
       "name": "Line071-372.mesh",
       "userData": {
-        "gltfIndex": 372
+        "gltfIndex": 372,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6706,9 +7094,10 @@
       "id": "64c24",
       "name": "Line072-373.mesh",
       "userData": {
-        "gltfIndex": 373
+        "gltfIndex": 373,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6723,9 +7112,10 @@
       "id": "96e6c",
       "name": "Line073-374.mesh",
       "userData": {
-        "gltfIndex": 374
+        "gltfIndex": 374,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6740,9 +7130,10 @@
       "id": "b262c",
       "name": "Line074-375.mesh",
       "userData": {
-        "gltfIndex": 375
+        "gltfIndex": 375,
+        "triangleCount": 184
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6757,9 +7148,10 @@
       "id": "8de7f",
       "name": "Line075-376.mesh",
       "userData": {
-        "gltfIndex": 376
+        "gltfIndex": 376,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6774,9 +7166,10 @@
       "id": "2f18b",
       "name": "Box001-377.mesh",
       "userData": {
-        "gltfIndex": 377
+        "gltfIndex": 377,
+        "triangleCount": 300
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6791,9 +7184,10 @@
       "id": "9a06a",
       "name": "Box002-378.mesh",
       "userData": {
-        "gltfIndex": 378
+        "gltfIndex": 378,
+        "triangleCount": 300
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6808,9 +7202,10 @@
       "id": "9f3f9",
       "name": "Box343-379.mesh",
       "userData": {
-        "gltfIndex": 379
+        "gltfIndex": 379,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6825,9 +7220,10 @@
       "id": "6df53",
       "name": "Box345-381.mesh",
       "userData": {
-        "gltfIndex": 381
+        "gltfIndex": 381,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6842,9 +7238,10 @@
       "id": "ac54e",
       "name": "Cylinder073-382.mesh",
       "userData": {
-        "gltfIndex": 382
+        "gltfIndex": 382,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6859,9 +7256,10 @@
       "id": "6248b",
       "name": "Cylinder075-384.mesh",
       "userData": {
-        "gltfIndex": 384
+        "gltfIndex": 384,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6876,9 +7274,10 @@
       "id": "ea9d7",
       "name": "Cylinder076-385.mesh",
       "userData": {
-        "gltfIndex": 385
+        "gltfIndex": 385,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6893,9 +7292,10 @@
       "id": "10fdc",
       "name": "Line076-386.mesh",
       "userData": {
-        "gltfIndex": 386
+        "gltfIndex": 386,
+        "triangleCount": 1312
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6910,9 +7310,10 @@
       "id": "69b95",
       "name": "Box346-387.mesh",
       "userData": {
-        "gltfIndex": 387
+        "gltfIndex": 387,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6927,9 +7328,10 @@
       "id": "d0ad4",
       "name": "Box348-389.mesh",
       "userData": {
-        "gltfIndex": 389
+        "gltfIndex": 389,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6944,9 +7346,10 @@
       "id": "241fd",
       "name": "Cylinder077-390.mesh",
       "userData": {
-        "gltfIndex": 390
+        "gltfIndex": 390,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6961,9 +7364,10 @@
       "id": "4bf92",
       "name": "Cylinder078-391.mesh",
       "userData": {
-        "gltfIndex": 391
+        "gltfIndex": 391,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6978,9 +7382,10 @@
       "id": "68f3f",
       "name": "Cylinder079-392.mesh",
       "userData": {
-        "gltfIndex": 392
+        "gltfIndex": 392,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -6995,9 +7400,10 @@
       "id": "1117f",
       "name": "Cylinder080-393.mesh",
       "userData": {
-        "gltfIndex": 393
+        "gltfIndex": 393,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7012,9 +7418,10 @@
       "id": "437f5",
       "name": "Line077-394.mesh",
       "userData": {
-        "gltfIndex": 394
+        "gltfIndex": 394,
+        "triangleCount": 1196
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7029,9 +7436,10 @@
       "id": "d92e8",
       "name": "Line078-395.mesh",
       "userData": {
-        "gltfIndex": 395
+        "gltfIndex": 395,
+        "triangleCount": 24
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7046,9 +7454,10 @@
       "id": "27af5",
       "name": "Line079-396.mesh",
       "userData": {
-        "gltfIndex": 396
+        "gltfIndex": 396,
+        "triangleCount": 76
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7063,9 +7472,10 @@
       "id": "9355c",
       "name": "Line080-397.mesh",
       "userData": {
-        "gltfIndex": 397
+        "gltfIndex": 397,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7080,9 +7490,10 @@
       "id": "bb7b6",
       "name": "Cylinder081-398.mesh",
       "userData": {
-        "gltfIndex": 398
+        "gltfIndex": 398,
+        "triangleCount": 716
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7097,9 +7508,10 @@
       "id": "457b6",
       "name": "Cylinder082-399.mesh",
       "userData": {
-        "gltfIndex": 399
+        "gltfIndex": 399,
+        "triangleCount": 752
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7114,9 +7526,10 @@
       "id": "8135f",
       "name": "Box349-400.mesh",
       "userData": {
-        "gltfIndex": 400
+        "gltfIndex": 400,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7131,9 +7544,10 @@
       "id": "90eb2",
       "name": "Box350-401.mesh",
       "userData": {
-        "gltfIndex": 401
+        "gltfIndex": 401,
+        "triangleCount": 20
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7148,9 +7562,10 @@
       "id": "a2498",
       "name": "Line081-402.mesh",
       "userData": {
-        "gltfIndex": 402
+        "gltfIndex": 402,
+        "triangleCount": 308
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7165,9 +7580,10 @@
       "id": "a2a07",
       "name": "Line082-403.mesh",
       "userData": {
-        "gltfIndex": 403
+        "gltfIndex": 403,
+        "triangleCount": 308
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7182,9 +7598,10 @@
       "id": "18c00",
       "name": "Line039_Material0-404.mesh",
       "userData": {
-        "gltfIndex": 404
+        "gltfIndex": 404,
+        "triangleCount": 108
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7199,9 +7616,10 @@
       "id": "1c524",
       "name": "Plane011-405.mesh",
       "userData": {
-        "gltfIndex": 405
+        "gltfIndex": 405,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7216,9 +7634,10 @@
       "id": "cddd6",
       "name": "Plane012-406.mesh",
       "userData": {
-        "gltfIndex": 406
+        "gltfIndex": 406,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7233,9 +7652,10 @@
       "id": "222d1",
       "name": "Plane013-407.mesh",
       "userData": {
-        "gltfIndex": 407
+        "gltfIndex": 407,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7250,9 +7670,10 @@
       "id": "1969e",
       "name": "Plane014-408.mesh",
       "userData": {
-        "gltfIndex": 408
+        "gltfIndex": 408,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7267,9 +7688,10 @@
       "id": "a805b",
       "name": "Plane015-409.mesh",
       "userData": {
-        "gltfIndex": 409
+        "gltfIndex": 409,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7284,9 +7706,10 @@
       "id": "05fe5",
       "name": "Plane016-410.mesh",
       "userData": {
-        "gltfIndex": 410
+        "gltfIndex": 410,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7301,9 +7724,10 @@
       "id": "ac9ed",
       "name": "Plane017-411.mesh",
       "userData": {
-        "gltfIndex": 411
+        "gltfIndex": 411,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7318,9 +7742,10 @@
       "id": "e583d",
       "name": "Plane022-412.mesh",
       "userData": {
-        "gltfIndex": 412
+        "gltfIndex": 412,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7335,9 +7760,10 @@
       "id": "2ae86",
       "name": "Plane019-413.mesh",
       "userData": {
-        "gltfIndex": 413
+        "gltfIndex": 413,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7352,9 +7778,10 @@
       "id": "b5d15",
       "name": "Plane020-414.mesh",
       "userData": {
-        "gltfIndex": 414
+        "gltfIndex": 414,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7369,9 +7796,10 @@
       "id": "f8e5a",
       "name": "Plane011-415.mesh",
       "userData": {
-        "gltfIndex": 415
+        "gltfIndex": 415,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7386,9 +7814,10 @@
       "id": "541de",
       "name": "Plane012-416.mesh",
       "userData": {
-        "gltfIndex": 416
+        "gltfIndex": 416,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7403,9 +7832,10 @@
       "id": "0e56c",
       "name": "Plane013-417.mesh",
       "userData": {
-        "gltfIndex": 417
+        "gltfIndex": 417,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7420,9 +7850,10 @@
       "id": "b3471",
       "name": "Plane014-418.mesh",
       "userData": {
-        "gltfIndex": 418
+        "gltfIndex": 418,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7437,9 +7868,10 @@
       "id": "f0240",
       "name": "Plane015-419.mesh",
       "userData": {
-        "gltfIndex": 419
+        "gltfIndex": 419,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7454,9 +7886,10 @@
       "id": "87a6c",
       "name": "Plane016-420.mesh",
       "userData": {
-        "gltfIndex": 420
+        "gltfIndex": 420,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7471,9 +7904,10 @@
       "id": "e89a9",
       "name": "Box013-421.mesh",
       "userData": {
-        "gltfIndex": 421
+        "gltfIndex": 421,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7488,9 +7922,10 @@
       "id": "065ac",
       "name": "Box352-423.mesh",
       "userData": {
-        "gltfIndex": 423
+        "gltfIndex": 423,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7505,9 +7940,10 @@
       "id": "01887",
       "name": "Box353-424.mesh",
       "userData": {
-        "gltfIndex": 424
+        "gltfIndex": 424,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7522,9 +7958,10 @@
       "id": "ae48d",
       "name": "Box354-425.mesh",
       "userData": {
-        "gltfIndex": 425
+        "gltfIndex": 425,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7539,9 +7976,10 @@
       "id": "b235b",
       "name": "Line083_Material0-427.mesh",
       "userData": {
-        "gltfIndex": 427
+        "gltfIndex": 427,
+        "triangleCount": 416
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7556,9 +7994,10 @@
       "id": "6cb8f",
       "name": "Box356-428.mesh",
       "userData": {
-        "gltfIndex": 428
+        "gltfIndex": 428,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7573,9 +8012,10 @@
       "id": "d0bc8",
       "name": "Box357-429.mesh",
       "userData": {
-        "gltfIndex": 429
+        "gltfIndex": 429,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7590,9 +8030,10 @@
       "id": "29abe",
       "name": "Box358-430.mesh",
       "userData": {
-        "gltfIndex": 430
+        "gltfIndex": 430,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7607,9 +8048,10 @@
       "id": "198c1",
       "name": "Box359-431.mesh",
       "userData": {
-        "gltfIndex": 431
+        "gltfIndex": 431,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7624,9 +8066,10 @@
       "id": "b2278",
       "name": "Box360-432.mesh",
       "userData": {
-        "gltfIndex": 432
+        "gltfIndex": 432,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7641,9 +8084,10 @@
       "id": "268b5",
       "name": "Box361-433.mesh",
       "userData": {
-        "gltfIndex": 433
+        "gltfIndex": 433,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7658,9 +8102,10 @@
       "id": "cafb7",
       "name": "Box362-434.mesh",
       "userData": {
-        "gltfIndex": 434
+        "gltfIndex": 434,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7675,9 +8120,10 @@
       "id": "b4939",
       "name": "Line084_Material0-435.mesh",
       "userData": {
-        "gltfIndex": 435
+        "gltfIndex": 435,
+        "triangleCount": 2736
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7692,9 +8138,10 @@
       "id": "54fb7",
       "name": "Cylinder083-436.mesh",
       "userData": {
-        "gltfIndex": 436
+        "gltfIndex": 436,
+        "triangleCount": 356
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7709,9 +8156,10 @@
       "id": "ec809",
       "name": "Cylinder084-437.mesh",
       "userData": {
-        "gltfIndex": 437
+        "gltfIndex": 437,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7726,9 +8174,10 @@
       "id": "3a724",
       "name": "Cylinder085-438.mesh",
       "userData": {
-        "gltfIndex": 438
+        "gltfIndex": 438,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7743,9 +8192,10 @@
       "id": "936c0",
       "name": "Line085-439.mesh",
       "userData": {
-        "gltfIndex": 439
+        "gltfIndex": 439,
+        "triangleCount": 124
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7760,9 +8210,10 @@
       "id": "52ae3",
       "name": "Line086-440.mesh",
       "userData": {
-        "gltfIndex": 440
+        "gltfIndex": 440,
+        "triangleCount": 24
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7777,9 +8228,10 @@
       "id": "5fe01",
       "name": "Line087-441.mesh",
       "userData": {
-        "gltfIndex": 441
+        "gltfIndex": 441,
+        "triangleCount": 116
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7794,9 +8246,10 @@
       "id": "379ca",
       "name": "Cylinder086-443.mesh",
       "userData": {
-        "gltfIndex": 443
+        "gltfIndex": 443,
+        "triangleCount": 3698
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7811,9 +8264,10 @@
       "id": "77d58",
       "name": "Line089_Material0-444.mesh",
       "userData": {
-        "gltfIndex": 444
+        "gltfIndex": 444,
+        "triangleCount": 2736
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7828,9 +8282,10 @@
       "id": "c50d1",
       "name": "Helix001-445.mesh",
       "userData": {
-        "gltfIndex": 445
+        "gltfIndex": 445,
+        "triangleCount": 1906
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7845,9 +8300,10 @@
       "id": "98ee2",
       "name": "Line090-446.mesh",
       "userData": {
-        "gltfIndex": 446
+        "gltfIndex": 446,
+        "triangleCount": 60
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7862,9 +8318,10 @@
       "id": "8f42a",
       "name": "Line091-448.mesh",
       "userData": {
-        "gltfIndex": 448
+        "gltfIndex": 448,
+        "triangleCount": 60
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7879,9 +8336,10 @@
       "id": "ec289",
       "name": "Line092_Material0-449.mesh",
       "userData": {
-        "gltfIndex": 449
+        "gltfIndex": 449,
+        "triangleCount": 2736
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7896,9 +8354,10 @@
       "id": "32dab",
       "name": "Line093_Material0-450.mesh",
       "userData": {
-        "gltfIndex": 450
+        "gltfIndex": 450,
+        "triangleCount": 2736
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7913,9 +8372,10 @@
       "id": "e7412",
       "name": "Cylinder087-451.mesh",
       "userData": {
-        "gltfIndex": 451
+        "gltfIndex": 451,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7930,9 +8390,10 @@
       "id": "f2ee7",
       "name": "Line094-452.mesh",
       "userData": {
-        "gltfIndex": 452
+        "gltfIndex": 452,
+        "triangleCount": 116
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7947,9 +8408,10 @@
       "id": "bbbb9",
       "name": "Cylinder088-453.mesh",
       "userData": {
-        "gltfIndex": 453
+        "gltfIndex": 453,
+        "triangleCount": 3698
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7964,9 +8426,10 @@
       "id": "2f838",
       "name": "Line095-454.mesh",
       "userData": {
-        "gltfIndex": 454
+        "gltfIndex": 454,
+        "triangleCount": 124
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7981,9 +8444,10 @@
       "id": "e8c4e",
       "name": "Line096-455.mesh",
       "userData": {
-        "gltfIndex": 455
+        "gltfIndex": 455,
+        "triangleCount": 24
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -7998,9 +8462,10 @@
       "id": "0e9e5",
       "name": "Cylinder089-456.mesh",
       "userData": {
-        "gltfIndex": 456
+        "gltfIndex": 456,
+        "triangleCount": 68
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8015,9 +8480,10 @@
       "id": "60a23",
       "name": "Cylinder090-457.mesh",
       "userData": {
-        "gltfIndex": 457
+        "gltfIndex": 457,
+        "triangleCount": 356
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8032,9 +8498,10 @@
       "id": "9205a",
       "name": "Line097-458.mesh",
       "userData": {
-        "gltfIndex": 458
+        "gltfIndex": 458,
+        "triangleCount": 28
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8049,9 +8516,10 @@
       "id": "2b5da",
       "name": "Plane017-459.mesh",
       "userData": {
-        "gltfIndex": 459
+        "gltfIndex": 459,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8066,9 +8534,10 @@
       "id": "49f55",
       "name": "Plane018-460.mesh",
       "userData": {
-        "gltfIndex": 460
+        "gltfIndex": 460,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8083,9 +8552,10 @@
       "id": "8a7f7",
       "name": "Line040-461.mesh",
       "userData": {
-        "gltfIndex": 461
+        "gltfIndex": 461,
+        "triangleCount": 380
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8100,9 +8570,10 @@
       "id": "afa3c",
       "name": "Ecorché-462.mesh",
       "userData": {
-        "gltfIndex": 462
+        "gltfIndex": 462,
+        "triangleCount": 1480
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8117,9 +8588,10 @@
       "id": "38e89",
       "name": "Ecorché001-463.mesh",
       "userData": {
-        "gltfIndex": 463
+        "gltfIndex": 463,
+        "triangleCount": 1480
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8134,9 +8606,10 @@
       "id": "0064b",
       "name": "Ecorché002-464.mesh",
       "userData": {
-        "gltfIndex": 464
+        "gltfIndex": 464,
+        "triangleCount": 1480
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8151,9 +8624,10 @@
       "id": "e6bd0",
       "name": "Ecorché003-465.mesh",
       "userData": {
-        "gltfIndex": 465
+        "gltfIndex": 465,
+        "triangleCount": 1480
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8168,9 +8642,10 @@
       "id": "2cbe4",
       "name": "Line100_Material0-466.mesh",
       "userData": {
-        "gltfIndex": 466
+        "gltfIndex": 466,
+        "triangleCount": 192
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8185,9 +8660,10 @@
       "id": "f6e69",
       "name": "Object006_Material0-467.mesh",
       "userData": {
-        "gltfIndex": 467
+        "gltfIndex": 467,
+        "triangleCount": 392
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8202,9 +8678,10 @@
       "id": "422d9",
       "name": "Line058_Material0-468.mesh",
       "userData": {
-        "gltfIndex": 468
+        "gltfIndex": 468,
+        "triangleCount": 1336
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8219,9 +8696,10 @@
       "id": "3b2fe",
       "name": "Line026_Material0-469.mesh",
       "userData": {
-        "gltfIndex": 469
+        "gltfIndex": 469,
+        "triangleCount": 5902
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8236,9 +8714,10 @@
       "id": "c871e",
       "name": "Sun001-471.mesh",
       "userData": {
-        "gltfIndex": 471
+        "gltfIndex": 471,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8253,9 +8732,10 @@
       "id": "2f649",
       "name": "Sun002-472.mesh",
       "userData": {
-        "gltfIndex": 472
+        "gltfIndex": 472,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8270,9 +8750,10 @@
       "id": "e60bf",
       "name": "Sun003-473.mesh",
       "userData": {
-        "gltfIndex": 473
+        "gltfIndex": 473,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8287,9 +8768,10 @@
       "id": "2d49a",
       "name": "Sun004-474.mesh",
       "userData": {
-        "gltfIndex": 474
+        "gltfIndex": 474,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8304,9 +8786,10 @@
       "id": "18e7d",
       "name": "Sun007-477.mesh",
       "userData": {
-        "gltfIndex": 477
+        "gltfIndex": 477,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8321,9 +8804,10 @@
       "id": "7a1c2",
       "name": "Sun008-478.mesh",
       "userData": {
-        "gltfIndex": 478
+        "gltfIndex": 478,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8338,9 +8822,10 @@
       "id": "811cd",
       "name": "Sun009-479.mesh",
       "userData": {
-        "gltfIndex": 479
+        "gltfIndex": 479,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8355,9 +8840,10 @@
       "id": "3eeec",
       "name": "Sun010-480.mesh",
       "userData": {
-        "gltfIndex": 480
+        "gltfIndex": 480,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8372,9 +8858,10 @@
       "id": "f88c7",
       "name": "Sun011-481.mesh",
       "userData": {
-        "gltfIndex": 481
+        "gltfIndex": 481,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8389,9 +8876,10 @@
       "id": "54d6c",
       "name": "Sun012-482.mesh",
       "userData": {
-        "gltfIndex": 482
+        "gltfIndex": 482,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8406,9 +8894,10 @@
       "id": "1d4c0",
       "name": "Sun013-483.mesh",
       "userData": {
-        "gltfIndex": 483
+        "gltfIndex": 483,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8423,9 +8912,10 @@
       "id": "bc678",
       "name": "Sun014-484.mesh",
       "userData": {
-        "gltfIndex": 484
+        "gltfIndex": 484,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8440,9 +8930,10 @@
       "id": "be8b6",
       "name": "Sun015-485.mesh",
       "userData": {
-        "gltfIndex": 485
+        "gltfIndex": 485,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8457,9 +8948,10 @@
       "id": "77f33",
       "name": "Sun016-486.mesh",
       "userData": {
-        "gltfIndex": 486
+        "gltfIndex": 486,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8474,9 +8966,10 @@
       "id": "e54d6",
       "name": "Sun017-487.mesh",
       "userData": {
-        "gltfIndex": 487
+        "gltfIndex": 487,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8491,9 +8984,10 @@
       "id": "d6a76",
       "name": "Sun018-488.mesh",
       "userData": {
-        "gltfIndex": 488
+        "gltfIndex": 488,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8508,9 +9002,10 @@
       "id": "462e1",
       "name": "Sun019-489.mesh",
       "userData": {
-        "gltfIndex": 489
+        "gltfIndex": 489,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8525,9 +9020,10 @@
       "id": "f162e",
       "name": "Sun020-490.mesh",
       "userData": {
-        "gltfIndex": 490
+        "gltfIndex": 490,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8542,9 +9038,10 @@
       "id": "c4e8d",
       "name": "Sun021-491.mesh",
       "userData": {
-        "gltfIndex": 491
+        "gltfIndex": 491,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8559,9 +9056,10 @@
       "id": "0a893",
       "name": "Sun022-492.mesh",
       "userData": {
-        "gltfIndex": 492
+        "gltfIndex": 492,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8576,9 +9074,10 @@
       "id": "8303c",
       "name": "Sun023-493.mesh",
       "userData": {
-        "gltfIndex": 493
+        "gltfIndex": 493,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8593,9 +9092,10 @@
       "id": "ca051",
       "name": "Sun024-494.mesh",
       "userData": {
-        "gltfIndex": 494
+        "gltfIndex": 494,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8610,9 +9110,10 @@
       "id": "6c6c3",
       "name": "Sun025-495.mesh",
       "userData": {
-        "gltfIndex": 495
+        "gltfIndex": 495,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8627,9 +9128,10 @@
       "id": "bad64",
       "name": "Sun026-496.mesh",
       "userData": {
-        "gltfIndex": 496
+        "gltfIndex": 496,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8644,9 +9146,10 @@
       "id": "724eb",
       "name": "Sun027-497.mesh",
       "userData": {
-        "gltfIndex": 497
+        "gltfIndex": 497,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8661,9 +9164,10 @@
       "id": "4f3f9",
       "name": "Sun028-498.mesh",
       "userData": {
-        "gltfIndex": 498
+        "gltfIndex": 498,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8678,9 +9182,10 @@
       "id": "22d53",
       "name": "Sun029-499.mesh",
       "userData": {
-        "gltfIndex": 499
+        "gltfIndex": 499,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8695,9 +9200,10 @@
       "id": "38a3e",
       "name": "Sun030-500.mesh",
       "userData": {
-        "gltfIndex": 500
+        "gltfIndex": 500,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8712,9 +9218,10 @@
       "id": "dc38c",
       "name": "Sun031-501.mesh",
       "userData": {
-        "gltfIndex": 501
+        "gltfIndex": 501,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8729,9 +9236,10 @@
       "id": "64de5",
       "name": "Sun032-502.mesh",
       "userData": {
-        "gltfIndex": 502
+        "gltfIndex": 502,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8746,9 +9254,10 @@
       "id": "3c056",
       "name": "Sun033-503.mesh",
       "userData": {
-        "gltfIndex": 503
+        "gltfIndex": 503,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8763,9 +9272,10 @@
       "id": "144a7",
       "name": "Sun035-505.mesh",
       "userData": {
-        "gltfIndex": 505
+        "gltfIndex": 505,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8780,9 +9290,10 @@
       "id": "dfc9e",
       "name": "Sun037-507.mesh",
       "userData": {
-        "gltfIndex": 507
+        "gltfIndex": 507,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8797,9 +9308,10 @@
       "id": "3d043",
       "name": "Sun038-508.mesh",
       "userData": {
-        "gltfIndex": 508
+        "gltfIndex": 508,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8814,9 +9326,10 @@
       "id": "ce8a1",
       "name": "Sun039-509.mesh",
       "userData": {
-        "gltfIndex": 509
+        "gltfIndex": 509,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8831,9 +9344,10 @@
       "id": "3f4b9",
       "name": "Sun040-510.mesh",
       "userData": {
-        "gltfIndex": 510
+        "gltfIndex": 510,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8848,9 +9362,10 @@
       "id": "aa07a",
       "name": "Sun041-511.mesh",
       "userData": {
-        "gltfIndex": 511
+        "gltfIndex": 511,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8865,9 +9380,10 @@
       "id": "888c6",
       "name": "Sun043-513.mesh",
       "userData": {
-        "gltfIndex": 513
+        "gltfIndex": 513,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8882,9 +9398,10 @@
       "id": "bcda4",
       "name": "Sun044-514.mesh",
       "userData": {
-        "gltfIndex": 514
+        "gltfIndex": 514,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8899,9 +9416,10 @@
       "id": "9136c",
       "name": "Sun045-515.mesh",
       "userData": {
-        "gltfIndex": 515
+        "gltfIndex": 515,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8916,9 +9434,10 @@
       "id": "752ae",
       "name": "Sun046-516.mesh",
       "userData": {
-        "gltfIndex": 516
+        "gltfIndex": 516,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8933,9 +9452,10 @@
       "id": "d5782",
       "name": "Sun047-517.mesh",
       "userData": {
-        "gltfIndex": 517
+        "gltfIndex": 517,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8950,9 +9470,10 @@
       "id": "0ce0f",
       "name": "Sun048-518.mesh",
       "userData": {
-        "gltfIndex": 518
+        "gltfIndex": 518,
+        "triangleCount": 2
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8967,9 +9488,10 @@
       "id": "b057d",
       "name": "Sun055-519.mesh",
       "userData": {
-        "gltfIndex": 519
+        "gltfIndex": 519,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -8984,9 +9506,10 @@
       "id": "539cd",
       "name": "Sun056-520.mesh",
       "userData": {
-        "gltfIndex": 520
+        "gltfIndex": 520,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9001,9 +9524,10 @@
       "id": "c9bb4",
       "name": "Sun057-521.mesh",
       "userData": {
-        "gltfIndex": 521
+        "gltfIndex": 521,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9018,9 +9542,10 @@
       "id": "efc0c",
       "name": "Sun058-522.mesh",
       "userData": {
-        "gltfIndex": 522
+        "gltfIndex": 522,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9035,9 +9560,10 @@
       "id": "b6f8d",
       "name": "Sun059-523.mesh",
       "userData": {
-        "gltfIndex": 523
+        "gltfIndex": 523,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9052,9 +9578,10 @@
       "id": "3b7dc",
       "name": "Sun060-524.mesh",
       "userData": {
-        "gltfIndex": 524
+        "gltfIndex": 524,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9069,9 +9596,10 @@
       "id": "aa5d3",
       "name": "Sun061-525.mesh",
       "userData": {
-        "gltfIndex": 525
+        "gltfIndex": 525,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9086,9 +9614,10 @@
       "id": "3953d",
       "name": "Sun062-526.mesh",
       "userData": {
-        "gltfIndex": 526
+        "gltfIndex": 526,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9103,9 +9632,10 @@
       "id": "09b7a",
       "name": "Sun063-527.mesh",
       "userData": {
-        "gltfIndex": 527
+        "gltfIndex": 527,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9120,9 +9650,10 @@
       "id": "8e03f",
       "name": "Sun064-528.mesh",
       "userData": {
-        "gltfIndex": 528
+        "gltfIndex": 528,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9137,9 +9668,10 @@
       "id": "db07f",
       "name": "Sun065-529.mesh",
       "userData": {
-        "gltfIndex": 529
+        "gltfIndex": 529,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9154,9 +9686,10 @@
       "id": "0bff5",
       "name": "Sun067-531.mesh",
       "userData": {
-        "gltfIndex": 531
+        "gltfIndex": 531,
+        "triangleCount": 16
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9171,9 +9704,10 @@
       "id": "4f94b",
       "name": "Line020-532.mesh",
       "userData": {
-        "gltfIndex": 532
+        "gltfIndex": 532,
+        "triangleCount": 192
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9188,9 +9722,10 @@
       "id": "d161e",
       "name": "Object007-533.mesh",
       "userData": {
-        "gltfIndex": 533
+        "gltfIndex": 533,
+        "triangleCount": 24
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9205,9 +9740,10 @@
       "id": "0788d",
       "name": "Object009-534.mesh",
       "userData": {
-        "gltfIndex": 534
+        "gltfIndex": 534,
+        "triangleCount": 12
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9222,9 +9758,10 @@
       "id": "de27e",
       "name": "Line019-535.mesh",
       "userData": {
-        "gltfIndex": 535
+        "gltfIndex": 535,
+        "triangleCount": 264
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9239,9 +9776,10 @@
       "id": "452b9",
       "name": "Object003-536.mesh",
       "userData": {
-        "gltfIndex": 536
+        "gltfIndex": 536,
+        "triangleCount": 262
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9256,9 +9794,10 @@
       "id": "bccd3",
       "name": "Object005-537.mesh",
       "userData": {
-        "gltfIndex": 537
+        "gltfIndex": 537,
+        "triangleCount": 304
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9273,9 +9812,10 @@
       "id": "8a07c",
       "name": "Line018-538.mesh",
       "userData": {
-        "gltfIndex": 538
+        "gltfIndex": 538,
+        "triangleCount": 346
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9290,9 +9830,10 @@
       "id": "c2c9e",
       "name": "Line017-539.mesh",
       "userData": {
-        "gltfIndex": 539
+        "gltfIndex": 539,
+        "triangleCount": 368
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9307,9 +9848,10 @@
       "id": "7b5ea",
       "name": "Cylinder003-540.mesh",
       "userData": {
-        "gltfIndex": 540
+        "gltfIndex": 540,
+        "triangleCount": 64
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9324,9 +9866,10 @@
       "id": "035dc",
       "name": "Cylinder004-541.mesh",
       "userData": {
-        "gltfIndex": 541
+        "gltfIndex": 541,
+        "triangleCount": 64
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9341,9 +9884,10 @@
       "id": "79b1d",
       "name": "Line016-542.mesh",
       "userData": {
-        "gltfIndex": 542
+        "gltfIndex": 542,
+        "triangleCount": 44
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9358,9 +9902,10 @@
       "id": "09ae3",
       "name": "Line021-543.mesh",
       "userData": {
-        "gltfIndex": 543
+        "gltfIndex": 543,
+        "triangleCount": 168
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9375,9 +9920,10 @@
       "id": "5ade8",
       "name": "Torus001-544.mesh",
       "userData": {
-        "gltfIndex": 544
+        "gltfIndex": 544,
+        "triangleCount": 192
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9392,9 +9938,10 @@
       "id": "f4000",
       "name": "Torus002-545.mesh",
       "userData": {
-        "gltfIndex": 545
+        "gltfIndex": 545,
+        "triangleCount": 192
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9409,9 +9956,10 @@
       "id": "4f188",
       "name": "Object011-546.mesh",
       "userData": {
-        "gltfIndex": 546
+        "gltfIndex": 546,
+        "triangleCount": 60
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9426,9 +9974,10 @@
       "id": "5423e",
       "name": "Object013-547.mesh",
       "userData": {
-        "gltfIndex": 547
+        "gltfIndex": 547,
+        "triangleCount": 36
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9443,9 +9992,10 @@
       "id": "90b8a",
       "name": "Cylinder005-548.mesh",
       "userData": {
-        "gltfIndex": 548
+        "gltfIndex": 548,
+        "triangleCount": 64
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9460,9 +10010,10 @@
       "id": "df682",
       "name": "Line022-549.mesh",
       "userData": {
-        "gltfIndex": 549
+        "gltfIndex": 549,
+        "triangleCount": 340
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9477,9 +10028,10 @@
       "id": "e23af",
       "name": "Line025-550.mesh",
       "userData": {
-        "gltfIndex": 550
+        "gltfIndex": 550,
+        "triangleCount": 340
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9494,9 +10046,10 @@
       "id": "769f9",
       "name": "Helix001-551.mesh",
       "userData": {
-        "gltfIndex": 551
+        "gltfIndex": 551,
+        "triangleCount": 5794
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9511,9 +10064,10 @@
       "id": "91cd1",
       "name": "Line102-553.mesh",
       "userData": {
-        "gltfIndex": 553
+        "gltfIndex": 553,
+        "triangleCount": 272
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9528,9 +10082,10 @@
       "id": "afb23",
       "name": "Line101-554.mesh",
       "userData": {
-        "gltfIndex": 554
+        "gltfIndex": 554,
+        "triangleCount": 138
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9545,9 +10100,10 @@
       "id": "95ca2",
       "name": "Arc004-555.mesh",
       "userData": {
-        "gltfIndex": 555
+        "gltfIndex": 555,
+        "triangleCount": 268
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -9571,7 +10127,7 @@
         },
         "events": []
       },
-      "ver": "1.0.16",
+      "ver": "1.0.17",
       "imported": true,
       "files": [
         ".cconb"
@@ -9585,7 +10141,10 @@
       "id": "6ea13",
       "name": "Map #1-0.image",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -9602,7 +10161,10 @@
       "id": "745cc",
       "name": "Map #1-1.image",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -10275,7 +10837,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -10295,7 +10857,8 @@
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -10307,7 +10870,8 @@
             "name": "Take 001",
             "from": 0,
             "to": 3.3333332538604736,
-            "wrapMode": 2
+            "wrapMode": 2,
+            "previousId": "73b7f"
           }
         ]
       }
@@ -10925,6 +11489,24 @@
       ],
       "scenes": [
         "3aeac991-caa1-492b-ae67-4030c16ad161@b0fe3"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }

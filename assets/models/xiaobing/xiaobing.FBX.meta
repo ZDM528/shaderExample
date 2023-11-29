@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.12",
   "importer": "fbx",
   "imported": true,
   "uuid": "4d046799-f6fa-431f-9ead-b560ab027fb1",
@@ -28,9 +28,10 @@
       "id": "7868a",
       "name": "xiaobing_Material0.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 5056
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -62,7 +63,10 @@
       "id": "b372b",
       "name": "贴图 #15.image",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -79,7 +83,10 @@
       "id": "d412c",
       "name": "贴图 #13.image",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -102,8 +109,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/models/xiaobing/xiaobing_pifu.jpg"
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6847d3df-9049-4621-a83c-17da1200e37c"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -125,8 +132,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/models/xiaobing/xiaobing_cloth.jpg"
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "177b32eb-57da-4f8e-8837-84a9e66289b3"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -192,7 +199,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -204,17 +211,18 @@
     "imageMetas": [
       {
         "name": "贴图 #15",
-        "remap": "db://assets/models/xiaobing/xiaobing_pifu.jpg",
+        "remap": "6847d3df-9049-4621-a83c-17da1200e37c",
         "uri": "4d046799-f6fa-431f-9ead-b560ab027fb1@b372b"
       },
       {
         "name": "贴图 #13",
-        "remap": "db://assets/models/xiaobing/xiaobing_cloth.jpg",
+        "remap": "177b32eb-57da-4f8e-8837-84a9e66289b3",
         "uri": "4d046799-f6fa-431f-9ead-b560ab027fb1@d412c"
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "redirect": "4d046799-f6fa-431f-9ead-b560ab027fb1@f0417",
     "assetFinder": {
@@ -237,17 +245,6 @@
       "scenes": [
         "4d046799-f6fa-431f-9ead-b560ab027fb1@f0417"
       ]
-    },
-    "meshOptimizer": {
-      "simplifyOptions": {
-        "targetRatio": 1,
-        "preserveSurfaceCurvature": false,
-        "preserveBorderEdges": false,
-        "preserveUVSeamEdges": false,
-        "preserveUVFoldoverEdges": false,
-        "maxIterationCount": 200
-      },
-      "enable": false
     },
     "materials": {
       "841b3034-7916-4050-9afd-0ce7eb1aecb8@44abd": {
@@ -524,6 +521,28 @@
           {}
         ]
       }
+    },
+    "meshSimplify": {
+      "enable": false,
+      "targetRatio": 1
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
     }
   }
 }

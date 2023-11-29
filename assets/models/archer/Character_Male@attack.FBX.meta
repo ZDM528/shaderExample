@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.12",
   "importer": "fbx",
   "imported": true,
   "uuid": "3301a75e-6064-4df5-87b6-2879e3cf19ae",
@@ -35,7 +35,7 @@
           }
         ]
       },
-      "ver": "1.0.16",
+      "ver": "1.0.17",
       "imported": true,
       "files": [
         ".cconb"
@@ -51,7 +51,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -62,7 +62,8 @@
   "userData": {
     "imageMetas": [],
     "fbx": {
-      "smartMaterialEnabled": false
+      "smartMaterialEnabled": false,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -74,7 +75,8 @@
             "name": "attack",
             "from": 0,
             "to": 0.800000011920929,
-            "wrapMode": 0
+            "wrapMode": 0,
+            "previousId": "989ed"
           }
         ]
       }
@@ -87,6 +89,24 @@
       "materials": [],
       "scenes": [
         "3301a75e-6064-4df5-87b6-2879e3cf19ae@473e7"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }

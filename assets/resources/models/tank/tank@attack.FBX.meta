@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.12",
   "importer": "fbx",
   "imported": true,
   "uuid": "2d13124c-8dee-4411-b544-f814e52f7992",
@@ -54,7 +54,7 @@
           "embeddedPlayerGroups": []
         }
       },
-      "ver": "1.0.16",
+      "ver": "1.0.17",
       "imported": true,
       "files": [
         ".cconb"
@@ -70,7 +70,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -83,7 +83,8 @@
     "legacyFbxImporter": false,
     "allowMeshDataAccess": true,
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "animationImportSettings": [
       {
@@ -96,7 +97,8 @@
             "from": 0,
             "to": 0.46666666865348816,
             "wrapMode": 0,
-            "speed": 2
+            "speed": 2,
+            "previousId": "989ed"
           }
         ]
       }
@@ -109,6 +111,24 @@
       "materials": [],
       "scenes": [
         "2d13124c-8dee-4411-b544-f814e52f7992@0a381"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
       ]
     }
   }

@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.4",
+  "ver": "2.3.12",
   "importer": "fbx",
   "imported": true,
   "uuid": "f1ccc8a0-cc38-427f-88e5-fc6014571605",
@@ -28,9 +28,10 @@
       "id": "c42ea",
       "name": "gun.mesh",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "triangleCount": 928
       },
-      "ver": "1.1.0",
+      "ver": "1.1.1",
       "imported": true,
       "files": [
         ".bin",
@@ -45,7 +46,10 @@
       "id": "181cb",
       "name": "贴图 #4.image",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
       },
       "ver": "1.0.3",
       "imported": true,
@@ -68,8 +72,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/models/xiaobing/xiaobing_gun.jpg"
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "f5e503d2-46b2-46cb-90ab-fd7b2fd6013b"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -87,7 +91,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.12",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -99,12 +103,13 @@
     "imageMetas": [
       {
         "name": "贴图 #4",
-        "remap": "db://assets/models/xiaobing/xiaobing_gun.jpg",
+        "remap": "f5e503d2-46b2-46cb-90ab-fd7b2fd6013b",
         "uri": "f1ccc8a0-cc38-427f-88e5-fc6014571605@181cb"
       }
     ],
     "fbx": {
-      "smartMaterialEnabled": true
+      "smartMaterialEnabled": true,
+      "matchMeshNames": false
     },
     "redirect": "f1ccc8a0-cc38-427f-88e5-fc6014571605@faa96",
     "assetFinder": {
@@ -200,6 +205,24 @@
           {}
         ]
       }
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
     }
   }
 }

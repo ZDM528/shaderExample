@@ -1,0 +1,101 @@
+// Effect Syntax Guide: https://docs.cocos.com/creator/manual/zh/shader/index.html
+
+CCEffect %{
+  techniques:
+  - name: opaque
+    passes:
+    - vert: unlit-vs:vert # builtin header
+      frag: unlit-fs:frag
+      properties: &props
+        mainTexture:    { value: white }
+        mainColor:      { value: [1, 1, 1, 1], editor: { type: color } }
+        offset:         { value: [-30,-20] ,target: offsetParam.xy}
+        dist:           { value: 90            }
+  - name: transparent
+    passes:
+    - vert: unlit-vs:vert # builtin header
+      frag: unlit-fs:frag
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: src_alpha
+          blendDst: one_minus_src_alpha
+          blendSrcAlpha: src_alpha
+          blendDstAlpha: one_minus_src_alpha
+      properties: *props
+}%
+
+CCProgram unlit-vs %{
+  precision highp float;
+  #include <legacy/input-standard>
+  #include <builtin/uniforms/cc-global>
+  #include <legacy/local-batch>
+  #include <legacy/input-standard>
+  #include <legacy/fog-vs>
+  #include <legacy/shadow-map-vs>
+  
+  in vec4 a_color;
+  #if HAS_SECOND_UV
+    in vec2 a_texCoord1;
+  #endif
+  
+  out vec3 v_position;
+  out vec2 v_uv;
+  out vec2 v_uv1;
+  out vec4 v_color;
+
+  uniform Constants {
+    vec2 offsetParam;
+    float dist;
+  };
+
+vec4 vert () {
+  StandardVertInput In;
+  CCVertInput(In);
+
+  mat4 matWorld, matWorldIT;
+  CCGetWorldMatrixFull(matWorld, matWorldIT);
+
+  vec4 pos = matWorld * In.position;
+  v_position = pos.xyz;
+ 
+
+  // 在视图空间坐标下,离相机距离越远,顶点坐标变换
+  vec2 offset = offsetParam.xy;
+  vec4 outPos = cc_matView * matWorld * In.position;
+  float zOff = (outPos.z / dist);
+  outPos.xy += offset * zOff * zOff;
+
+  v_uv = a_texCoord;
+  #if HAS_SECOND_UV
+    v_uv1 = a_texCoord1;
+  #endif
+  v_color = a_color;
+  CC_TRANSFER_FOG(pos);
+  CC_TRANSFER_SHADOW(pos);
+
+  return cc_matProj *outPos;
+}
+}%
+
+
+CCProgram unlit-fs %{
+  precision highp float;
+  #include <legacy/output>
+  #include <legacy/fog-fs>
+
+  in vec2 v_uv;
+  in vec3 v_position;
+
+  uniform sampler2D mainTexture;
+
+  uniform Constant {
+    vec4 mainColor;
+  };
+
+  vec4 frag () {
+    vec4 col = mainColor * texture(mainTexture, v_uv);
+    CC_APPLY_FOG(col, v_position);
+    return CCFragOutput(col);
+  }
+}%

@@ -1,0 +1,167 @@
+{
+  "ver": "2.3.12",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e",
+  "files": [],
+  "subMetas": {
+    "75f74": {
+      "importer": "gltf-mesh",
+      "uuid": "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@75f74",
+      "displayName": "",
+      "id": "75f74",
+      "name": "Astronaut.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 3536
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 22
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "df7df": {
+      "importer": "gltf-embeded-image",
+      "uuid": "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@df7df",
+      "displayName": "",
+      "id": "df7df",
+      "name": "贴图 #1.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a96a6": {
+      "importer": "texture",
+      "uuid": "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@a96a6",
+      "displayName": "",
+      "id": "a96a6",
+      "name": "贴图 #1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@df7df"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b679b": {
+      "importer": "gltf-material",
+      "uuid": "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@b679b",
+      "displayName": "",
+      "id": "b679b",
+      "name": "Astronaut.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9ee96": {
+      "importer": "gltf-scene",
+      "uuid": "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@9ee96",
+      "displayName": "",
+      "id": "9ee96",
+      "name": "Astronaut.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "贴图 #1",
+        "uri": "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@df7df"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": false,
+      "matchMeshNames": false
+    },
+    "redirect": "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@9ee96",
+    "assetFinder": {
+      "meshes": [
+        "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@75f74"
+      ],
+      "skeletons": [
+        "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@438fe"
+      ],
+      "textures": [
+        "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@a96a6"
+      ],
+      "materials": [
+        "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@b679b"
+      ],
+      "scenes": [
+        "bdfa8b2b-a117-4cad-8768-b0b45adb2c4e@9ee96"
+      ]
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    }
+  }
+}

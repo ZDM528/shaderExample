@@ -48,9 +48,9 @@ CCProgram ball-fs %{
   };
 
   vec4 frag () {
-    vec4 color=vec4(0.0,0.6,1.0,1.0);
+    vec4 color = vec4(0.0,0.6,1.0,1.0);
     float waterX = v_position.y;
-    waterX = sin(v_position.x *10.0 +cc_time.x * 3.5 )* 0.03 + waterX;
+    waterX = sin(v_position.x * 10.0 + cc_time.x * 3.5 )* 0.03 + waterX;
     float height = waterY-0.5;
     color = mix(color, vec4(1.0, 1.1, 1.0, 1.0), step(height,waterX));
     return CCFragOutput(color);

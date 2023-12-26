@@ -14,7 +14,7 @@ export class myMesh extends Component {
             width: 10,
             length: 10,
             widthSegments: 100,
-            lengthSegments: 100,
+            lengthSegments:100,
         })
         renderer.mesh = utils.MeshUtils.createMesh(plane);
     }
